@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="redG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="50%" stop-color="#b91c1c" />
+      <stop offset="100%" stop-color="#7f1d1d" />
+    </linearGradient>
+    <radialGradient id="darkBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#241414" />
+      <stop offset="100%" stop-color="#0a0505" />
+    </radialGradient>
+  </defs>
+  <circle cx="50" cy="50" r="48" fill="url(#darkBg)" stroke="url(#redG)" stroke-width="2" />
+  <!-- Sleek Supercar Silhouette -->
+  <path d="M 20 56 C 24 50, 32 46, 40 44 C 47 42, 58 42, 68 47 C 76 50, 80 54, 82 58 L 78 62 C 75 62, 73 59, 70 59 C 67 59, 65 62, 62 62 L 38 62 C 35 62, 33 59, 30 59 C 27 59, 25 62, 22 62 Z" fill="url(#redG)" />
+  <circle cx="30" cy="61" r="4.5" fill="#111" stroke="#ef4444" stroke-width="1.5" />
+  <circle cx="70" cy="61" r="4.5" fill="#111" stroke="#ef4444" stroke-width="1.5" />
+  <!-- Headlight beam -->
+  <polygon points="80,56 90,54 88,57" fill="#fef08a" opacity="0.8" />
+  <text x="50" y="80" font-family="sans-serif" font-size="8" font-weight="600" fill="#ef4444" text-anchor="middle" letter-spacing="2">CORSA</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <radialGradient id="wheelBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#18181b" />
+      <stop offset="100%" stop-color="#09090b" />
+    </radialGradient>
+    <linearGradient id="metal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e4e4e7" />
+      <stop offset="50%" stop-color="#71717a" />
+      <stop offset="100%" stop-color="#27272a" />
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="48" fill="url(#wheelBg)" stroke="#27272a" stroke-width="2" />
+  <!-- Wheel Rim -->
+  <circle cx="50" cy="48" r="30" fill="none" stroke="url(#metal)" stroke-width="6" />
+  <!-- Center Cap -->
+  <circle cx="50" cy="48" r="12" fill="#09090b" stroke="#dc2626" stroke-width="2" />
+  <!-- 12 O'clock Marker -->
+  <rect x="48" y="15" width="4" height="6" fill="#dc2626" />
+  <!-- Spokes -->
+  <rect x="22" y="46" width="16" height="4" fill="url(#metal)" />
+  <rect x="62" y="46" width="16" height="4" fill="url(#metal)" />
+  <rect x="48" y="60" width="4" height="16" fill="url(#metal)" />
+  <text x="50" y="51" font-family="sans-serif" font-size="6" font-weight="bold" fill="#fff" text-anchor="middle">RMC</text>
+  <text x="50" y="90" font-family="sans-serif" font-size="7" font-weight="600" fill="#a1a1aa" text-anchor="middle" letter-spacing="1">VELOCE</text>
+</svg>

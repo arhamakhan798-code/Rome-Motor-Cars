@@ -1,0 +1,1347 @@
+ROME MOTOR CARS
+
+CORPORATE POLICY& GOVERNANCE HANDBOOK
+
+Company-wide policy framework for luxury and premium vehicle sales
+
+VERSION 1.0  |  13 NOVEMBER 2026STATUS: INTERNAL DRAFT — NOT YET APPROVED
+
+Prepared for Rome Motor Cars (RMC)
+
+Document control
+
+Document owner
+
+Rome Motor Cars — Management
+
+Document title
+
+Corporate Policy & Governance Handbook
+
+Version
+
+1.0 — Initial comprehensive draft
+
+Effective date
+
+To be inserted after formal approval
+
+Review cycle
+
+At least annually and whenever laws or operations materially change
+
+Approval authority
+
+Director / authorised governing body — to be confirmed
+
+Applies to
+
+Employees, directors, contractors, agents and relevant business partners
+
+Business model assumption
+
+Written for a vehicle retailer/dealer that may also facilitate third-party listings. Remove provisions that do not apply.
+
+Important notice
+
+This handbook is a detailed operational policy template. It is not legal advice, does not establish that RMC holds any licence or regulatory approval, and does not replace mandatory consumer, vehicle, tax, privacy, employment, sanctions, customs, financial-crime or advertising laws. It must be reviewed and adapted by qualified lawyers and relevant compliance professionals in every country where RMC is incorporated, advertises, takes orders, stores vehicles, employs people, ships vehicles or serves customers.
+
+No policy in this handbook may reduce a customer's statutory rights. If a law, regulator's requirement, court order or signed customer contract imposes a higher or different standard, the mandatory requirement or valid contract prevails to the extent of the inconsistency.
+
+Square-bracketed fields such as [LEGAL ENTITY NAME] are completion fields. Do not publish or use customer-facing versions until they have been completed, approved and checked for local legal compliance.
+
+How to use this handbook
+
+Adopt the handbook through a written management resolution and record the approval date.
+
+Complete the company profile and jurisdiction schedule in Appendix A.
+
+Choose the correct operating model: owned inventory, consignment, brokerage/marketplace, or a combination. Make the seller of record clear for every vehicle.
+
+Set actual commercial values—deposit rules, payment deadlines, warranty terms, cancellation rules and delivery estimates—only after operational and legal review.
+
+Train staff, provide the relevant policies to customers and suppliers, and retain evidence of acknowledgement.
+
+Review the handbook at least annually and after a significant incident, new market entry, business-model change or legal change.
+
+Contents
+
+1. Purpose, scope and definitions
+
+2. Corporate governance and ethical conduct
+
+3. Customer relations and service standards
+
+4. Vehicle sourcing, listing and disclosure
+
+5. Sales, reservations and contracts
+
+6. Pricing, payments, refunds and financial controls
+
+7. Vehicle inspection, quality and records
+
+8. Delivery, shipping and handover
+
+9. Returns, warranty, repairs and after-sales
+
+10. Complaints and dispute handling
+
+11. Privacy, data protection and records management
+
+12. Information security and fraud prevention
+
+13. Marketing, advertising and brand standards
+
+14. Employees, workplace and contractors
+
+15. Suppliers, agents and business partners
+
+16. International trade, customs and sanctions compliance
+
+17. Health, safety, premises and environmental practices
+
+18. Risk management, incidents and business continuity
+
+19. Whistleblowing, investigations and disciplinary action
+
+20. Policy administration and enforcement
+
+Appendices: implementation schedule, customer disclosures, operational checklists and forms
+
+1. Purpose, scope and definitions
+
+These policies establish minimum standards for responsible, transparent and consistent RMC operations.
+
+1.1 Purpose. RMC aims to conduct vehicle-related business honestly, lawfully, professionally and with appropriate care for customers, employees, suppliers and the public.
+
+1.2 Scope. This handbook applies to all RMC directors, officers, employees, temporary staff, contractors, consultants, sales representatives, agents and any third party acting in RMC's name, to the extent set out in their agreements.
+
+1.3 Geographic scope. RMC may serve customers in Asia, the Middle East and other approved markets. Local mandatory laws apply in each relevant jurisdiction. Management must maintain a country compliance register before entering a new market.
+
+1.4 Definitions.
+
+RMC means [FULL LEGAL ENTITY NAME], trading as Rome Motor Cars, including approved subsidiaries and branches.
+
+Customer means a prospective or actual purchaser, seller, consignor or person using RMC services.
+
+Vehicle means any car or other motor vehicle marketed, sold, brokered, stored, inspected or delivered by RMC.
+
+Seller of record means the legal person named in the sales contract as the seller. It must be identified before a customer pays.
+
+Owned inventory means vehicles legally owned by RMC or an entity it controls.
+
+Third-party vehicle means a vehicle owned by a separate seller and listed, marketed or facilitated by RMC.
+
+Business day means a day on which the relevant RMC office and applicable payment/settlement institutions are open.
+
+Personal data means information relating to an identified or identifiable individual, as defined by applicable law.
+
+1.5 Order of precedence. Mandatory law takes priority. A signed customer agreement may add detail or provide a more favourable customer term but may not waive non-waivable rights. Internal procedures support, and do not override, this hierarchy.
+
+2. Corporate governance and ethical conduct
+
+2.1 Governance and authority
+
+Purpose: Ensure decisions are authorised, recorded and accountable.
+
+RMC must maintain accurate corporate registration, ownership, director, tax and licensing records as required by applicable law.
+
+Management must approve an authority matrix defining who may set prices, approve discounts, accept deposits, sign contracts, issue refunds, appoint suppliers and commit company funds.
+
+No employee may bind RMC beyond their documented authority. Unusual, high-value or related-party transactions require enhanced approval.
+
+Material decisions, approvals, exceptions and conflicts must be recorded in a durable business record.
+
+Management must review financial performance, compliance risks, customer complaints, safety incidents and policy exceptions at regular intervals.
+
+2.2 Integrity and fair dealing
+
+Purpose: Require honest conduct in every business interaction.
+
+Employees must not misrepresent vehicle condition, mileage, ownership, history, availability, delivery timing, price or warranty coverage.
+
+Bribery, kickbacks, facilitation payments, extortion, embezzlement, falsified records and improper inducements are prohibited.
+
+Gifts and hospitality must be modest, lawful, transparent and recorded where required. Cash gifts or benefits intended to influence a decision are prohibited.
+
+Employees must not discriminate unlawfully or use abusive, threatening or deceptive sales tactics.
+
+Company records must be complete, accurate, timely and never knowingly falsified or concealed.
+
+2.3 Conflicts of interest
+
+Purpose: Protect decisions from undisclosed personal interests.
+
+Employees must promptly disclose actual, potential or perceived conflicts, including family interests in suppliers, customers or competing businesses.
+
+A conflicted person must not make or improperly influence the related decision.
+
+Related-party transactions require prior written approval by an authorised independent decision-maker and must be on documented, fair terms.
+
+Employees may not use RMC information, property, opportunities or customer relationships for undisclosed personal gain.
+
+2.4 Confidentiality and company property
+
+Purpose: Protect non-public business information and assets.
+
+Confidential information may be accessed only for legitimate work and shared only with authorised recipients who need it.
+
+Customer lists, pricing methods, supplier terms, credentials, financial information, contracts and business plans are confidential unless lawfully public.
+
+Company devices, accounts, vehicles, funds, documents and software must be used responsibly and returned when requested or when engagement ends.
+
+Confidentiality obligations continue after employment or engagement ends, subject to lawful rights to report wrongdoing or disclose information to regulators.
+
+3. Customer relations and service standards
+
+3.1 Fair customer treatment
+
+Purpose: Provide clear, respectful and consistent service.
+
+Customers must receive truthful, understandable information before committing to a purchase.
+
+RMC must identify whether it is acting as vehicle owner/seller, broker, marketplace operator, agent or another intermediary in each transaction.
+
+Customers must be told who the contracting seller is, who receives payment, who is responsible for delivery and who handles warranty or post-sale obligations.
+
+Staff must not pressure customers into immediate decisions by inventing scarcity, competing offers or deadlines.
+
+Reasonable accessibility and language support should be provided where practicable and required by law.
+
+3.2 Customer verification
+
+Purpose: Reduce fraud and comply with applicable legal obligations.
+
+RMC may request identity, address, company-authority, beneficial-ownership or payment-source information where reasonably necessary, proportionate and lawful.
+
+The purpose of verification, required documents, retention period and access controls must be explained where required.
+
+RMC must not collect more information than is reasonably needed for the transaction or a legal obligation.
+
+If identity or authority cannot be verified to the required standard, RMC may pause or decline the transaction and explain the next steps where lawful.
+
+3.3 Customer communications
+
+Purpose: Maintain a reliable and auditable service record.
+
+Material promises about price, specification, condition, delivery, warranty, refund or availability must be confirmed in writing.
+
+Staff should respond within the service target approved by management. The initial target is two business days, unless a published service commitment says otherwise.
+
+Staff must not disclose another customer's personal or transaction information.
+
+Where a matter requires specialist or management review, the customer should be told that it has been escalated and given a reasonable update timeframe.
+
+3.4 Accessibility and non-discrimination
+
+Purpose: Ensure lawful and respectful access to services.
+
+RMC prohibits unlawful discrimination in customer service, hiring, contracting and access to facilities.
+
+Decisions must be based on legitimate business, safety, legal or risk criteria—not protected personal characteristics.
+
+Any refusal of service must be documented with a legitimate, lawful reason.
+
+4. Vehicle sourcing, listing and disclosure
+
+4.1 Approved sourcing
+
+Purpose: Acquire or list vehicles only through traceable and legitimate channels.
+
+Before acquiring or listing a vehicle, RMC must take reasonable steps to verify the seller's identity and legal authority to sell.
+
+RMC must obtain and review available title, registration, export/import, lien/finance settlement and ownership documents appropriate to the vehicle and jurisdiction.
+
+RMC must not knowingly acquire or market stolen, cloned, unlawfully imported, tampered, counterfeit or otherwise unlawfully held vehicles.
+
+Any unexplained ownership gap, inconsistent VIN/chassis number, altered document, suspicious payment request or material discrepancy must be escalated and the vehicle held from sale pending review.
+
+Third-party listings must identify the responsible seller and must not imply RMC owns the vehicle if it does not.
+
+4.2 Vehicle listing accuracy
+
+Purpose: Ensure listings fairly represent the actual vehicle.
+
+Each listing must use the correct make, model, model year, trim, body style, engine/powertrain, transmission, drivetrain and material equipment details.
+
+The stated model year, manufacture date and first-registration date must not be treated as interchangeable. Use the correct label and explain any distinction.
+
+Mileage must be described accurately as indicated, verified, estimated or unknown. Odometer discrepancies or replacement must be disclosed.
+
+Photos must depict the actual vehicle being offered, unless clearly labelled as illustrative stock images. Images must not conceal material damage or materially alter appearance.
+
+Availability must be updated promptly when a vehicle is sold, reserved, withdrawn or no longer available.
+
+Any known accident, flood, fire, structural repair, major mechanical issue, title brand, import status or material defect must be disclosed before contract.
+
+Optional equipment, modifications, service history and remaining manufacturer warranty must be described accurately and supported where possible.
+
+4.3 Pricing and currency display
+
+Purpose: Prevent misleading price presentation.
+
+The listing must state the currency and whether the displayed amount includes or excludes taxes, duties, registration, shipping, insurance, inspection and other charges.
+
+If USD is the display currency, the customer must be told the currency actually charged and how any conversion is calculated.
+
+Any exchange-rate source, rate date, conversion fee and payment-provider fee charged to the customer must be disclosed before payment.
+
+A price must not be advertised as final or all-inclusive unless it genuinely includes all mandatory charges known at the time.
+
+Promotions and discounts must state eligibility, duration, exclusions and any stock limitations clearly.
+
+4.4 Vehicle withdrawal and correction
+
+Purpose: Correct errors and prevent reliance on inaccurate listings.
+
+RMC may correct a genuine listing error, but must notify affected customers who have relied on the incorrect information.
+
+If a material listing error is discovered before contract, RMC must pause the listing and issue corrected information.
+
+If discovered after contract, RMC must promptly inform the customer and offer a lawful remedy, which may include correction, renegotiation or cancellation/refund where required or agreed.
+
+A vehicle must be withdrawn if its legal status, safety or authenticity is in reasonable doubt.
+
+5. Sales, reservations and contracts
+
+5.1 Pre-contract information
+
+Purpose: Make the transaction understandable before the customer commits.
+
+Before accepting payment, RMC must provide the vehicle description, seller identity, total known price, payment currency, payment schedule, delivery terms, applicable taxes/charges, cancellation terms and warranty/return position.
+
+The customer must be given a reasonable opportunity to review the contract and ask questions.
+
+No material term may be hidden in a link, footnote or unclear wording.
+
+The final contract must identify the vehicle by VIN/chassis number where available and include the agreed specification and disclosures.
+
+5.2 Reservations and deposits
+
+Purpose: Set clear expectations when a vehicle is held for a customer.
+
+Every reservation must state the vehicle, reservation amount, currency, reservation period, expiry date/time, whether the amount is refundable, and the conditions for applying it to the purchase price.
+
+RMC must not describe a deposit as non-refundable unless that term is lawful, clearly disclosed before payment and fair in the circumstances.
+
+The reservation is not a transfer of ownership unless the signed agreement and applicable law expressly provide otherwise.
+
+RMC must not accept overlapping reservations that it cannot honour.
+
+If RMC cannot supply the reserved vehicle, it must notify the customer promptly and return amounts due within the stated and legally required timeframe.
+
+5.3 Sales contract and authority
+
+Purpose: Ensure every sale is documented and approved.
+
+A sale is binding only when the required parties have accepted the written contract and any required conditions have been satisfied.
+
+The contract must name the legal seller, buyer, vehicle, agreed price, taxes/fees, payment milestones, delivery location, risk/ownership transfer terms, disclosures, warranty and dispute process.
+
+Any change to vehicle, price, delivery, specification or payment terms must be recorded in a signed amendment or other legally valid written acceptance.
+
+Sales staff must not promise benefits or warranties that are absent from the approved contract or authorised policy.
+
+The company must provide the customer with a copy of the executed contract and receipts.
+
+5.4 Cancellations and changes
+
+Purpose: Handle cancellation requests consistently and lawfully.
+
+The contract must explain whether and how either party may cancel, applicable notice requirements, deductions and refund timing.
+
+Statutory cooling-off or cancellation rights must be honoured where applicable, including any rules for distance or off-premises sales.
+
+RMC must not impose an unlawful penalty or retain amounts beyond a lawful and contractually justified amount.
+
+Where a customer requests a change, RMC must confirm whether it is possible, any price/timing impact and whether a new agreement is required.
+
+If RMC cancels for reasons within its control, it must provide the remedies required by law and contract, including refund of amounts owed.
+
+5.5 Trade-ins and customer-supplied vehicles
+
+Purpose: Manage trade-in transactions transparently.
+
+Any trade-in valuation must state assumptions about condition, mileage, title, finance, keys, accessories and inspection.
+
+The final trade-in value may be adjusted only on disclosed, objectively supportable grounds, with the customer's agreement.
+
+RMC must verify title and any outstanding finance before accepting transfer.
+
+The customer must receive a written receipt and transfer documentation.
+
+6. Pricing, payments, refunds and financial controls
+
+6.1 Payment methods and account ownership
+
+Purpose: Ensure funds move through approved, traceable channels.
+
+RMC must publish the payment methods it actually accepts and identify the legal account beneficiary.
+
+Payments must be made only to bank or payment accounts formally designated by RMC in the contract or an independently verified invoice.
+
+Employees must never ask customers to send funds to personal accounts, wallets or unrelated third parties.
+
+Any change to payment instructions must be independently verified through a known contact channel, not solely by replying to the message that announced the change.
+
+Cash payments, if legally permitted and accepted, must be subject to documented limits, receipts and enhanced controls.
+
+6.2 Payment confirmation and receipts
+
+Purpose: Create reliable evidence of every payment.
+
+A payment is treated as received only when cleared or otherwise confirmed by the relevant financial institution or payment provider.
+
+RMC must issue a receipt showing amount, currency, date, payer, transaction reference, vehicle/order reference and remaining balance.
+
+Staff must not mark an order as paid based solely on a screenshot or unverified transfer slip.
+
+Overpayments and duplicate payments must be investigated and returned or applied only with the customer's written agreement and subject to legal requirements.
+
+6.3 Refunds
+
+Purpose: Process valid refunds securely and promptly.
+
+Refund eligibility, deductions and timelines must follow the contract and mandatory law.
+
+Refunds should ordinarily be returned to the original payment method and verified payer, unless law or the payment provider requires another method.
+
+A refund to a different account requires documented identity, authority and fraud checks.
+
+Refund approvals must be segregated from the person who initiated the original sale where practicable.
+
+RMC must maintain a refund register with reason, amount, currency, approval, payment reference and completion date.
+
+If a refund is delayed, RMC must explain the reason and provide a realistic update.
+
+6.4 Financial controls and accounting
+
+Purpose: Safeguard company funds and records.
+
+All sales, deposits, refunds, fees, commissions and supplier payments must be recorded in the accounting system.
+
+Bank reconciliations must be performed regularly by an authorised person who is not solely responsible for initiating payments.
+
+High-value payments, unusual refunds, new beneficiaries and changes to bank details require dual approval.
+
+Company and customer funds must not be mixed where segregation is required by law, contract or sound accounting practice.
+
+Records must be retained for the statutory period and made available to authorised auditors or regulators where legally required.
+
+6.5 Financial crime and suspicious transactions
+
+Purpose: Prevent misuse of RMC for fraud or unlawful financial activity.
+
+RMC must maintain risk-based customer, seller, beneficial-owner and transaction checks where required by applicable law.
+
+Staff must escalate unusual payment structures, unexplained third-party funding, overpayments followed by refund requests, inconsistent payer identity, suspected forged documents and requests to bypass normal controls.
+
+RMC must comply with applicable anti-money-laundering, counter-terrorist-financing, anti-bribery, sanctions and reporting obligations that apply to its activities.
+
+Staff must not tip off a person where disclosure is prohibited by law.
+
+Management must obtain specialist advice before RMC offers financing, credit, escrow, money transmission or other regulated financial services.
+
+7. Vehicle inspection, quality and records
+
+7.1 Inspection standard
+
+Purpose: Use a consistent and documented assessment before sale or delivery.
+
+Each vehicle must receive an inspection appropriate to its age, value, intended market, condition and legal requirements.
+
+Inspection should cover identity/VIN, odometer, exterior, interior, glass, tyres, brakes, steering, suspension, lights, warning indicators, engine, transmission, underbody, safety equipment and roadworthiness where applicable.
+
+Inspections must be carried out by a competent person or qualified third-party provider.
+
+The inspection date, inspector, methods, limitations, findings, photographs and recommended repairs must be recorded.
+
+A visual inspection must not be represented as a full mechanical, structural or diagnostic examination unless it was one.
+
+7.2 Condition grading
+
+Purpose: Use consistent and understandable condition descriptions.
+
+RMC should adopt a written grading scale and explain what each grade means.
+
+Condition grades must be based on documented criteria, not used as a substitute for disclosing known defects.
+
+Wear consistent with age and mileage should be distinguished from damage, faults and safety defects.
+
+Where a defect cannot be assessed, the report must say 'not inspected', 'not verified' or equivalent rather than imply that it is fault-free.
+
+7.3 Repairs and roadworthiness
+
+Purpose: Do not release unsafe vehicles.
+
+Known safety-critical defects must be repaired or otherwise lawfully resolved before the vehicle is driven or delivered for road use.
+
+Repairs must be performed by competent providers using appropriate parts and methods.
+
+Repair invoices, parts records, diagnostic reports and warranty information must be retained.
+
+A vehicle that is not roadworthy must be clearly identified and transported using an appropriate method; it must not be represented as ready to drive.
+
+7.4 Vehicle file
+
+Purpose: Maintain a traceable record for each vehicle.
+
+The vehicle file should include sourcing documents, title/ownership checks, VIN images, mileage evidence, inspection reports, photographs, repair history, listing versions, customer disclosures, contracts, payment records and delivery/handover records.
+
+Access must be restricted to staff who need the file for their duties.
+
+Corrections must preserve an audit trail; original evidence must not be silently overwritten.
+
+Retention periods must be set according to applicable law, contractual needs and legitimate business purposes.
+
+8. Delivery, shipping and handover
+
+8.1 Delivery planning
+
+Purpose: Set realistic and documented delivery expectations.
+
+The contract must identify the delivery method, destination, estimated timeframe, party responsible for arranging transport and any included or excluded charges.
+
+An estimate is not a guaranteed date unless expressly stated as guaranteed in the contract.
+
+RMC must communicate material delays promptly, explain known causes and provide revised estimates.
+
+Customers must be told which documents, duties, taxes, inspections, registration and local approvals are their responsibility and which RMC will arrange.
+
+8.2 Shipping and transport providers
+
+Purpose: Use competent and appropriately insured logistics providers.
+
+RMC must conduct proportionate due diligence on carriers, freight forwarders, storage yards and customs agents.
+
+Written arrangements should specify custody, condition reporting, insurance, liability, delivery evidence, subcontracting and incident notification.
+
+Vehicle condition should be recorded at collection and delivery using dated photographs and a signed condition report.
+
+Any damage, loss, theft or delay must be reported promptly to the relevant carrier, insurer and customer as appropriate.
+
+8.3 Customs, duties and import/export
+
+Purpose: Avoid unlawful or unexpected cross-border movement.
+
+Before a cross-border shipment, RMC must identify the exporter, importer of record, destination requirements, vehicle eligibility, emissions/safety requirements, taxes, duties, permits and required documents.
+
+No employee or agent may falsify invoices, undervalue a vehicle, misstate origin, conceal a vehicle's age or specification, or misclassify goods to reduce duties.
+
+The contract must clearly allocate responsibility for customs clearance, duties, taxes, port charges, storage, demurrage and registration.
+
+RMC must not ship a vehicle where required approvals or legal eligibility are not established.
+
+Country-specific import restrictions and vehicle age limits must be checked for each transaction; a general handbook cannot replace that check.
+
+8.4 Handover and acceptance
+
+Purpose: Document the transfer of custody and relevant information.
+
+At handover, the customer or authorised recipient should inspect the vehicle and receive keys, manuals, available service records, warranty documents, accessories and required transfer documents.
+
+A handover form should record date, location, odometer reading, visible condition, included items, outstanding items and any customer-noted concerns.
+
+The customer should be invited to record concerns without being pressured to sign a statement that contradicts their observations.
+
+Ownership and risk transfer occur as stated in the contract and applicable law; handover alone must not be assumed to settle every legal issue.
+
+9. Returns, warranty, repairs and after-sales
+
+9.1 Statutory rights
+
+Purpose: Preserve all mandatory customer protections.
+
+Nothing in an RMC warranty, return policy or disclaimer limits rights that cannot legally be excluded.
+
+The applicable consumer law depends on the transaction, customer status, seller location, destination and other connecting factors.
+
+Before sale, RMC must identify which entity is responsible for statutory obligations and any voluntary warranty.
+
+9.2 Voluntary warranty
+
+Purpose: Describe any additional RMC or third-party warranty accurately.
+
+If a voluntary warranty is offered, written terms must state provider, duration, start date, covered components, claim process, limits, exclusions, geographic scope and whether labour, parts, diagnosis and transport are covered.
+
+The warranty must not be described as a manufacturer warranty unless it is genuinely issued or honoured by the manufacturer.
+
+Warranty exclusions must be clear and fair, and must not purport to exclude mandatory legal remedies.
+
+Any third-party warranty provider must be identified and its role explained.
+
+9.3 Returns and cancellations after delivery
+
+Purpose: Handle post-delivery requests fairly and consistently.
+
+The customer-facing return policy must state eligibility, time limits, vehicle-use limits, condition requirements, notification method, inspection process, return transport arrangements and any lawful deductions.
+
+RMC must assess alleged faults against the contract, disclosures, inspection evidence, usage, applicable law and independent technical findings where appropriate.
+
+A customer must not be denied a valid statutory remedy solely because a voluntary return window has expired.
+
+If RMC offers a voluntary change-of-mind return, it must define the process and any reasonable, lawful costs in advance.
+
+Refunds or replacements must be completed within the period required by law or the agreed policy.
+
+9.4 Repairs and service claims
+
+Purpose: Provide a transparent after-sales process.
+
+Customers should contact [AFTER-SALES EMAIL/PHONE] with order reference, VIN, mileage, issue description and supporting evidence.
+
+RMC should acknowledge a claim within two business days as an initial service target and explain the next steps.
+
+No repair should be authorised at RMC's expense without approval, except where immediate action is reasonably necessary to protect safety and is permitted by the contract and law.
+
+RMC may request a reasonable inspection or independent assessment, without unreasonably delaying a lawful remedy.
+
+All claim decisions, technical reports, repair authorisations, invoices and communications must be retained.
+
+10. Complaints and dispute handling
+
+10.1 Complaint intake
+
+Purpose: Make it easy for customers to raise concerns.
+
+Complaints may be submitted through [COMPLAINT EMAIL], [POSTAL ADDRESS] or another published channel.
+
+RMC should acknowledge a complaint within two business days as a target, assign a case reference and identify a responsible handler.
+
+The handler must review the contract, listing, inspection file, communications, payment records and relevant law.
+
+The customer should receive a substantive response within a reasonable published timeframe. If more time is needed, RMC must explain why and provide an update date.
+
+10.2 Escalation and resolution
+
+Purpose: Resolve complaints fairly and consistently.
+
+Unresolved, high-value, safety-related, fraud-related or legally sensitive complaints must be escalated to management or legal counsel.
+
+Possible outcomes include explanation, correction, repair, replacement, refund, price adjustment, apology or another lawful remedy.
+
+RMC must not retaliate against a customer for making a complaint or exercising a lawful right.
+
+Customers retain the right to approach regulators, consumer bodies, courts or other competent authorities.
+
+10.3 Disputes and governing law
+
+Purpose: Ensure dispute terms are clear and legally reviewed.
+
+Each customer contract must state the governing law and dispute forum only after local legal review.
+
+Any arbitration or exclusive-jurisdiction clause must be lawful, appropriately disclosed and not remove non-waivable consumer rights.
+
+RMC may propose good-faith negotiation or mediation, but must not prevent a customer from using mandatory legal remedies.
+
+All litigation threats, regulator notices and formal legal claims must be referred promptly to authorised management and counsel.
+
+11. Privacy, data protection and records management
+
+11.1 Privacy principles
+
+Purpose: Handle personal information lawfully, fairly and transparently.
+
+RMC must identify a lawful basis for each processing purpose and provide a privacy notice explaining what data is collected, why, how it is used, who receives it, how long it is kept and how rights may be exercised.
+
+Personal data must be adequate, relevant and limited to what is necessary for the stated purpose.
+
+Data must be kept accurate and corrected when appropriate.
+
+Sensitive or high-risk data must receive additional safeguards and must not be collected unless there is a valid, necessary and lawful reason.
+
+Personal data must not be sold or disclosed for unrelated purposes without a valid legal basis and required notice or consent.
+
+11.2 Customer and employee data
+
+Purpose: Limit access and protect individual information.
+
+Access to identity documents, contact details, payment references, employment records and complaint files must be role-based.
+
+Identity documents must not be stored in personal messaging accounts, unmanaged devices or public folders.
+
+Marketing consent must be collected and recorded where required. Customers must be able to opt out through a simple method.
+
+Employee data must be used only for legitimate employment, payroll, safety, legal and operational purposes.
+
+11.3 Data sharing and international transfers
+
+Purpose: Control disclosures to service providers and overseas recipients.
+
+Before sharing personal data with a cloud provider, payment processor, carrier, marketing platform or overseas affiliate, RMC must assess the recipient, purpose, security and legal transfer requirements.
+
+Written data-processing or confidentiality terms must be used where required.
+
+Third parties must not reuse RMC data for their own unrelated purposes unless legally authorised and disclosed.
+
+RMC must maintain a list of material data processors and review it periodically.
+
+11.4 Retention and deletion
+
+Purpose: Keep information only as long as justified.
+
+RMC must maintain a retention schedule covering contracts, accounting records, vehicle files, identity checks, employee records, marketing preferences, complaints and security logs.
+
+Retention must meet statutory periods, limitation periods and legitimate operational needs, while avoiding indefinite storage without justification.
+
+When the retention period ends, data must be securely deleted, anonymised or archived where legally required.
+
+Legal holds, audits and investigations suspend routine deletion for relevant records.
+
+11.5 Privacy requests
+
+Purpose: Respond to individual rights requests.
+
+Requests for access, correction, deletion, restriction, objection or portability must be routed to [PRIVACY CONTACT].
+
+RMC must verify the requester's identity proportionately and respond within applicable legal deadlines.
+
+If a request is refused or limited, RMC must explain the lawful reason and available complaint route where required.
+
+12. Information security and fraud prevention
+
+12.1 Account and device security
+
+Purpose: Protect RMC systems, accounts and information.
+
+Every user must have an individual account; shared credentials are prohibited except for a formally approved technical service account with controlled access.
+
+Multi-factor authentication must be enabled wherever available for email, cloud storage, financial systems, website administration and developer platforms.
+
+Passwords must be unique, strong and stored in an approved password manager; passwords must never be sent in plain text.
+
+Access must be removed promptly when a person changes role or leaves.
+
+Devices must be locked, updated, protected against malware and encrypted where supported and appropriate.
+
+12.2 Website and application security
+
+Purpose: Reduce risks to customer-facing systems.
+
+Production systems must use HTTPS and supported software versions.
+
+Secrets, API keys, service-account files and database credentials must never be committed to public repositories or embedded in client-side code.
+
+Administrative functions must use least-privilege access and appropriate authentication.
+
+Backups must be maintained and restoration tested periodically.
+
+Changes to payment, customer-data, inventory or access-control functions must be tested before release and recorded.
+
+12.3 Fraud and impersonation
+
+Purpose: Protect customers and RMC from deceptive activity.
+
+RMC must publish official contact details and payment instructions on channels it controls.
+
+Staff must verify unusual requests to change bank details, release a vehicle, refund to a new account or disclose sensitive data using a separate trusted channel.
+
+Suspected impersonation, fake listings, phishing, forged payment evidence or account compromise must be escalated immediately.
+
+RMC must preserve relevant evidence and notify affected parties, banks, platforms, insurers or authorities when required.
+
+12.4 Security incidents
+
+Purpose: Contain and respond to suspected breaches.
+
+Any suspected loss, unauthorised access, malware, data disclosure, payment diversion or system compromise must be reported immediately to [SECURITY CONTACT].
+
+The response lead must assess scope, contain the incident, preserve evidence, restore safe operations and document decisions.
+
+Required regulator and individual notifications must be made within the deadlines set by applicable law.
+
+A post-incident review must identify root causes, corrective actions, owners and completion dates.
+
+13. Marketing, advertising and brand standards
+
+13.1 Truthful advertising
+
+Purpose: Ensure marketing claims are accurate and substantiated.
+
+Advertising must not be false, misleading, materially incomplete or likely to create an inaccurate impression.
+
+Claims such as 'certified', 'accident-free', 'one owner', 'full service history', 'original mileage', 'guaranteed', 'best price' or 'manufacturer approved' require evidence and careful qualification.
+
+Testimonials, reviews, ratings and endorsements must be genuine and presented in accordance with applicable disclosure rules.
+
+Paid endorsements and influencer relationships must be disclosed where required.
+
+Promotional prices must identify material conditions, exclusions, expiry dates and stock limitations.
+
+13.2 Brand identity and communications
+
+Purpose: Maintain a consistent and professional RMC identity.
+
+Only approved logos, colours, typography, photography and brand assets may be used for official communications.
+
+Staff must not make unauthorised public statements on behalf of RMC.
+
+Social media responses must be respectful, accurate and must not disclose confidential customer information.
+
+Vehicle images and videos must not imply features, specifications or condition that the actual vehicle does not have.
+
+13.3 Marketing data and consent
+
+Purpose: Use customer contact information responsibly.
+
+Marketing messages must comply with applicable consent, opt-out, identification and timing requirements.
+
+Transactional messages must be distinguished from promotional messages where required.
+
+Opt-out requests must be actioned promptly and retained as a suppression record so the person is not re-added inadvertently.
+
+Purchased or scraped contact lists must not be used unless their collection and use are lawful and appropriately documented.
+
+14. Employees, workplace and contractors
+
+14.1 Recruitment and onboarding
+
+Purpose: Recruit fairly and establish clear responsibilities.
+
+Recruitment decisions must be based on role-related qualifications, experience, competence and lawful eligibility.
+
+Employment terms, pay, working hours, leave, probation, benefits, notice and termination conditions must be documented and comply with local labour law.
+
+Role descriptions, reporting lines, delegated authority and performance expectations must be provided.
+
+Background checks may be used only when lawful, relevant, proportionate and appropriately disclosed.
+
+14.2 Workplace conduct
+
+Purpose: Maintain a respectful, safe and professional workplace.
+
+Harassment, bullying, threats, violence, unlawful discrimination and retaliation are prohibited.
+
+Employees must follow lawful safety instructions and report hazards, injuries and unsafe practices.
+
+Alcohol or impairing substances must not be used in a way that compromises work, driving, customer safety or legal obligations.
+
+Employees must protect customer vehicles, keys, documents and property while in RMC custody.
+
+Personal relationships must not compromise supervision, procurement, hiring, sales approvals or customer treatment.
+
+14.3 Performance, training and discipline
+
+Purpose: Support competent and accountable work.
+
+Employees must receive training relevant to their responsibilities, including customer fairness, vehicle disclosure, data security, fraud awareness and safety.
+
+Performance concerns should be addressed through clear feedback and documented improvement steps.
+
+Disciplinary action must be fair, consistent, proportionate and compliant with local employment law.
+
+Serious misconduct may include fraud, theft, bribery, falsification, harassment, deliberate concealment of vehicle defects, misuse of customer data or serious safety breaches.
+
+14.4 Contractors and remote workers
+
+Purpose: Apply equivalent controls to non-employees.
+
+Contractors must have written scopes, confidentiality terms, data-security obligations, ownership-of-work terms and termination provisions.
+
+Remote workers must use approved accounts and secure networks and must not store business information in unauthorised personal services.
+
+Contractor access must be limited to the minimum needed and removed when the engagement ends.
+
+15. Suppliers, agents and business partners
+
+15.1 Selection and due diligence
+
+Purpose: Engage reputable and capable partners.
+
+Suppliers should be assessed for identity, ownership, competence, financial stability, reputation, legal compliance, insurance and relevant licences.
+
+Enhanced review is required for high-value, cross-border, safety-critical or customer-data-processing suppliers.
+
+RMC must not knowingly engage suppliers involved in bribery, fraud, stolen vehicles, sanctions evasion, forced labour or other serious unlawful conduct.
+
+Supplier selection and material exceptions must be documented.
+
+15.2 Supplier contracts and performance
+
+Purpose: Set measurable expectations and accountability.
+
+Written contracts should define scope, price, service levels, delivery, quality, insurance, confidentiality, data protection, subcontracting, audit rights, incident reporting, liability and termination.
+
+Suppliers must not represent themselves as RMC employees or make commitments on RMC's behalf unless authorised.
+
+Performance, complaints, incidents, invoices and contract renewals should be reviewed periodically.
+
+RMC may suspend or terminate a supplier for serious misconduct, safety risk, fraud, material breach or loss of required authorisation, subject to contract and law.
+
+15.3 Agents and commissions
+
+Purpose: Ensure intermediaries act transparently.
+
+Agents must have written authority, defined territory and scope, approved commission terms and clear restrictions on representations.
+
+Commissions must be recorded and paid to the contracted party through traceable channels.
+
+Agents must disclose their role and must not collect customer funds unless expressly authorised and legally permitted.
+
+Sub-agents may not be appointed without prior written approval.
+
+16. International trade, customs and sanctions compliance
+
+16.1 Market-entry approval
+
+Purpose: Enter new countries only after a documented readiness review.
+
+Before selling into a new country, management must assess company registration or licensing, consumer rules, taxes, advertising restrictions, data protection, payment rules, import eligibility, vehicle standards and dispute exposure.
+
+A country-specific checklist must identify local counsel or qualified advisers, responsible staff, required registrations and launch approval.
+
+RMC must not imply that it is locally licensed, authorised or physically established unless that is true.
+
+16.2 Sanctions and restricted-party screening
+
+Purpose: Avoid prohibited transactions and counterparties.
+
+Where applicable, RMC must screen relevant buyers, sellers, beneficial owners, banks, carriers and other transaction parties against sanctions and restricted-party requirements.
+
+Screening must use current official or suitably reliable sources and be repeated when material facts change.
+
+Potential matches must be escalated for review; staff must not independently clear a serious match without documented authority.
+
+RMC must not structure transactions to evade sanctions, export controls or trade restrictions.
+
+16.3 Export controls and vehicle eligibility
+
+Purpose: Ensure vehicles can lawfully move to their destination.
+
+RMC must check restrictions on vehicle age, emissions, steering configuration, safety equipment, salvage status, modifications, engine type and import permits.
+
+Export declarations, origin documents, invoices and shipping records must be accurate.
+
+RMC must not knowingly ship a vehicle for an unlawful end use or to a prohibited destination or party.
+
+Where uncertainty exists, the transaction must be paused until qualified advice or official confirmation is obtained.
+
+17. Health, safety, premises and environmental practices
+
+17.1 Workplace and showroom safety
+
+Purpose: Protect staff, customers and visitors.
+
+Premises must be maintained in a safe condition with appropriate lighting, access control, fire protection, emergency exits and first-aid arrangements.
+
+Vehicles must be moved only by authorised and competent drivers, with seatbelts and applicable road laws observed.
+
+Test drives must follow a written procedure covering licence checks, insurance, route, supervision, vehicle condition and incident response.
+
+Customers must not enter workshop, storage or restricted areas without permission and appropriate supervision.
+
+17.2 Vehicle storage and keys
+
+Purpose: Maintain secure custody of inventory.
+
+Inventory must be stored in a controlled location with reasonable theft, weather, fire and damage protection.
+
+Keys, documents and access devices must be logged and stored securely.
+
+Vehicle movements, test drives, maintenance and release to carriers must be recorded.
+
+Any loss, damage, unauthorised use or suspected tampering must be reported immediately.
+
+17.3 Environmental responsibility
+
+Purpose: Manage vehicle-related environmental risks lawfully.
+
+Fuel, oil, coolant, batteries, tyres and other regulated materials must be stored, handled and disposed of in accordance with applicable requirements.
+
+Spills must be contained and reported using appropriate procedures.
+
+RMC should prefer responsible recycling and licensed waste contractors where applicable.
+
+Environmental claims in marketing must be accurate and supported.
+
+18. Risk management, incidents and business continuity
+
+18.1 Risk register
+
+Purpose: Identify and monitor material business risks.
+
+Management must maintain a risk register covering vehicle title and fraud, inaccurate listings, safety defects, customer disputes, payment fraud, cyber incidents, supplier failure, shipping loss, regulatory breaches and reputational risks.
+
+Each material risk must have an owner, likelihood/impact assessment, controls, action plan and review date.
+
+High or critical risks must be escalated to senior management.
+
+18.2 Incident reporting
+
+Purpose: Ensure incidents are addressed quickly and consistently.
+
+Employees must promptly report accidents, theft, suspected fraud, data incidents, regulatory contact, customer safety concerns, vehicle defects and serious supplier failures.
+
+The incident lead must protect people first, secure the scene where appropriate, preserve records and notify emergency services or authorities when required.
+
+Only authorised persons may issue public statements about serious incidents.
+
+An incident report must record facts, actions, notifications, losses, decisions and corrective measures.
+
+18.3 Business continuity and disaster recovery
+
+Purpose: Maintain essential operations during disruption.
+
+RMC must identify critical systems and processes, including inventory records, customer communications, payment reconciliation, contracts, backups and vehicle custody.
+
+Backups must be protected against unauthorised access and ransomware and restoration should be tested periodically.
+
+A continuity plan must identify decision-makers, emergency contacts, alternative communication channels and manual workarounds.
+
+After recovery, records created during disruption must be reconciled into the official systems.
+
+18.4 Insurance
+
+Purpose: Maintain appropriate risk transfer arrangements.
+
+Management should periodically review insurance appropriate to the actual business model, including motor trade/garage risks, inventory, transit/cargo, public liability, employer liability, professional liability, cyber and property cover as applicable.
+
+Coverage limits, exclusions, territories, deductibles and policy conditions must be understood; insurance must not be represented as covering a risk unless confirmed by the insurer.
+
+Claims must be notified within policy deadlines and supported by accurate records.
+
+19. Whistleblowing, investigations and disciplinary action
+
+19.1 Reporting concerns
+
+Purpose: Provide a safe channel for good-faith reporting.
+
+Employees and business partners may report suspected fraud, bribery, safety violations, discrimination, data misuse, falsified records, unlawful conduct or serious policy breaches to [REPORTING EMAIL/CONTACT].
+
+Reports may be made confidentially where the law and available process permit.
+
+RMC prohibits retaliation against a person who makes a good-faith report or participates in a lawful investigation.
+
+Knowingly malicious or deliberately fabricated reports may themselves be addressed under applicable policy and law.
+
+19.2 Investigations
+
+Purpose: Conduct fair, proportionate and evidence-based reviews.
+
+Investigations must be authorised, appropriately independent and limited to the issue being examined.
+
+Relevant records must be preserved and access restricted to those who need to know.
+
+People involved should be treated fairly and given an appropriate opportunity to respond, subject to legal and investigative constraints.
+
+Findings and actions must be documented. Serious matters must be referred to external counsel, auditors, regulators or law enforcement where appropriate or required.
+
+19.3 Corrective action
+
+Purpose: Address root causes and prevent recurrence.
+
+Corrective actions may include training, process changes, access restrictions, contract remedies, disciplinary action, customer remediation or reporting to authorities.
+
+Each action must have an owner and due date.
+
+Management must review whether corrective actions were effective.
+
+20. Policy administration and enforcement
+
+20.1 Ownership and review
+
+Purpose: Keep the handbook current and operational.
+
+Management owns this handbook and appoints a policy coordinator to maintain the controlled version.
+
+The handbook must be reviewed at least annually and after significant changes to law, business model, markets, systems or risk exposure.
+
+Changes must be approved by the designated authority and communicated to affected people.
+
+Obsolete versions must be withdrawn from active use but retained where required for audit or legal purposes.
+
+20.2 Exceptions
+
+Purpose: Prevent informal or unauthorised departures from policy.
+
+Exceptions require a written request stating the reason, risk, duration, safeguards and approving authority.
+
+No exception may authorise unlawful conduct or waive a non-waivable legal obligation.
+
+Exceptions must be time-limited and recorded in an exception register.
+
+20.3 Acknowledgement
+
+Purpose: Confirm that relevant people have received the policies.
+
+Employees and contractors must acknowledge receipt and understanding of the policies relevant to their roles.
+
+Acknowledgement confirms receipt, not a waiver of statutory rights.
+
+Customer-facing terms must be presented separately and accepted through a legally valid process.
+
+20.4 Consequences of breach
+
+Purpose: Apply proportionate accountability.
+
+A breach may result in coaching, retraining, restricted authority, disciplinary action, contract remedies or termination, subject to applicable law and agreement.
+
+Suspected criminal conduct or regulatory breaches may be referred to competent authorities.
+
+Enforcement must be consistent, documented and free from retaliation or discrimination.
+
+Appendix A — Company profile and decisions to complete
+
+Complete every item before formal adoption or publication.
+
+Item
+
+Required entry
+
+Full legal entity name
+
+[INSERT]
+
+Trading name
+
+Rome Motor Cars / RMC
+
+Company registration number and country
+
+[INSERT]
+
+Registered office
+
+[INSERT]
+
+Operating office/showroom locations
+
+[INSERT]
+
+Countries in which RMC will actively sell
+
+[INSERT]
+
+Website and official domains
+
+[INSERT]
+
+Official customer-service email and phone
+
+[INSERT]
+
+Privacy contact / data protection lead
+
+[INSERT]
+
+Security incident contact
+
+[INSERT]
+
+Complaints contact
+
+[INSERT]
+
+Legal counsel / compliance adviser
+
+[INSERT]
+
+Seller model
+
+Select per vehicle: RMC-owned / consignment / third-party marketplace / broker
+
+Seller of record
+
+Must be named in each customer contract
+
+Payment beneficiary and accepted methods
+
+[INSERT — never use personal accounts]
+
+Display and settlement currencies
+
+USD display is contemplated; confirm actual settlement currencies
+
+Deposit and reservation rules
+
+[INSERT approved amount, period, refund rules]
+
+Cancellation and return rules
+
+[INSERT after legal review]
+
+Warranty provider and coverage
+
+[INSERT; do not imply a warranty if none exists]
+
+Delivery and shipping territories
+
+[INSERT]
+
+Governing law and dispute forum
+
+[LEGAL REVIEW REQUIRED]
+
+Record-retention schedule
+
+[INSERT by record type and jurisdiction]
+
+Approval authority and effective date
+
+[INSERT]
+
+Appendix B — Minimum customer-facing disclosures
+
+Before a customer places an order or pays, the relevant sales channel should clearly display or provide:
+
+Full legal name and contact details of RMC and the seller of record.
+
+Whether RMC owns the vehicle or acts as an intermediary.
+
+Vehicle identity, VIN/chassis number where available, model year, specification and mileage status.
+
+Known accident, damage, repair, title, import, odometer and material-condition disclosures.
+
+Actual vehicle photographs or a clear label where images are illustrative.
+
+Total price, currency, taxes, duties, delivery, registration and other additional charges, including what is not included.
+
+Payment beneficiary, payment schedule, deposit and reservation conditions.
+
+Estimated delivery date/range, delivery method and responsibility for customs and import clearance.
+
+Cancellation, return, refund and complaint process, without limiting statutory rights.
+
+Warranty provider, duration, coverage and exclusions, or a clear statement if no additional voluntary warranty is offered.
+
+Privacy notice, marketing choices and customer support contacts.
+
+Appendix C — Vehicle intake and listing checklist
+
+☐ Seller identity and authority to sell checked.
+
+☐ VIN/chassis identity physically checked and compared with documents.
+
+☐ Ownership, title, lien/finance and registration documents reviewed.
+
+☐ Import/export status and destination eligibility checked where relevant.
+
+☐ Mileage source and any discrepancy documented.
+
+☐ Accident, flood, fire, structural repair and known defect history requested and recorded.
+
+☐ Inspection completed by competent person; scope and limitations recorded.
+
+☐ Safety-critical issues resolved before road use or clearly held from road use.
+
+☐ Actual photographs captured and stored with date.
+
+☐ Specification, model year, trim and equipment verified.
+
+☐ Price, currency and excluded charges checked.
+
+☐ Seller-of-record and sales route identified.
+
+☐ Listing reviewed and approved before publication.
+
+Appendix D — Sales and delivery checklist
+
+☐ Customer verification completed where required.
+
+☐ Vehicle and seller-of-record identity confirmed.
+
+☐ Customer received all material disclosures and final price breakdown.
+
+☐ Reservation/deposit conditions disclosed and accepted.
+
+☐ Written sales contract signed by authorised parties.
+
+☐ Payment beneficiary independently verified; cleared funds confirmed.
+
+☐ Shipping, insurance, customs and delivery responsibilities allocated.
+
+☐ Pre-delivery inspection and condition photographs completed.
+
+☐ Handover documents, keys, accessories and available records prepared.
+
+☐ Customer signed a factual handover record and received copies.
+
+☐ Ownership/registration transfer steps completed or clearly assigned.
+
+☐ After-sales, warranty and complaint contact details provided.
+
+Appendix E — Suggested operational forms
+
+Form
+
+Minimum contents
+
+Vehicle condition and inspection report
+
+VIN, date, inspector, odometer, inspection scope, findings, defects, photos, repairs and limitations.
+
+Vehicle disclosure statement
+
+Known history, damage, title/import status, mileage status, modifications and customer acknowledgement.
+
+Vehicle reservation form
+
+Vehicle, buyer, amount, currency, reservation expiry, refund terms, payment receipt and signatures.
+
+Vehicle purchase agreement
+
+Seller/buyer, vehicle, price, taxes, payment milestones, disclosures, delivery, title/risk transfer, warranty and disputes.
+
+Delivery and handover form
+
+Date/location, odometer, condition, keys, accessories, documents, outstanding issues and signatures.
+
+Refund authorisation form
+
+Reason, contract basis, amount, original payment reference, verified recipient, approvals and completion.
+
+Customer complaint form
+
+Customer/order details, issue, requested resolution, evidence, handler, timeline and outcome.
+
+Supplier due-diligence form
+
+Legal identity, ownership, licences, insurance, references, risk review and approval.
+
+Incident report
+
+Date/time, people, facts, immediate actions, evidence, notifications, impact and corrective actions.
+
+Employee/contractor acknowledgement
+
+Version received, training status, acknowledgement date and signature.
+
+Appendix F — Implementation plan
+
+1. Confirm legal structure: Confirm legal entity, ownership, registration, licences, operating locations and authorised signatories.
+
+2. Confirm operating model: For every listing, distinguish RMC-owned stock from consignment, brokerage and marketplace inventory; identify seller of record.
+
+3. Obtain local legal review: Review consumer, privacy, employment, tax, import/export, advertising, sanctions, payment and dispute provisions in each target country.
+
+4. Approve commercial terms: Set deposits, cancellation, refund, warranty, delivery, inspection and service standards based on real operations and legal advice.
+
+5. Build supporting documents: Prepare customer contracts, privacy notice, website terms, supplier agreements, employee documents and operational forms.
+
+6. Configure controls: Set payment approval, access control, secure storage, backup, incident response, record retention and audit trails.
+
+7. Train and publish: Train staff, obtain acknowledgements and publish only approved customer-facing policies.
+
+8. Review effectiveness: Review complaints, incidents, exceptions, supplier performance and policy changes at least annually.
+
+Approval and acknowledgement
+
+Approved on: __________________________
+
+Approving director / authorised officer: __________________________
+
+Signature: __________________________
+
+Next scheduled review: __________________________
+
+Policy coordinator: __________________________
+
+Employee / contractor acknowledgement (where applicable): I confirm that I have received this handbook, understand that I must follow the policies relevant to my role, and know how to raise a concern. This acknowledgement does not waive any legal rights.
+
+Name: __________________________    Role: __________________________
+
+Signature: _______________________    Date: _________________________
+
+Final implementation note
+
+This handbook is intentionally written as a broad company-wide framework. It does not yet set final commercial choices that have not been confirmed by RMC, such as exact deposit percentages, return windows, warranty duration, delivery promises, accepted payment rails, legal entity details or governing law. Those choices must be completed consistently across the website, advertisements, invoices, order forms and signed contracts. Before launch, have qualified counsel review the final text in the company's home jurisdiction and each target market.
