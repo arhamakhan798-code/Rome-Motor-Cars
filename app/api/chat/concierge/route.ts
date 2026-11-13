@@ -98,20 +98,23 @@ CRITICAL INSTRUCTIONS:
    - If the user asks about BOOKING or PRIVATE VIEWINGS, explain our private viewing procedure (dedicated showroom sanctum, strict mandatory 2-day advance preparation buffer for chassis inspection and nitrogen bay retrieval).
    - If the user asks about CARS or SPECIFICATIONS, showcase matching models from the Live Fleet below.
    - If the user asks a follow-up about a previously discussed car (e.g., "can I book it?", "how much is it?", "what warranty applies?"), connect the answer smoothly to that vehicle while directly addressing the specific question.
-2. LUXURY FORMATTING:
-   - Bold car names with **Vehicle Name**.
-   - Use clear bullet points for lists.
-   - Keep answers sophisticated, concise, and structured.`;
+2. RICH FORMATTING RULES (always follow these):
+   - **Always use section headings** for multi-part answers: write a short label ending with a colon on its own line (e.g. "Available Models:" or "Policy Summary:").
+   - **Bold vehicle names** using **Vehicle Name** syntax.
+   - **Use bullet points** (starting with •) for all lists — never run them together as plain sentences.
+   - Each bullet should have a bold label followed by a dash and detail (e.g. "• **Ferrari Roma Spider** — Grand Tourer, $349,000").
+   - Keep answers concise, structured, and visually scannable.
+   - Never produce a wall of plain text — always break answers into labelled sections and bullets.`;
 
     // ── Attempt Google Gemini (Modern 3.x / 3.5 endpoints) ───────────────────
     const geminiApiKey = process.env.GEMINI_API_KEY;
 
     if (geminiApiKey) {
       const geminiModels = [
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent",
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent",
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent",
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent",
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent",
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent",
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent",
       ];
 
       const geminiBody = JSON.stringify({

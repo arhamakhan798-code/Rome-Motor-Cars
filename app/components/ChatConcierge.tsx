@@ -224,40 +224,42 @@ export default function ChatConcierge() {
 
   /**
    * Renders a concierge message with luxury formatting:
-   * - **bold** → crimson-accented bold spans
-   * - Lines starting with "•" → styled bullet rows
-   * - Lines ending with ":" (short ≤40 chars) → section headings
+   * - **bold** → white bold spans
+   * - Lines starting with "•" or "-" → styled crimson-arrow bullet rows
+   * - Lines ending with ":" (short ≤52 chars) → gold/crimson section headings
    * - Blank lines → spacers
+   * - First paragraph auto-detected as an intro line (slightly lighter color)
    */
   const renderConciergeMessage = (text: string) => {
     const lines = text.split("\n");
     const elements: React.ReactNode[] = [];
+    let firstContentSeen = false;
 
     lines.forEach((line, i) => {
       const trimmed = line.trim();
 
       if (!trimmed) {
-        // Blank line spacer
-        elements.push(<div key={i} style={{ height: "6px" }} />);
+        elements.push(<div key={i} style={{ height: "8px" }} />);
         return;
       }
 
       // Section heading: short line ending with ":"
-      if (trimmed.endsWith(":") && trimmed.length <= 48 && !trimmed.startsWith("•")) {
+      if (trimmed.endsWith(":") && trimmed.length <= 52 && !trimmed.startsWith("•") && !trimmed.startsWith("-")) {
+        firstContentSeen = true;
         elements.push(
           <div
             key={i}
             style={{
               fontFamily: "var(--font-montserrat), 'Montserrat', sans-serif",
-              fontSize: "0.7rem",
+              fontSize: "0.68rem",
               fontWeight: 700,
-              letterSpacing: "0.12em",
+              letterSpacing: "0.14em",
               textTransform: "uppercase",
               color: "#ef4444",
-              marginTop: i === 0 ? 0 : "10px",
-              marginBottom: "4px",
-              borderBottom: "1px solid rgba(239, 68, 68, 0.2)",
-              paddingBottom: "3px",
+              marginTop: i === 0 ? 0 : "14px",
+              marginBottom: "6px",
+              borderBottom: "1px solid rgba(239, 68, 68, 0.25)",
+              paddingBottom: "4px",
             }}
           >
             {trimmed.slice(0, -1)}
@@ -267,20 +269,33 @@ export default function ChatConcierge() {
       }
 
       // Bullet point line
-      if (trimmed.startsWith("•") || trimmed.startsWith("-")) {
+      if (trimmed.startsWith("•") || (trimmed.startsWith("-") && trimmed.length > 2)) {
+        firstContentSeen = true;
         const content = trimmed.replace(/^[•\-]\s*/, "");
         elements.push(
           <div
             key={i}
             style={{
               display: "flex",
-              gap: "8px",
+              gap: "9px",
               alignItems: "flex-start",
-              marginBottom: "5px",
+              marginBottom: "7px",
+              paddingLeft: "2px",
             }}
           >
-            <span style={{ color: "#ef4444", fontSize: "0.75rem", marginTop: "1px", flexShrink: 0 }}>▸</span>
-            <span style={{ fontSize: "0.82rem", lineHeight: 1.55, color: "rgba(255,255,255,0.9)" }}>
+            <span style={{
+              color: "#ef4444",
+              fontSize: "0.7rem",
+              marginTop: "3px",
+              flexShrink: 0,
+              lineHeight: 1,
+            }}>▸</span>
+            <span style={{
+              fontSize: "0.81rem",
+              lineHeight: 1.6,
+              color: "rgba(255,255,255,0.88)",
+              letterSpacing: "0.01em",
+            }}>
               {renderInlineBold(content)}
             </span>
           </div>
@@ -288,16 +303,21 @@ export default function ChatConcierge() {
         return;
       }
 
-      // Regular paragraph with inline bold support
+      // First content line = intro paragraph (slightly muted)
+      const isIntro = !firstContentSeen;
+      firstContentSeen = true;
+
       elements.push(
         <p
           key={i}
           style={{
             margin: 0,
-            marginBottom: "4px",
-            fontSize: "0.82rem",
-            lineHeight: 1.6,
-            color: "rgba(255,255,255,0.88)",
+            marginBottom: "6px",
+            fontSize: isIntro ? "0.83rem" : "0.81rem",
+            lineHeight: 1.65,
+            color: isIntro ? "rgba(255,255,255,0.75)" : "rgba(255,255,255,0.88)",
+            fontStyle: isIntro ? "italic" : "normal",
+            letterSpacing: "0.01em",
           }}
         >
           {renderInlineBold(trimmed)}
@@ -315,7 +335,11 @@ export default function ChatConcierge() {
       i % 2 === 1 ? (
         <strong
           key={i}
-          style={{ color: "#ffffff", fontWeight: 700 }}
+          style={{
+            color: "#ffffff",
+            fontWeight: 700,
+            letterSpacing: "0.01em",
+          }}
         >
           {part}
         </strong>
@@ -399,7 +423,7 @@ export default function ChatConcierge() {
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "5px", fontSize: "0.65rem", color: "#22c55e" }}>
                   <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "#22c55e", display: "inline-block", boxShadow: "0 0 6px #22c55e" }} />
-                  <span>Live Fleet &amp; Policy Intelligence</span>
+                  <span>Private Atelier Concierge</span>
                 </div>
               </div>
             </div>
@@ -587,17 +611,18 @@ export default function ChatConcierge() {
                     >
                       <div
                         style={{
-                          padding: "0.75rem 1rem",
-                          borderRadius: isUser ? "14px 14px 2px 14px" : "14px 14px 14px 2px",
-                          backgroundColor: isUser ? "#dc2626" : "rgba(255, 255, 255, 0.06)",
+                          padding: isUser ? "0.65rem 0.95rem" : "0.9rem 1.1rem",
+                          borderRadius: isUser ? "16px 16px 2px 16px" : "2px 16px 16px 16px",
+                          backgroundColor: isUser ? "#dc2626" : "rgba(255, 255, 255, 0.055)",
                           border: isUser ? "none" : "1px solid rgba(255, 255, 255, 0.1)",
+                          borderLeft: isUser ? undefined : "2px solid rgba(239, 68, 68, 0.5)",
                           color: "#ffffff",
                           fontSize: "0.82rem",
-                          lineHeight: 1.55,
-                          boxShadow: isUser ? "0 4px 14px rgba(220, 38, 38, 0.3)" : "none",
-                          fontFamily: isUser
-                            ? "var(--font-montserrat), 'Montserrat', sans-serif"
-                            : "var(--font-montserrat), 'Montserrat', sans-serif",
+                          lineHeight: 1.6,
+                          boxShadow: isUser
+                            ? "0 4px 14px rgba(220, 38, 38, 0.3)"
+                            : "0 2px 12px rgba(0,0,0,0.3)",
+                          fontFamily: "var(--font-montserrat), 'Montserrat', sans-serif",
                         }}
                       >
                         {isUser ? msg.text : renderConciergeMessage(msg.text)}
