@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { searchPolicies, searchLiveInventory } from "@/app/lib/rag/search";
 import { Vehicle } from "@/app/lib/types";
 
+export const dynamic = "force-dynamic";
+
 interface ChatMessage {
   role: "user" | "assistant" | "system";
   content: string;

@@ -4,6 +4,8 @@ import path from "path";
 import { getAccessToken } from "@/app/lib/sheets";
 import { Vehicle } from "@/app/lib/types";
 
+export const dynamic = "force-dynamic";
+
 const SPREADSHEET_ID = "19Wx2-Tqq9tMxIWzjDLVqDaPTHXKET30cDwU5ii4ZOLU";
 
 export type { Vehicle };
