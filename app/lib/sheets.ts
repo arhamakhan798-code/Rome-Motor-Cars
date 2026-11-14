@@ -9,22 +9,53 @@ const SHEET_NAME = "Clients";
 let cachedToken: { token: string; expiresAt: number } | null = null;
 
 function getServiceAccount() {
-  // 1. Support deployment environment variables (e.g. Vercel)
-  const envJson = process.env.GOOGLE_SERVICE_ACCOUNT_JSON || process.env.GOOGLE_SERVICE_ACCOUNT_KEY;
-  if (envJson) {
+  // 1. Check all possible environment variable names
+  const envJson =
+    process.env.GOOGLE_SERVICE_ACCOUNT_JSON ||
+    process.env.GOOGLE_SERVICE_ACCOUNT_KEY ||
+    process.env.GOOGLE_SHEETS_SERVICE_ACCOUNT ||
+    process.env.SERVICE_ACCOUNT_JSON;
+
+  if (envJson && envJson.trim().length > 0) {
     try {
-      return JSON.parse(envJson);
+      let rawStr = envJson.trim();
+      // Remove wrapping single/double quotes if user pasted with quotes
+      if (
+        (rawStr.startsWith("'") && rawStr.endsWith("'")) ||
+        (rawStr.startsWith('"') && rawStr.endsWith('"'))
+      ) {
+        rawStr = rawStr.slice(1, -1);
+      }
+      const parsed = JSON.parse(rawStr);
+      if (parsed.private_key) {
+        parsed.private_key = parsed.private_key.replace(/\\n/g, "\n");
+      }
+      return parsed;
     } catch {
       try {
-        const decoded = Buffer.from(envJson, "base64").toString("utf-8");
-        return JSON.parse(decoded);
+        const decoded = Buffer.from(envJson.trim(), "base64").toString("utf-8");
+        const parsed = JSON.parse(decoded);
+        if (parsed.private_key) {
+          parsed.private_key = parsed.private_key.replace(/\\n/g, "\n");
+        }
+        return parsed;
       } catch (e) {
         console.error("Failed to parse GOOGLE_SERVICE_ACCOUNT_JSON:", e);
       }
     }
   }
 
-  // 2. Local filesystem fallback
+  // 2. Check individual environment variables
+  const clientEmail = process.env.GOOGLE_CLIENT_EMAIL;
+  const privateKey = process.env.GOOGLE_PRIVATE_KEY;
+  if (clientEmail && privateKey) {
+    return {
+      client_email: clientEmail,
+      private_key: privateKey.replace(/\\n/g, "\n"),
+    };
+  }
+
+  // 3. Local filesystem fallback (local dev)
   const primaryPath = path.join(process.cwd(), "service-account.json");
   const fallbackPath = path.join(process.cwd(), "..", "rome-motor-cars-1b038ee7e6af.json");
 
@@ -33,8 +64,18 @@ function getServiceAccount() {
     filePath = fallbackPath;
   }
 
-  const raw = fs.readFileSync(filePath, "utf-8");
-  return JSON.parse(raw);
+  if (fs.existsSync(filePath)) {
+    const raw = fs.readFileSync(filePath, "utf-8");
+    const parsed = JSON.parse(raw);
+    if (parsed.private_key) {
+      parsed.private_key = parsed.private_key.replace(/\\n/g, "\n");
+    }
+    return parsed;
+  }
+
+  throw new Error(
+    "Google Service Account credentials not found. Please add GOOGLE_SERVICE_ACCOUNT_JSON to your Vercel Environment Variables (select Production, Preview, Development) and trigger a redeployment."
+  );
 }
 
 function base64url(input: string | Buffer): string {
