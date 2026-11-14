@@ -113,10 +113,7 @@ CRITICAL INSTRUCTIONS:
 
     if (geminiApiKey) {
       const geminiModels = [
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent",
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent",
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent",
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent",
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
       ];
 
       const geminiBody = JSON.stringify({
@@ -179,12 +176,21 @@ CRITICAL INSTRUCTIONS:
       const carMention = carRef ? ` for the **${carRef.make} ${carRef.model || ""}**` : "";
 
       reply = `To arrange a Private Viewing${carMention}, our atelier observes the following protocols:\n\n• **2-Day Preparation Buffer**: All viewings require at least 2 full buffer days advance reservation. This ensures our master technicians can retrieve the chassis from its nitrogen-stabilized bay, verify tire pressures, and complete detailing.\n• **Private Showroom Sanctum**: You will be hosted in a dedicated private viewing suite with a technical curator.\n• **Scheduling**: You can reserve directly through our showroom by clicking **Reserve Viewing** on any car card, or request assistance from our concierge right here.`;
-    } else if (isCarInquiry && matchingCars.length > 0) {
+    } else if (matchingCars.length > 0) {
       const topCar = matchingCars[0];
       if (/how much|price|cost|valuation|worth/i.test(qLower)) {
         reply = `The **${topCar.year} ${topCar.make} ${topCar.model}** is offered at **${topCar.price}**.\n\nIt features ${topCar.engine || "a precision powerplant"} generating ${topCar.horsepower || "exceptional output"} and accelerates 0-60 mph in ${topCar.acceleration || "sub-4.0s"}.\n\nWould you like to reserve a private viewing session for this vehicle? (Requires a 2-day preparation buffer).`;
       } else if (/speed|fast|acceleration|0-60|engine|horsepower|hp|specs/i.test(qLower)) {
         reply = `Engineering specifications for the **${topCar.year} ${topCar.make} ${topCar.model}**:\n\n• Powerplant: ${topCar.engine || "High-Output Atelier Engine"}\n• Output: ${topCar.horsepower || "Apex Output"}\n• 0-60 mph: ${topCar.acceleration || "Sub-4.0s"}\n• Top Speed: ${topCar.topSpeed || "190+ mph"}\n• Valuation: ${topCar.price}\n\nPreserved in our climate-stabilized subterranean vault.`;
+      } else if (/v12/i.test(qLower)) {
+        reply = `Our vault houses several premier twelve-cylinder and apex flagship specimens:\n\n` +
+          matchingCars
+            .map(
+              (c) =>
+                `• **${c.year} ${c.make} ${c.model}** (${c.category})\n  Valuation: ${c.price} | Output: ${c.horsepower || "Apex Output"} | 0-60: ${c.acceleration || "Sub-4.0s"}`
+            )
+            .join("\n\n") +
+          `\n\nEach vehicle is preserved in our climate-stabilized subterranean vault and available for private inspection with a minimum 2-day advance reservation.`;
       } else {
         const intros = [
           `From our live reserve, here are curated models aligned with your inquiry:`,

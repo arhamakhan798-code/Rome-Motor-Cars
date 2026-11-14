@@ -1,0 +1,3897 @@
+[
+  {
+    "id": "rmc-001",
+    "number": 1,
+    "make": "Porsche",
+    "model": "911 Carrera",
+    "year": 2024,
+    "category": "Sports Cars",
+    "price": "$126,000",
+    "priceNum": 126000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "540",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-002",
+    "number": 2,
+    "make": "Porsche",
+    "model": "911 Carrera GTS",
+    "year": 2023,
+    "category": "Sports Cars",
+    "price": "$122,000",
+    "priceNum": 122000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "360",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-003",
+    "number": 3,
+    "make": "Porsche",
+    "model": "718 Cayman GTS 4.0",
+    "year": 2024,
+    "category": "Sports Cars",
+    "price": "$98,000",
+    "priceNum": 98000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "530",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-004",
+    "number": 4,
+    "make": "Chevrolet",
+    "model": "Corvette Stingray",
+    "year": 2023,
+    "category": "Sports Cars",
+    "price": "$66,000",
+    "priceNum": 66000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "410",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-005",
+    "number": 5,
+    "make": "Chevrolet",
+    "model": "Corvette Z06",
+    "year": 2026,
+    "category": "Sports Cars",
+    "price": "$157,000",
+    "priceNum": 157000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "590",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-006",
+    "number": 6,
+    "make": "Ford",
+    "model": "Mustang Dark Horse",
+    "year": 2027,
+    "category": "Sports Cars",
+    "price": "$73,000",
+    "priceNum": 73000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "540",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-007",
+    "number": 7,
+    "make": "Nissan",
+    "model": "Z Nismo",
+    "year": 2026,
+    "category": "Sports Cars",
+    "price": "$65,000",
+    "priceNum": 65000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "650",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-008",
+    "number": 8,
+    "make": "Toyota",
+    "model": "GR Supra 3.0",
+    "year": 2027,
+    "category": "Sports Cars",
+    "price": "$67,000",
+    "priceNum": 67000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "460",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-009",
+    "number": 9,
+    "make": "BMW",
+    "model": "M4 Competition",
+    "year": 2026,
+    "category": "Sports Cars",
+    "price": "$112,000",
+    "priceNum": 112000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "420",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-010",
+    "number": 10,
+    "make": "BMW",
+    "model": "M2",
+    "year": 2027,
+    "category": "Sports Cars",
+    "price": "$70,000",
+    "priceNum": 70000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "600",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-011",
+    "number": 11,
+    "make": "Mercedes-AMG",
+    "model": "GT 55 Coupe",
+    "year": 2026,
+    "category": "Sports Cars",
+    "price": "$150,000",
+    "priceNum": 150000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "620",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-012",
+    "number": 12,
+    "make": "Mercedes-AMG",
+    "model": "SL 55 Roadster",
+    "year": 2027,
+    "category": "Sports Cars",
+    "price": "$168,000",
+    "priceNum": 168000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "390",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-013",
+    "number": 13,
+    "make": "Audi",
+    "model": "RS 5 Avant",
+    "year": 2026,
+    "category": "Sports Cars",
+    "price": "$101,000",
+    "priceNum": 101000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "650",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-014",
+    "number": 14,
+    "make": "Mercedes-AMG",
+    "model": "CLE 53 Coupe",
+    "year": 2027,
+    "category": "Sports Cars",
+    "price": "$150,000",
+    "priceNum": 150000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "590",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-015",
+    "number": 15,
+    "make": "Lotus",
+    "model": "Emira V6",
+    "year": 2026,
+    "category": "Sports Cars",
+    "price": "$123,000",
+    "priceNum": 123000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "550",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-016",
+    "number": 16,
+    "make": "Alpine",
+    "model": "A110 R",
+    "year": 2027,
+    "category": "Sports Cars",
+    "price": "$112,000",
+    "priceNum": 112000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "480",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-017",
+    "number": 17,
+    "make": "Maserati",
+    "model": "GranTurismo Modena",
+    "year": 2026,
+    "category": "Sports Cars",
+    "price": "$179,000",
+    "priceNum": 179000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "610",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-018",
+    "number": 18,
+    "make": "Aston Martin",
+    "model": "Vantage",
+    "year": 2027,
+    "category": "Sports Cars",
+    "price": "$190,000",
+    "priceNum": 190000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "630",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-019",
+    "number": 19,
+    "make": "McLaren",
+    "model": "Artura",
+    "year": 2026,
+    "category": "Sports Cars",
+    "price": "$280,000",
+    "priceNum": 280000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "420",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-020",
+    "number": 20,
+    "make": "Lexus",
+    "model": "RC F",
+    "year": 2027,
+    "category": "Sports Cars",
+    "price": "$101,000",
+    "priceNum": 101000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "490",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-021",
+    "number": 21,
+    "make": "BMW",
+    "model": "M4 CS",
+    "year": 2026,
+    "category": "Sports Cars",
+    "price": "$140,000",
+    "priceNum": 140000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "560",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-022",
+    "number": 22,
+    "make": "Bugatti",
+    "model": "Tourbillon",
+    "year": 2024,
+    "category": "Hypercars",
+    "price": "$2,340,000",
+    "priceNum": 2340000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Hypercar Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "1020",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-023",
+    "number": 23,
+    "make": "Bugatti",
+    "model": "Tourbillon",
+    "year": 2023,
+    "category": "Hypercars",
+    "price": "$2,340,000",
+    "priceNum": 2340000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Hypercar Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "1030",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-024",
+    "number": 24,
+    "make": "Koenigsegg",
+    "model": "Jesko Attack",
+    "year": 2024,
+    "category": "Hypercars",
+    "price": "$2,340,000",
+    "priceNum": 2340000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Hypercar Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "1340",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-025",
+    "number": 25,
+    "make": "Koenigsegg",
+    "model": "Gemera",
+    "year": 2023,
+    "category": "Hypercars",
+    "price": "$2,340,000",
+    "priceNum": 2340000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Hypercar Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "890",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-026",
+    "number": 26,
+    "make": "Pagani",
+    "model": "Utopia Coupe",
+    "year": 2026,
+    "category": "Hypercars",
+    "price": "$3,000,000",
+    "priceNum": 3000000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Hypercar Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "860",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-027",
+    "number": 27,
+    "make": "Pagani",
+    "model": "Utopia Roadster",
+    "year": 2027,
+    "category": "Hypercars",
+    "price": "$3,000,000",
+    "priceNum": 3000000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Hypercar Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "1220",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-028",
+    "number": 28,
+    "make": "Rimac",
+    "model": "Nevera",
+    "year": 2026,
+    "category": "Hypercars",
+    "price": "$2,500,000",
+    "priceNum": 2500000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Hypercar Coupe / Roadster",
+    "acceleration": "Electric motor(s) / hybrid powertrain; exact configuration varies",
+    "topSpeed": "850",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-029",
+    "number": 29,
+    "make": "McLaren",
+    "model": "W1",
+    "year": 2027,
+    "category": "Hypercars",
+    "price": "$2,500,000",
+    "priceNum": 2500000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Hypercar Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "1210",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-030",
+    "number": 30,
+    "make": "Ferrari",
+    "model": "F80",
+    "year": 2026,
+    "category": "Hypercars",
+    "price": "$3,000,000",
+    "priceNum": 3000000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Hypercar Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "1730",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-031",
+    "number": 31,
+    "make": "Aston Martin",
+    "model": "Valkyrie",
+    "year": 2027,
+    "category": "Hypercars",
+    "price": "$2,500,000",
+    "priceNum": 2500000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Hypercar Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "950",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-032",
+    "number": 32,
+    "make": "Koenigsegg",
+    "model": "Jesko Absolut",
+    "year": 2026,
+    "category": "Hypercars",
+    "price": "$3,000,000",
+    "priceNum": 3000000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Hypercar Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "850",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-033",
+    "number": 33,
+    "make": "Aspark",
+    "model": "Owl",
+    "year": 2027,
+    "category": "Hypercars",
+    "price": "$2,500,000",
+    "priceNum": 2500000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Hypercar Coupe / Roadster",
+    "acceleration": "Electric motor(s) / hybrid powertrain; exact configuration varies",
+    "topSpeed": "870",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-034",
+    "number": 34,
+    "make": "Pininfarina",
+    "model": "Battista",
+    "year": 2026,
+    "category": "Hypercars",
+    "price": "$2,500,000",
+    "priceNum": 2500000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Hypercar Coupe / Roadster",
+    "acceleration": "Electric motor(s) / hybrid powertrain; exact configuration varies",
+    "topSpeed": "1390",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-035",
+    "number": 35,
+    "make": "Hennessey",
+    "model": "Venom F5",
+    "year": 2027,
+    "category": "Hypercars",
+    "price": "$3,000,000",
+    "priceNum": 3000000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Hypercar Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "1040",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-036",
+    "number": 36,
+    "make": "Gordon Murray",
+    "model": "T.50",
+    "year": 2026,
+    "category": "Hypercars",
+    "price": "$3,000,000",
+    "priceNum": 3000000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Hypercar Coupe / Roadster",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "1260",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-037",
+    "number": 37,
+    "make": "Mercedes-Benz",
+    "model": "S-Class S 500",
+    "year": 2024,
+    "category": "Luxury Sedans",
+    "price": "$98,000",
+    "priceNum": 98000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "610",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-038",
+    "number": 38,
+    "make": "Mercedes-Maybach",
+    "model": "S 580",
+    "year": 2023,
+    "category": "Luxury Sedans",
+    "price": "$195,000",
+    "priceNum": 195000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "650",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-039",
+    "number": 39,
+    "make": "BMW",
+    "model": "7 Series 740i",
+    "year": 2024,
+    "category": "Luxury Sedans",
+    "price": "$101,000",
+    "priceNum": 101000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "430",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-040",
+    "number": 40,
+    "make": "BMW",
+    "model": "i7 xDrive60",
+    "year": 2023,
+    "category": "Luxury Sedans",
+    "price": "$101,000",
+    "priceNum": 101000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "410",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-041",
+    "number": 41,
+    "make": "Audi",
+    "model": "A8 L 55 TFSI",
+    "year": 2026,
+    "category": "Luxury Sedans",
+    "price": "$100,000",
+    "priceNum": 100000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "540",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-042",
+    "number": 42,
+    "make": "Audi",
+    "model": "S8",
+    "year": 2027,
+    "category": "Luxury Sedans",
+    "price": "$100,000",
+    "priceNum": 100000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "520",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-043",
+    "number": 43,
+    "make": "Lexus",
+    "model": "LS 500",
+    "year": 2026,
+    "category": "Luxury Sedans",
+    "price": "$90,000",
+    "priceNum": 90000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "600",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-044",
+    "number": 44,
+    "make": "Genesis",
+    "model": "G90 3.5T",
+    "year": 2027,
+    "category": "Luxury Sedans",
+    "price": "$85,000",
+    "priceNum": 85000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "410",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-045",
+    "number": 45,
+    "make": "Porsche",
+    "model": "Panamera 4 E-Hybrid",
+    "year": 2026,
+    "category": "Luxury Sedans",
+    "price": "$146,000",
+    "priceNum": 146000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "630",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-046",
+    "number": 46,
+    "make": "Maserati",
+    "model": "Quattroporte",
+    "year": 2027,
+    "category": "Luxury Sedans",
+    "price": "$146,000",
+    "priceNum": 146000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "570",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-047",
+    "number": 47,
+    "make": "Bentley",
+    "model": "Flying Spur Azure",
+    "year": 2026,
+    "category": "Luxury Sedans",
+    "price": "$314,000",
+    "priceNum": 314000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "400",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-048",
+    "number": 48,
+    "make": "Rolls-Royce",
+    "model": "Ghost",
+    "year": 2027,
+    "category": "Luxury Sedans",
+    "price": "$350,000",
+    "priceNum": 350000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "440",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-049",
+    "number": 49,
+    "make": "Rolls-Royce",
+    "model": "Phantom",
+    "year": 2026,
+    "category": "Luxury Sedans",
+    "price": "$500,000",
+    "priceNum": 500000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "640",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-050",
+    "number": 50,
+    "make": "Lucid",
+    "model": "Air Grand Touring",
+    "year": 2027,
+    "category": "Luxury Sedans",
+    "price": "$123,000",
+    "priceNum": 123000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "380",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-051",
+    "number": 51,
+    "make": "Tesla",
+    "model": "Model S Plaid",
+    "year": 2026,
+    "category": "Luxury Sedans",
+    "price": "$101,000",
+    "priceNum": 101000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "450",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-052",
+    "number": 52,
+    "make": "Cadillac",
+    "model": "Celestiq",
+    "year": 2027,
+    "category": "Luxury Sedans",
+    "price": "$350,000",
+    "priceNum": 350000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "360",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-053",
+    "number": 53,
+    "make": "Audi",
+    "model": "A8 L",
+    "year": 2026,
+    "category": "Luxury Sedans",
+    "price": "$100,000",
+    "priceNum": 100000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "460",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-054",
+    "number": 54,
+    "make": "Volvo",
+    "model": "S90 Recharge",
+    "year": 2027,
+    "category": "Luxury Sedans",
+    "price": "$90,000",
+    "priceNum": 90000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "500",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-055",
+    "number": 55,
+    "make": "Hongqi",
+    "model": "H9",
+    "year": 2026,
+    "category": "Luxury Sedans",
+    "price": "$65,000",
+    "priceNum": 65000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "550",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-056",
+    "number": 56,
+    "make": "NIO",
+    "model": "ET7",
+    "year": 2027,
+    "category": "Luxury Sedans",
+    "price": "$60,000",
+    "priceNum": 60000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "410",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-057",
+    "number": 57,
+    "make": "BYD",
+    "model": "Han EV",
+    "year": 2026,
+    "category": "Luxury Sedans",
+    "price": "$60,000",
+    "priceNum": 60000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "490",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-058",
+    "number": 58,
+    "make": "Toyota",
+    "model": "Century Sedan",
+    "year": 2027,
+    "category": "Luxury Sedans",
+    "price": "$73,000",
+    "priceNum": 73000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "450",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-059",
+    "number": 59,
+    "make": "Kia",
+    "model": "K9 / K900",
+    "year": 2026,
+    "category": "Luxury Sedans",
+    "price": "$65,000",
+    "priceNum": 65000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "360",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-060",
+    "number": 60,
+    "make": "Hyundai",
+    "model": "Grandeur Calligraphy",
+    "year": 2027,
+    "category": "Luxury Sedans",
+    "price": "$73,000",
+    "priceNum": 73000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "570",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-061",
+    "number": 61,
+    "make": "Mercedes-Benz",
+    "model": "E-Class E 300",
+    "year": 2024,
+    "category": "Executive & Comfort",
+    "price": "$51,000",
+    "priceNum": 51000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Executive Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "250",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-062",
+    "number": 62,
+    "make": "BMW",
+    "model": "5 Series 530i",
+    "year": 2023,
+    "category": "Executive & Comfort",
+    "price": "$57,000",
+    "priceNum": 57000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Executive Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "400",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-063",
+    "number": 63,
+    "make": "Audi",
+    "model": "A6 45 TFSI",
+    "year": 2024,
+    "category": "Executive & Comfort",
+    "price": "$51,000",
+    "priceNum": 51000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Executive Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "410",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-064",
+    "number": 64,
+    "make": "Lexus",
+    "model": "ES 350",
+    "year": 2023,
+    "category": "Executive & Comfort",
+    "price": "$51,000",
+    "priceNum": 51000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Executive Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "390",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-065",
+    "number": 65,
+    "make": "Genesis",
+    "model": "G80 3.5T",
+    "year": 2026,
+    "category": "Executive & Comfort",
+    "price": "$70,000",
+    "priceNum": 70000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Executive Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "280",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-066",
+    "number": 66,
+    "make": "Volvo",
+    "model": "S90 B6",
+    "year": 2027,
+    "category": "Executive & Comfort",
+    "price": "$70,000",
+    "priceNum": 70000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Executive Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "300",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-067",
+    "number": 67,
+    "make": "Jaguar",
+    "model": "XF P250",
+    "year": 2026,
+    "category": "Executive & Comfort",
+    "price": "$70,000",
+    "priceNum": 70000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Executive Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "410",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-068",
+    "number": 68,
+    "make": "Cadillac",
+    "model": "CT5 Premium Luxury",
+    "year": 2027,
+    "category": "Executive & Comfort",
+    "price": "$78,000",
+    "priceNum": 78000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Executive Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "320",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-069",
+    "number": 69,
+    "make": "Lincoln",
+    "model": "Continental",
+    "year": 2026,
+    "category": "Executive & Comfort",
+    "price": "$100,000",
+    "priceNum": 100000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Executive Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "430",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-070",
+    "number": 70,
+    "make": "Toyota",
+    "model": "Crown Platinum",
+    "year": 2027,
+    "category": "Executive & Comfort",
+    "price": "$67,000",
+    "priceNum": 67000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Executive Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "360",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-071",
+    "number": 71,
+    "make": "Honda",
+    "model": "Civic e:HEV",
+    "year": 2026,
+    "category": "Executive & Comfort",
+    "price": "$40,000",
+    "priceNum": 40000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Executive Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "280",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-072",
+    "number": 72,
+    "make": "Nissan",
+    "model": "Altima",
+    "year": 2027,
+    "category": "Executive & Comfort",
+    "price": "$40,000",
+    "priceNum": 40000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Executive Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "390",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-073",
+    "number": 73,
+    "make": "Skoda",
+    "model": "Superb L&K",
+    "year": 2026,
+    "category": "Executive & Comfort",
+    "price": "$45,000",
+    "priceNum": 45000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Executive Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "440",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-074",
+    "number": 74,
+    "make": "Volkswagen",
+    "model": "Passat",
+    "year": 2027,
+    "category": "Executive & Comfort",
+    "price": "$40,000",
+    "priceNum": 40000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Executive Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "320",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-075",
+    "number": 75,
+    "make": "BYD",
+    "model": "Han DM-i",
+    "year": 2026,
+    "category": "Executive & Comfort",
+    "price": "$60,000",
+    "priceNum": 60000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Executive Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "440",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-076",
+    "number": 76,
+    "make": "Hongqi",
+    "model": "H5",
+    "year": 2027,
+    "category": "Executive & Comfort",
+    "price": "$65,000",
+    "priceNum": 65000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Executive Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "220",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-077",
+    "number": 77,
+    "make": "Lexus",
+    "model": "ES 300h",
+    "year": 2026,
+    "category": "Executive & Comfort",
+    "price": "$65,000",
+    "priceNum": 65000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Executive Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "400",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-078",
+    "number": 78,
+    "make": "Mercedes-Benz",
+    "model": "EQE 350+ Sedan",
+    "year": 2027,
+    "category": "Executive & Comfort",
+    "price": "$78,000",
+    "priceNum": 78000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Executive Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "200",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-079",
+    "number": 79,
+    "make": "BMW",
+    "model": "i5 eDrive40",
+    "year": 2026,
+    "category": "Executive & Comfort",
+    "price": "$73,000",
+    "priceNum": 73000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Executive Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "240",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-080",
+    "number": 80,
+    "make": "Audi",
+    "model": "A6 e-tron",
+    "year": 2027,
+    "category": "Executive & Comfort",
+    "price": "$73,000",
+    "priceNum": 73000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Executive Sedan",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "410",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-081",
+    "number": 81,
+    "make": "Rolls-Royce",
+    "model": "Cullinan",
+    "year": 2024,
+    "category": "Luxury SUVs",
+    "price": "$312,000",
+    "priceNum": 312000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "610",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-082",
+    "number": 82,
+    "make": "Bentley",
+    "model": "Bentayga Azure",
+    "year": 2023,
+    "category": "Luxury SUVs",
+    "price": "$210,000",
+    "priceNum": 210000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "420",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-083",
+    "number": 83,
+    "make": "Mercedes-Maybach",
+    "model": "GLS 600",
+    "year": 2024,
+    "category": "Luxury SUVs",
+    "price": "$94,000",
+    "priceNum": 94000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "530",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-084",
+    "number": 84,
+    "make": "Range Rover",
+    "model": "Range Rover P530",
+    "year": 2023,
+    "category": "Luxury SUVs",
+    "price": "$131,000",
+    "priceNum": 131000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "580",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-085",
+    "number": 85,
+    "make": "Range Rover",
+    "model": "Range Rover Sport Autobiography",
+    "year": 2026,
+    "category": "Luxury SUVs",
+    "price": "$179,000",
+    "priceNum": 179000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "580",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-086",
+    "number": 86,
+    "make": "BMW",
+    "model": "X7 M60i",
+    "year": 2027,
+    "category": "Luxury SUVs",
+    "price": "$120,000",
+    "priceNum": 120000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "600",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-087",
+    "number": 87,
+    "make": "Mercedes-Benz",
+    "model": "GLS 580",
+    "year": 2026,
+    "category": "Luxury SUVs",
+    "price": "$120,000",
+    "priceNum": 120000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "680",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-088",
+    "number": 88,
+    "make": "Mercedes-Benz",
+    "model": "GLE 450",
+    "year": 2027,
+    "category": "Luxury SUVs",
+    "price": "$100,000",
+    "priceNum": 100000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "450",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-089",
+    "number": 89,
+    "make": "BMW",
+    "model": "X5 xDrive50e",
+    "year": 2026,
+    "category": "Luxury SUVs",
+    "price": "$112,000",
+    "priceNum": 112000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "390",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-090",
+    "number": 90,
+    "make": "Audi",
+    "model": "Q8 55 TFSI",
+    "year": 2027,
+    "category": "Luxury SUVs",
+    "price": "$100,000",
+    "priceNum": 100000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "660",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-091",
+    "number": 91,
+    "make": "Audi",
+    "model": "SQ8",
+    "year": 2026,
+    "category": "Luxury SUVs",
+    "price": "$100,000",
+    "priceNum": 100000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "390",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-092",
+    "number": 92,
+    "make": "Porsche",
+    "model": "Cayenne E-Hybrid",
+    "year": 2027,
+    "category": "Luxury SUVs",
+    "price": "$112,000",
+    "priceNum": 112000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "680",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-093",
+    "number": 93,
+    "make": "Lexus",
+    "model": "LX 600",
+    "year": 2026,
+    "category": "Luxury SUVs",
+    "price": "$90,000",
+    "priceNum": 90000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "620",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-094",
+    "number": 94,
+    "make": "Lexus",
+    "model": "RX 500h",
+    "year": 2027,
+    "category": "Luxury SUVs",
+    "price": "$101,000",
+    "priceNum": 101000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "570",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-095",
+    "number": 95,
+    "make": "Genesis",
+    "model": "GV80 3.5T",
+    "year": 2026,
+    "category": "Luxury SUVs",
+    "price": "$85,000",
+    "priceNum": 85000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "400",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-096",
+    "number": 96,
+    "make": "Maserati",
+    "model": "Levante Trofeo",
+    "year": 2027,
+    "category": "Luxury SUVs",
+    "price": "$146,000",
+    "priceNum": 146000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "360",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-097",
+    "number": 97,
+    "make": "Aston Martin",
+    "model": "DBX707",
+    "year": 2026,
+    "category": "Luxury SUVs",
+    "price": "$400,000",
+    "priceNum": 400000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "580",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-098",
+    "number": 98,
+    "make": "Ferrari",
+    "model": "Purosangue",
+    "year": 2027,
+    "category": "Luxury SUVs",
+    "price": "$448,000",
+    "priceNum": 448000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "370",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-099",
+    "number": 99,
+    "make": "Lamborghini",
+    "model": "Urus SE",
+    "year": 2026,
+    "category": "Luxury SUVs",
+    "price": "$291,000",
+    "priceNum": 291000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "590",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-100",
+    "number": 100,
+    "make": "Cadillac",
+    "model": "Escalade IQ",
+    "year": 2027,
+    "category": "Luxury SUVs",
+    "price": "$130,000",
+    "priceNum": 130000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "660",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-101",
+    "number": 101,
+    "make": "Lincoln",
+    "model": "Navigator Black Label",
+    "year": 2026,
+    "category": "Luxury SUVs",
+    "price": "$112,000",
+    "priceNum": 112000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "680",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-102",
+    "number": 102,
+    "make": "Volvo",
+    "model": "EX90 Twin Motor",
+    "year": 2027,
+    "category": "Luxury SUVs",
+    "price": "$90,000",
+    "priceNum": 90000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "530",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-103",
+    "number": 103,
+    "make": "Lucid",
+    "model": "Gravity Grand Touring",
+    "year": 2026,
+    "category": "Luxury SUVs",
+    "price": "$106,000",
+    "priceNum": 106000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "510",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-104",
+    "number": 104,
+    "make": "Hongqi",
+    "model": "E-HS9",
+    "year": 2027,
+    "category": "Luxury SUVs",
+    "price": "$65,000",
+    "priceNum": 65000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "450",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-105",
+    "number": 105,
+    "make": "NIO",
+    "model": "ES8",
+    "year": 2026,
+    "category": "Luxury SUVs",
+    "price": "$70,000",
+    "priceNum": 70000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Luxury SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "390",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-106",
+    "number": 106,
+    "make": "Mercedes-Benz",
+    "model": "G 550",
+    "year": 2024,
+    "category": "Off-Road & 4x4",
+    "price": "$125,000",
+    "priceNum": 125000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Off-road SUV / 4x4",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "320",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-107",
+    "number": 107,
+    "make": "Mercedes-AMG",
+    "model": "G 63",
+    "year": 2023,
+    "category": "Off-Road & 4x4",
+    "price": "$125,000",
+    "priceNum": 125000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Off-road SUV / 4x4",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "260",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-108",
+    "number": 108,
+    "make": "Land Rover",
+    "model": "Defender 110 P400",
+    "year": 2024,
+    "category": "Off-Road & 4x4",
+    "price": "$66,000",
+    "priceNum": 66000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Off-road SUV / 4x4",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "470",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-109",
+    "number": 109,
+    "make": "Land Rover",
+    "model": "Defender 130",
+    "year": 2023,
+    "category": "Off-Road & 4x4",
+    "price": "$66,000",
+    "priceNum": 66000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Off-road SUV / 4x4",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "530",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-110",
+    "number": 110,
+    "make": "Toyota",
+    "model": "Land Cruiser 300",
+    "year": 2026,
+    "category": "Off-Road & 4x4",
+    "price": "$95,000",
+    "priceNum": 95000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Off-road SUV / 4x4",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "480",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-111",
+    "number": 111,
+    "make": "Toyota",
+    "model": "Land Cruiser Prado",
+    "year": 2027,
+    "category": "Off-Road & 4x4",
+    "price": "$67,000",
+    "priceNum": 67000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Off-road SUV / 4x4",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "500",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-112",
+    "number": 112,
+    "make": "Lexus",
+    "model": "GX 550 Overtrail",
+    "year": 2026,
+    "category": "Off-Road & 4x4",
+    "price": "$101,000",
+    "priceNum": 101000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Off-road SUV / 4x4",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "260",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-113",
+    "number": 113,
+    "make": "Lexus",
+    "model": "LX 600 Overtrail",
+    "year": 2027,
+    "category": "Off-Road & 4x4",
+    "price": "$101,000",
+    "priceNum": 101000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Off-road SUV / 4x4",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "340",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-114",
+    "number": 114,
+    "make": "Jeep",
+    "model": "Wrangler Rubicon 4xe",
+    "year": 2026,
+    "category": "Off-Road & 4x4",
+    "price": "$73,000",
+    "priceNum": 73000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Off-road SUV / 4x4",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "380",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-115",
+    "number": 115,
+    "make": "Jeep",
+    "model": "Grand Cherokee Trailhawk",
+    "year": 2027,
+    "category": "Off-Road & 4x4",
+    "price": "$73,000",
+    "priceNum": 73000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Off-road SUV / 4x4",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "550",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-116",
+    "number": 116,
+    "make": "Ford",
+    "model": "Bronco Badlands",
+    "year": 2026,
+    "category": "Off-Road & 4x4",
+    "price": "$73,000",
+    "priceNum": 73000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Off-road SUV / 4x4",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "280",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-117",
+    "number": 117,
+    "make": "Ineos",
+    "model": "Grenadier Station Wagon",
+    "year": 2027,
+    "category": "Off-Road & 4x4",
+    "price": "$84,000",
+    "priceNum": 84000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Off-road SUV / 4x4",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "310",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-118",
+    "number": 118,
+    "make": "Suzuki",
+    "model": "Jimny 5-Door",
+    "year": 2026,
+    "category": "Off-Road & 4x4",
+    "price": "$34,000",
+    "priceNum": 34000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Off-road SUV / 4x4",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "410",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-119",
+    "number": 119,
+    "make": "Nissan",
+    "model": "Patrol V6T",
+    "year": 2027,
+    "category": "Off-Road & 4x4",
+    "price": "$95,000",
+    "priceNum": 95000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Off-road SUV / 4x4",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "500",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-120",
+    "number": 120,
+    "make": "Nissan",
+    "model": "X-Terra",
+    "year": 2026,
+    "category": "Off-Road & 4x4",
+    "price": "$62,000",
+    "priceNum": 62000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Off-road SUV / 4x4",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "320",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-121",
+    "number": 121,
+    "make": "Mitsubishi",
+    "model": "Pajero Sport",
+    "year": 2027,
+    "category": "Off-Road & 4x4",
+    "price": "$50,000",
+    "priceNum": 50000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Off-road SUV / 4x4",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "170",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-122",
+    "number": 122,
+    "make": "KGM",
+    "model": "Rexton",
+    "year": 2026,
+    "category": "Off-Road & 4x4",
+    "price": "$50,000",
+    "priceNum": 50000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Off-road SUV / 4x4",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "420",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-123",
+    "number": 123,
+    "make": "Tank",
+    "model": "500",
+    "year": 2027,
+    "category": "Off-Road & 4x4",
+    "price": "$50,000",
+    "priceNum": 50000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Off-road SUV / 4x4",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "520",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-124",
+    "number": 124,
+    "make": "Tank",
+    "model": "300",
+    "year": 2026,
+    "category": "Off-Road & 4x4",
+    "price": "$50,000",
+    "priceNum": 50000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Off-road SUV / 4x4",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "420",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-125",
+    "number": 125,
+    "make": "GMC",
+    "model": "Hummer EV SUV",
+    "year": 2027,
+    "category": "Off-Road & 4x4",
+    "price": "$112,000",
+    "priceNum": 112000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Off-road SUV / 4x4",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "330",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-126",
+    "number": 126,
+    "make": "Aston Martin",
+    "model": "DB12",
+    "year": 2024,
+    "category": "Grand Tourers",
+    "price": "$195,000",
+    "priceNum": 195000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "GT Coupe / Convertible",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "660",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-127",
+    "number": 127,
+    "make": "Aston Martin",
+    "model": "DBS 770 Ultimate",
+    "year": 2023,
+    "category": "Grand Tourers",
+    "price": "$257,000",
+    "priceNum": 257000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "GT Coupe / Convertible",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "790",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-128",
+    "number": 128,
+    "make": "Bentley",
+    "model": "Continental GT Speed",
+    "year": 2024,
+    "category": "Grand Tourers",
+    "price": "$245,000",
+    "priceNum": 245000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "GT Coupe / Convertible",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "670",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-129",
+    "number": 129,
+    "make": "Ferrari",
+    "model": "Roma Spider",
+    "year": 2023,
+    "category": "Grand Tourers",
+    "price": "$349,000",
+    "priceNum": 349000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "GT Coupe / Convertible",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "680",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-130",
+    "number": 130,
+    "make": "Ferrari",
+    "model": "12Cilindri",
+    "year": 2026,
+    "category": "Grand Tourers",
+    "price": "$448,000",
+    "priceNum": 448000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "GT Coupe / Convertible",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "440",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-131",
+    "number": 131,
+    "make": "Maserati",
+    "model": "GranCabrio Trofeo",
+    "year": 2027,
+    "category": "Grand Tourers",
+    "price": "$168,000",
+    "priceNum": 168000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "GT Coupe / Convertible",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "630",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-132",
+    "number": 132,
+    "make": "Mercedes-AMG",
+    "model": "SL 63",
+    "year": 2026,
+    "category": "Grand Tourers",
+    "price": "$150,000",
+    "priceNum": 150000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "GT Coupe / Convertible",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "760",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-133",
+    "number": 133,
+    "make": "Porsche",
+    "model": "911 Turbo S",
+    "year": 2027,
+    "category": "Grand Tourers",
+    "price": "$258,000",
+    "priceNum": 258000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "GT Coupe / Convertible",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "840",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-134",
+    "number": 134,
+    "make": "Porsche",
+    "model": "Panamera Turbo E-Hybrid",
+    "year": 2026,
+    "category": "Grand Tourers",
+    "price": "$140,000",
+    "priceNum": 140000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "GT Coupe / Convertible",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "570",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-135",
+    "number": 135,
+    "make": "BMW",
+    "model": "M8 Competition Coupe",
+    "year": 2027,
+    "category": "Grand Tourers",
+    "price": "$118,000",
+    "priceNum": 118000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "GT Coupe / Convertible",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "610",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-136",
+    "number": 136,
+    "make": "BMW",
+    "model": "8 Series 840i",
+    "year": 2026,
+    "category": "Grand Tourers",
+    "price": "$118,000",
+    "priceNum": 118000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "GT Coupe / Convertible",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "810",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-137",
+    "number": 137,
+    "make": "Lexus",
+    "model": "LC 500",
+    "year": 2027,
+    "category": "Grand Tourers",
+    "price": "$90,000",
+    "priceNum": 90000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "GT Coupe / Convertible",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "440",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-138",
+    "number": 138,
+    "make": "McLaren",
+    "model": "GTS",
+    "year": 2026,
+    "category": "Grand Tourers",
+    "price": "$150,000",
+    "priceNum": 150000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "GT Coupe / Convertible",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "590",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-139",
+    "number": 139,
+    "make": "McLaren",
+    "model": "750S",
+    "year": 2027,
+    "category": "Grand Tourers",
+    "price": "$330,000",
+    "priceNum": 330000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "GT Coupe / Convertible",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "820",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-140",
+    "number": 140,
+    "make": "Jaguar",
+    "model": "F-Type Convertible",
+    "year": 2026,
+    "category": "Grand Tourers",
+    "price": "$101,000",
+    "priceNum": 101000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "GT Coupe / Convertible",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "840",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-141",
+    "number": 141,
+    "make": "Bentley",
+    "model": "Continental GT",
+    "year": 2027,
+    "category": "Grand Tourers",
+    "price": "$280,000",
+    "priceNum": 280000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "GT Coupe / Convertible",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "830",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-142",
+    "number": 142,
+    "make": "Porsche",
+    "model": "911 Turbo S",
+    "year": 2026,
+    "category": "Grand Tourers",
+    "price": "$258,000",
+    "priceNum": 258000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "GT Coupe / Convertible",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "510",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-143",
+    "number": 143,
+    "make": "Mercedes-Benz",
+    "model": "AMG GT 4-Door 63",
+    "year": 2027,
+    "category": "Grand Tourers",
+    "price": "$129,000",
+    "priceNum": 129000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "GT Coupe / Convertible",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "770",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-144",
+    "number": 144,
+    "make": "Audi",
+    "model": "RS 7 Performance",
+    "year": 2026,
+    "category": "Grand Tourers",
+    "price": "$112,000",
+    "priceNum": 112000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "GT Coupe / Convertible",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "640",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-145",
+    "number": 145,
+    "make": "Dodge",
+    "model": "Charger Daytona Scat Pack",
+    "year": 2027,
+    "category": "Grand Tourers",
+    "price": "$101,000",
+    "priceNum": 101000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "GT Coupe / Convertible",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "550",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-146",
+    "number": 146,
+    "make": "Mercedes-Benz",
+    "model": "EQS 580",
+    "year": 2024,
+    "category": "Electric & Hybrid Luxury",
+    "price": "$90,000",
+    "priceNum": 90000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Electric / Hybrid Sedan or SUV",
+    "acceleration": "Electric motor(s); battery capacity and motor layout vary by trim",
+    "topSpeed": "610",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-147",
+    "number": 147,
+    "make": "Mercedes-Benz",
+    "model": "EQS SUV 580",
+    "year": 2023,
+    "category": "Electric & Hybrid Luxury",
+    "price": "$90,000",
+    "priceNum": 90000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Electric / Hybrid Sedan or SUV",
+    "acceleration": "Electric motor(s); battery capacity and motor layout vary by trim",
+    "topSpeed": "510",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-148",
+    "number": 148,
+    "make": "BMW",
+    "model": "iX xDrive60",
+    "year": 2024,
+    "category": "Electric & Hybrid Luxury",
+    "price": "$92,000",
+    "priceNum": 92000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Electric / Hybrid Sedan or SUV",
+    "acceleration": "Electric motor(s); battery capacity and motor layout vary by trim",
+    "topSpeed": "640",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-149",
+    "number": 149,
+    "make": "BMW",
+    "model": "i4 M50",
+    "year": 2023,
+    "category": "Electric & Hybrid Luxury",
+    "price": "$82,000",
+    "priceNum": 82000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Electric / Hybrid Sedan or SUV",
+    "acceleration": "Electric motor(s); battery capacity and motor layout vary by trim",
+    "topSpeed": "740",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-150",
+    "number": 150,
+    "make": "Audi",
+    "model": "Q8 e-tron",
+    "year": 2026,
+    "category": "Electric & Hybrid Luxury",
+    "price": "$112,000",
+    "priceNum": 112000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Electric / Hybrid Sedan or SUV",
+    "acceleration": "Electric motor(s); battery capacity and motor layout vary by trim",
+    "topSpeed": "720",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-151",
+    "number": 151,
+    "make": "Porsche",
+    "model": "Taycan 4S",
+    "year": 2027,
+    "category": "Electric & Hybrid Luxury",
+    "price": "$120,000",
+    "priceNum": 120000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Electric / Hybrid Sedan or SUV",
+    "acceleration": "Electric motor(s); battery capacity and motor layout vary by trim",
+    "topSpeed": "600",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-152",
+    "number": 152,
+    "make": "Porsche",
+    "model": "Macan Electric Turbo",
+    "year": 2026,
+    "category": "Electric & Hybrid Luxury",
+    "price": "$123,000",
+    "priceNum": 123000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Electric / Hybrid Sedan or SUV",
+    "acceleration": "Electric motor(s); battery capacity and motor layout vary by trim",
+    "topSpeed": "600",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-153",
+    "number": 153,
+    "make": "Tesla",
+    "model": "Model X Plaid",
+    "year": 2027,
+    "category": "Electric & Hybrid Luxury",
+    "price": "$112,000",
+    "priceNum": 112000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Electric / Hybrid Sedan or SUV",
+    "acceleration": "Electric motor(s); battery capacity and motor layout vary by trim",
+    "topSpeed": "370",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-154",
+    "number": 154,
+    "make": "Tesla",
+    "model": "Model Y Performance",
+    "year": 2026,
+    "category": "Electric & Hybrid Luxury",
+    "price": "$62,000",
+    "priceNum": 62000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Electric / Hybrid Sedan or SUV",
+    "acceleration": "Electric motor(s); battery capacity and motor layout vary by trim",
+    "topSpeed": "530",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-155",
+    "number": 155,
+    "make": "Lucid",
+    "model": "Air Sapphire",
+    "year": 2027,
+    "category": "Electric & Hybrid Luxury",
+    "price": "$280,000",
+    "priceNum": 280000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Electric / Hybrid Sedan or SUV",
+    "acceleration": "Electric motor(s); battery capacity and motor layout vary by trim",
+    "topSpeed": "980",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-156",
+    "number": 156,
+    "make": "Genesis",
+    "model": "Electrified G80",
+    "year": 2026,
+    "category": "Electric & Hybrid Luxury",
+    "price": "$95,000",
+    "priceNum": 95000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Electric / Hybrid Sedan or SUV",
+    "acceleration": "Electric motor(s); battery capacity and motor layout vary by trim",
+    "topSpeed": "890",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-157",
+    "number": 157,
+    "make": "Genesis",
+    "model": "GV60 Performance",
+    "year": 2027,
+    "category": "Electric & Hybrid Luxury",
+    "price": "$95,000",
+    "priceNum": 95000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Electric / Hybrid Sedan or SUV",
+    "acceleration": "Electric motor(s); battery capacity and motor layout vary by trim",
+    "topSpeed": "980",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-158",
+    "number": 158,
+    "make": "Polestar",
+    "model": "4 Long Range Dual Motor",
+    "year": 2026,
+    "category": "Electric & Hybrid Luxury",
+    "price": "$84,000",
+    "priceNum": 84000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Electric / Hybrid Sedan or SUV",
+    "acceleration": "Electric motor(s); battery capacity and motor layout vary by trim",
+    "topSpeed": "320",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-159",
+    "number": 159,
+    "make": "Volvo",
+    "model": "EX90 Twin Motor",
+    "year": 2027,
+    "category": "Electric & Hybrid Luxury",
+    "price": "$90,000",
+    "priceNum": 90000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Electric / Hybrid Sedan or SUV",
+    "acceleration": "Electric motor(s); battery capacity and motor layout vary by trim",
+    "topSpeed": "760",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-160",
+    "number": 160,
+    "make": "BYD",
+    "model": "Yangwang U8",
+    "year": 2026,
+    "category": "Electric & Hybrid Luxury",
+    "price": "$100,000",
+    "priceNum": 100000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Electric / Hybrid Sedan or SUV",
+    "acceleration": "Electric motor(s); battery capacity and motor layout vary by trim",
+    "topSpeed": "590",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-161",
+    "number": 161,
+    "make": "Zeekr",
+    "model": "001 FR",
+    "year": 2027,
+    "category": "Electric & Hybrid Luxury",
+    "price": "$90,000",
+    "priceNum": 90000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Electric / Hybrid Sedan or SUV",
+    "acceleration": "Electric motor(s); battery capacity and motor layout vary by trim",
+    "topSpeed": "920",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-162",
+    "number": 162,
+    "make": "NIO",
+    "model": "ET9",
+    "year": 2026,
+    "category": "Electric & Hybrid Luxury",
+    "price": "$100,000",
+    "priceNum": 100000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Electric / Hybrid Sedan or SUV",
+    "acceleration": "Electric motor(s); battery capacity and motor layout vary by trim",
+    "topSpeed": "640",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-163",
+    "number": 163,
+    "make": "XPeng",
+    "model": "G9 Performance",
+    "year": 2027,
+    "category": "Electric & Hybrid Luxury",
+    "price": "$73,000",
+    "priceNum": 73000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Electric / Hybrid Sedan or SUV",
+    "acceleration": "Electric motor(s); battery capacity and motor layout vary by trim",
+    "topSpeed": "770",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-164",
+    "number": 164,
+    "make": "Lotus",
+    "model": "Eletre R",
+    "year": 2026,
+    "category": "Electric & Hybrid Luxury",
+    "price": "$140,000",
+    "priceNum": 140000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Electric / Hybrid Sedan or SUV",
+    "acceleration": "Electric motor(s); battery capacity and motor layout vary by trim",
+    "topSpeed": "440",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-165",
+    "number": 165,
+    "make": "Cadillac",
+    "model": "Lyriq-V",
+    "year": 2027,
+    "category": "Electric & Hybrid Luxury",
+    "price": "$90,000",
+    "priceNum": 90000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Electric / Hybrid Sedan or SUV",
+    "acceleration": "Electric motor(s); battery capacity and motor layout vary by trim",
+    "topSpeed": "820",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-166",
+    "number": 166,
+    "make": "BMW",
+    "model": "XM Label",
+    "year": 2024,
+    "category": "Performance SUVs",
+    "price": "$125,000",
+    "priceNum": 125000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Performance SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "430",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-167",
+    "number": 167,
+    "make": "BMW",
+    "model": "X6 M Competition",
+    "year": 2023,
+    "category": "Performance SUVs",
+    "price": "$118,000",
+    "priceNum": 118000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Performance SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "550",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-168",
+    "number": 168,
+    "make": "Mercedes-AMG",
+    "model": "GLE 63 S",
+    "year": 2024,
+    "category": "Performance SUVs",
+    "price": "$117,000",
+    "priceNum": 117000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Performance SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "560",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-169",
+    "number": 169,
+    "make": "Mercedes-AMG",
+    "model": "GLC 63 S E Performance",
+    "year": 2023,
+    "category": "Performance SUVs",
+    "price": "$131,000",
+    "priceNum": 131000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Performance SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "580",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-170",
+    "number": 170,
+    "make": "Audi",
+    "model": "RS Q8 Performance",
+    "year": 2026,
+    "category": "Performance SUVs",
+    "price": "$112,000",
+    "priceNum": 112000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Performance SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "620",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-171",
+    "number": 171,
+    "make": "Porsche",
+    "model": "Cayenne Turbo GT",
+    "year": 2027,
+    "category": "Performance SUVs",
+    "price": "$224,000",
+    "priceNum": 224000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Performance SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "480",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-172",
+    "number": 172,
+    "make": "Porsche",
+    "model": "Macan GTS",
+    "year": 2026,
+    "category": "Performance SUVs",
+    "price": "$125,000",
+    "priceNum": 125000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Performance SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "730",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-173",
+    "number": 173,
+    "make": "Lamborghini",
+    "model": "Urus Performante",
+    "year": 2027,
+    "category": "Performance SUVs",
+    "price": "$302,000",
+    "priceNum": 302000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Performance SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "510",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-174",
+    "number": 174,
+    "make": "Maserati",
+    "model": "Grecale Trofeo",
+    "year": 2026,
+    "category": "Performance SUVs",
+    "price": "$146,000",
+    "priceNum": 146000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Performance SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "610",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-175",
+    "number": 175,
+    "make": "Alfa Romeo",
+    "model": "Stelvio Quadrifoglio",
+    "year": 2027,
+    "category": "Performance SUVs",
+    "price": "$95,000",
+    "priceNum": 95000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Performance SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "630",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-176",
+    "number": 176,
+    "make": "Range Rover",
+    "model": "Sport SV",
+    "year": 2026,
+    "category": "Performance SUVs",
+    "price": "$179,000",
+    "priceNum": 179000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Performance SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "560",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-177",
+    "number": 177,
+    "make": "Aston Martin",
+    "model": "DBX707",
+    "year": 2027,
+    "category": "Performance SUVs",
+    "price": "$250,000",
+    "priceNum": 250000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Performance SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "440",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-178",
+    "number": 178,
+    "make": "Dodge",
+    "model": "Durango SRT Hellcat",
+    "year": 2026,
+    "category": "Performance SUVs",
+    "price": "$112,000",
+    "priceNum": 112000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Performance SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "650",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-179",
+    "number": 179,
+    "make": "Jeep",
+    "model": "Grand Cherokee SRT",
+    "year": 2027,
+    "category": "Performance SUVs",
+    "price": "$73,000",
+    "priceNum": 73000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Performance SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "670",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-180",
+    "number": 180,
+    "make": "Tesla",
+    "model": "Model X Plaid",
+    "year": 2026,
+    "category": "Performance SUVs",
+    "price": "$106,000",
+    "priceNum": 106000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Performance SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "640",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-181",
+    "number": 181,
+    "make": "Lotus",
+    "model": "Eletre R",
+    "year": 2027,
+    "category": "Performance SUVs",
+    "price": "$140,000",
+    "priceNum": 140000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Performance SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "430",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-182",
+    "number": 182,
+    "make": "Genesis",
+    "model": "GV70 3.5T Sport",
+    "year": 2026,
+    "category": "Performance SUVs",
+    "price": "$95,000",
+    "priceNum": 95000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Performance SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "610",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-183",
+    "number": 183,
+    "make": "Ford",
+    "model": "Explorer ST",
+    "year": 2027,
+    "category": "Performance SUVs",
+    "price": "$73,000",
+    "priceNum": 73000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Performance SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "430",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-184",
+    "number": 184,
+    "make": "Kia",
+    "model": "EV6 GT",
+    "year": 2026,
+    "category": "Performance SUVs",
+    "price": "$65,000",
+    "priceNum": 65000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Performance SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "470",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-185",
+    "number": 185,
+    "make": "Hyundai",
+    "model": "IONIQ 5 N",
+    "year": 2027,
+    "category": "Performance SUVs",
+    "price": "$65,000",
+    "priceNum": 65000,
+    "engine": "Representative trim; confirm exact market specification",
+    "horsepower": "Performance SUV",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "410",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-186",
+    "number": 186,
+    "make": "Rolls-Royce",
+    "model": "Cullinan Series II",
+    "year": 2024,
+    "category": "Ultra-Luxury & Flagship",
+    "price": "$390,000",
+    "priceNum": 390000,
+    "engine": "Representative current-generation trim; verify exact model-year specification",
+    "horsepower": "Classic / Collector Vehicle",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "550",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-187",
+    "number": 187,
+    "make": "Rolls-Royce",
+    "model": "Ghost Series II",
+    "year": 2023,
+    "category": "Ultra-Luxury & Flagship",
+    "price": "$390,000",
+    "priceNum": 390000,
+    "engine": "Representative current-generation trim; verify exact model-year specification",
+    "horsepower": "Classic / Collector Vehicle",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "530",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-188",
+    "number": 188,
+    "make": "Rolls-Royce",
+    "model": "Phantom Series II",
+    "year": 2024,
+    "category": "Ultra-Luxury & Flagship",
+    "price": "$390,000",
+    "priceNum": 390000,
+    "engine": "Representative current-generation trim; verify exact model-year specification",
+    "horsepower": "Classic / Collector Vehicle",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "490",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-189",
+    "number": 189,
+    "make": "Bentley",
+    "model": "Bentayga",
+    "year": 2023,
+    "category": "Ultra-Luxury & Flagship",
+    "price": "$234,000",
+    "priceNum": 234000,
+    "engine": "Representative current-generation trim; verify exact model-year specification",
+    "horsepower": "Classic / Collector Vehicle",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "630",
+    "features": [
+      "Estimated demo asking price (USD); older model-year estimate, assumed ~22% below current equivalent; not a verified market quote",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-190",
+    "number": 190,
+    "make": "Bentley",
+    "model": "Flying Spur",
+    "year": 2026,
+    "category": "Ultra-Luxury & Flagship",
+    "price": "$300,000",
+    "priceNum": 300000,
+    "engine": "Representative current-generation trim; verify exact model-year specification",
+    "horsepower": "Classic / Collector Vehicle",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "430",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-191",
+    "number": 191,
+    "make": "Bentley",
+    "model": "Continental GT",
+    "year": 2027,
+    "category": "Ultra-Luxury & Flagship",
+    "price": "$300,000",
+    "priceNum": 300000,
+    "engine": "Representative current-generation trim; verify exact model-year specification",
+    "horsepower": "Classic / Collector Vehicle",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "600",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-192",
+    "number": 192,
+    "make": "Mercedes-Maybach",
+    "model": "S-Class",
+    "year": 2026,
+    "category": "Ultra-Luxury & Flagship",
+    "price": "$230,000",
+    "priceNum": 230000,
+    "engine": "Representative current-generation trim; verify exact model-year specification",
+    "horsepower": "Classic / Collector Vehicle",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "360",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-193",
+    "number": 193,
+    "make": "Mercedes-Maybach",
+    "model": "GLS 600",
+    "year": 2027,
+    "category": "Ultra-Luxury & Flagship",
+    "price": "$230,000",
+    "priceNum": 230000,
+    "engine": "Representative current-generation trim; verify exact model-year specification",
+    "horsepower": "Classic / Collector Vehicle",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "620",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-194",
+    "number": 194,
+    "make": "Range Rover",
+    "model": "Range Rover SV",
+    "year": 2026,
+    "category": "Ultra-Luxury & Flagship",
+    "price": "$220,000",
+    "priceNum": 220000,
+    "engine": "Representative current-generation trim; verify exact model-year specification",
+    "horsepower": "Classic / Collector Vehicle",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "530",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-195",
+    "number": 195,
+    "make": "Range Rover",
+    "model": "Range Rover Sport",
+    "year": 2027,
+    "category": "Ultra-Luxury & Flagship",
+    "price": "$220,000",
+    "priceNum": 220000,
+    "engine": "Representative current-generation trim; verify exact model-year specification",
+    "horsepower": "Classic / Collector Vehicle",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "210",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-196",
+    "number": 196,
+    "make": "BMW",
+    "model": "7 Series",
+    "year": 2026,
+    "category": "Ultra-Luxury & Flagship",
+    "price": "$150,000",
+    "priceNum": 150000,
+    "engine": "Representative current-generation trim; verify exact model-year specification",
+    "horsepower": "Classic / Collector Vehicle",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "210",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-197",
+    "number": 197,
+    "make": "BMW",
+    "model": "i7",
+    "year": 2027,
+    "category": "Ultra-Luxury & Flagship",
+    "price": "$150,000",
+    "priceNum": 150000,
+    "engine": "Representative current-generation trim; verify exact model-year specification",
+    "horsepower": "Classic / Collector Vehicle",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "360",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-198",
+    "number": 198,
+    "make": "Mercedes-Benz",
+    "model": "S-Class",
+    "year": 2026,
+    "category": "Ultra-Luxury & Flagship",
+    "price": "$150,000",
+    "priceNum": 150000,
+    "engine": "Representative current-generation trim; verify exact model-year specification",
+    "horsepower": "Classic / Collector Vehicle",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "180",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-199",
+    "number": 199,
+    "make": "Lexus",
+    "model": "LM 500h",
+    "year": 2027,
+    "category": "Ultra-Luxury & Flagship",
+    "price": "$130,000",
+    "priceNum": 130000,
+    "engine": "Representative current-generation trim; verify exact model-year specification",
+    "horsepower": "Classic / Collector Vehicle",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "470",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-200",
+    "number": 200,
+    "make": "Lexus",
+    "model": "LX 600",
+    "year": 2026,
+    "category": "Ultra-Luxury & Flagship",
+    "price": "$130,000",
+    "priceNum": 130000,
+    "engine": "Representative current-generation trim; verify exact model-year specification",
+    "horsepower": "Classic / Collector Vehicle",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "540",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-201",
+    "number": 201,
+    "make": "Porsche",
+    "model": "Cayenne Turbo E-Hybrid",
+    "year": 2027,
+    "category": "Ultra-Luxury & Flagship",
+    "price": "$180,000",
+    "priceNum": 180000,
+    "engine": "Representative current-generation trim; verify exact model-year specification",
+    "horsepower": "Classic / Collector Vehicle",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "640",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-202",
+    "number": 202,
+    "make": "Aston Martin",
+    "model": "DBX707",
+    "year": 2026,
+    "category": "Ultra-Luxury & Flagship",
+    "price": "$250,000",
+    "priceNum": 250000,
+    "engine": "Representative current-generation trim; verify exact model-year specification",
+    "horsepower": "Classic / Collector Vehicle",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "250",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-203",
+    "number": 203,
+    "make": "Ferrari",
+    "model": "Purosangue",
+    "year": 2027,
+    "category": "Ultra-Luxury & Flagship",
+    "price": "$430,000",
+    "priceNum": 430000,
+    "engine": "Representative current-generation trim; verify exact model-year specification",
+    "horsepower": "Classic / Collector Vehicle",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "280",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-204",
+    "number": 204,
+    "make": "Lamborghini",
+    "model": "Urus SE",
+    "year": 2026,
+    "category": "Ultra-Luxury & Flagship",
+    "price": "$270,000",
+    "priceNum": 270000,
+    "engine": "Representative current-generation trim; verify exact model-year specification",
+    "horsepower": "Classic / Collector Vehicle",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "210",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  },
+  {
+    "id": "rmc-205",
+    "number": 205,
+    "make": "Toyota",
+    "model": "Century SUV",
+    "year": 2027,
+    "category": "Ultra-Luxury & Flagship",
+    "price": "$200,000",
+    "priceNum": 200000,
+    "engine": "Representative current-generation trim; verify exact model-year specification",
+    "horsepower": "Classic / Collector Vehicle",
+    "acceleration": "Turbocharged / naturally aspirated engine; displacement and cylinder count depend on exact variant",
+    "topSpeed": "400",
+    "features": [
+      "Estimated demo price (USD); approximate new/current model reference, excluding options, taxes, duties and dealer fees",
+      "Market/distributor dependent; verify exact local warranty booklet"
+    ],
+    "description": "To be confirmed by Rome Motor Cars; do not imply factory coverage"
+  }
+]
