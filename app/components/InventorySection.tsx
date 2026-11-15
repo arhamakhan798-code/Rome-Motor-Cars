@@ -659,295 +659,295 @@ export default function InventorySection() {
               gap: "20px",
             }}
           >
-          {filteredVehicles.map((car) => {
-            const isFavorited = !!wishlist[car.id];
-            const primaryImage = car.images && car.images[0] ? car.images[0] : "/hero-bg-desktop.jpg";
+            {filteredVehicles.map((car) => {
+              const isFavorited = !!wishlist[car.id];
+              const primaryImage = car.images && car.images[0] ? car.images[0] : "/hero-bg-desktop.jpg";
 
-            return (
-              <div
-                key={car.id}
-                onClick={() => {
-                  requireAuth(() => {
-                    soundFx.playVaultTone();
-                    setSelectedVehicle(car);
-                    if (typeof window !== "undefined") {
-                      const url = new URL(window.location.href);
-                      url.searchParams.set("car", car.id);
-                      window.history.pushState({}, "", url.toString());
-                    }
-                  });
-                }}
-                style={{
-                  position: "relative",
-                  backgroundColor: "#0d0e12",
-                  border: "1px solid rgba(255, 255, 255, 0.08)",
-                  borderRadius: "14px",
-                  overflow: "hidden",
-                  cursor: "pointer",
-                  transition: "all 0.35s cubic-bezier(0.16, 1, 0.3, 1)",
-                  display: "flex",
-                  flexDirection: "column",
-                }}
-                onMouseEnter={(e) => {
-                  const el = e.currentTarget as HTMLDivElement;
-                  el.style.transform = "translateY(-6px)";
-                  el.style.borderColor = "rgba(220, 38, 38, 0.45)";
-                  el.style.boxShadow = "0 14px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba(220, 38, 38, 0.2)";
-                  soundFx.playMechanicalClick();
-                }}
-                onMouseLeave={(e) => {
-                  const el = e.currentTarget as HTMLDivElement;
-                  el.style.transform = "translateY(0)";
-                  el.style.borderColor = "rgba(255, 255, 255, 0.08)";
-                  el.style.boxShadow = "none";
-                }}
-              >
-                {/* ── Card Top: Badge & Heart ── */}
+              return (
                 <div
-                  style={{
-                    position: "absolute",
-                    top: "14px",
-                    left: "14px",
-                    right: "14px",
-                    zIndex: 2,
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    pointerEvents: "none",
+                  key={car.id}
+                  onClick={() => {
+                    requireAuth(() => {
+                      soundFx.playVaultTone();
+                      setSelectedVehicle(car);
+                      if (typeof window !== "undefined") {
+                        const url = new URL(window.location.href);
+                        url.searchParams.set("car", car.id);
+                        window.history.pushState({}, "", url.toString());
+                      }
+                    });
                   }}
-                >
-                  {/* Tag: Only cars of 2026 and 2027 have FEATURED tag */}
-                  {car.featured ? (
-                    <div
-                      style={{
-                        backgroundColor: "#dc2626",
-                        color: "#ffffff",
-                        fontSize: "0.62rem",
-                        fontWeight: 700,
-                        letterSpacing: "0.14em",
-                        padding: "3px 8px",
-                        borderRadius: "4px",
-                        boxShadow: "0 2px 8px rgba(220, 38, 38, 0.6)",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "4px",
-                        textTransform: "uppercase",
-                      }}
-                    >
-                      <span style={{ fontSize: "0.65rem" }}>★</span> FEATURED
-                    </div>
-                  ) : (
-                    <div />
-                  )}
-
-                  {/* Heart / Favorite Button */}
-                  <button
-                    onClick={(e) => toggleWishlist(car.id, e)}
-                    style={{
-                      pointerEvents: "auto",
-                      background: "rgba(0, 0, 0, 0.5)",
-                      border: "none",
-                      borderRadius: "50%",
-                      width: "32px",
-                      height: "32px",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      color: isFavorited ? "#ef4444" : "rgba(255, 255, 255, 0.7)",
-                      fontSize: "1.05rem",
-                      cursor: "pointer",
-                      transition: "all 0.2s ease",
-                      backdropFilter: "blur(6px)",
-                    }}
-                    onMouseEnter={(e) => {
-                      (e.currentTarget as HTMLButtonElement).style.color = "#ef4444";
-                      (e.currentTarget as HTMLButtonElement).style.transform = "scale(1.15)";
-                    }}
-                    onMouseLeave={(e) => {
-                      (e.currentTarget as HTMLButtonElement).style.color = isFavorited
-                        ? "#ef4444"
-                        : "rgba(255, 255, 255, 0.7)";
-                      (e.currentTarget as HTMLButtonElement).style.transform = "scale(1)";
-                    }}
-                  >
-                    {isFavorited ? "♥" : "♡"}
-                  </button>
-                </div>
-
-                {/* ── Car Image on Studio Floor ── */}
-                <div
                   style={{
                     position: "relative",
-                    width: "100%",
-                    height: "210px",
-                    backgroundColor: "#050608",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
+                    backgroundColor: "#0d0e12",
+                    border: "1px solid rgba(255, 255, 255, 0.08)",
+                    borderRadius: "14px",
                     overflow: "hidden",
+                    cursor: "pointer",
+                    transition: "all 0.35s cubic-bezier(0.16, 1, 0.3, 1)",
+                    display: "flex",
+                    flexDirection: "column",
+                  }}
+                  onMouseEnter={(e) => {
+                    const el = e.currentTarget as HTMLDivElement;
+                    el.style.transform = "translateY(-6px)";
+                    el.style.borderColor = "rgba(220, 38, 38, 0.45)";
+                    el.style.boxShadow = "0 14px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba(220, 38, 38, 0.2)";
+                    soundFx.playMechanicalClick();
+                  }}
+                  onMouseLeave={(e) => {
+                    const el = e.currentTarget as HTMLDivElement;
+                    el.style.transform = "translateY(0)";
+                    el.style.borderColor = "rgba(255, 255, 255, 0.08)";
+                    el.style.boxShadow = "none";
                   }}
                 >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={primaryImage}
-                    alt={`${car.make} ${car.model}`}
-                    loading="lazy"
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover",
-                      objectPosition: "center center",
-                      display: "block",
-                      transition: "transform 0.5s ease",
-                    }}
-                    onMouseEnter={(e) => {
-                      (e.currentTarget as HTMLImageElement).style.transform = "scale(1.05)";
-                    }}
-                    onMouseLeave={(e) => {
-                      (e.currentTarget as HTMLImageElement).style.transform = "scale(1)";
-                    }}
-                  />
-
-                  {/* Bottom Vignette Overlay */}
+                  {/* ── Card Top: Badge & Heart ── */}
                   <div
                     style={{
                       position: "absolute",
-                      inset: 0,
-                      background: "linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(13,14,18,0.85) 100%)",
-                      pointerEvents: "none",
-                    }}
-                  />
-                </div>
-
-                {/* ── Card Content ── */}
-                <div
-                  style={{
-                    padding: "1rem 1.2rem 1.2rem",
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: "4px",
-                    flex: 1,
-                    justifyContent: "space-between",
-                  }}
-                >
-                  <div>
-                    {/* Make & Model */}
-                    <h3
-                      style={{
-                        fontFamily: "var(--font-montserrat), 'Montserrat', sans-serif",
-                        fontSize: "1.02rem",
-                        fontWeight: 600,
-                        color: "#ffffff",
-                        margin: 0,
-                        lineHeight: 1.3,
-                        whiteSpace: "nowrap",
-                        overflow: "hidden",
-                        textOverflow: "ellipsis",
-                      }}
-                    >
-                      {car.make} {car.model}
-                    </h3>
-
-                    {/* Year */}
-                    <div
-                      style={{
-                        fontSize: "0.78rem",
-                        color: "rgba(255, 255, 255, 0.45)",
-                        marginTop: "2px",
-                      }}
-                    >
-                      {car.year}
-                    </div>
-                  </div>
-
-                  {/* Price & Action Button Row */}
-                  <div
-                    style={{
+                      top: "14px",
+                      left: "14px",
+                      right: "14px",
+                      zIndex: 2,
                       display: "flex",
                       justifyContent: "space-between",
                       alignItems: "center",
-                      marginTop: "12px",
+                      pointerEvents: "none",
                     }}
                   >
-                    <div
-                      style={{
-                        fontFamily: "var(--font-montserrat), 'Montserrat', sans-serif",
-                        fontSize: "1.08rem",
-                        fontWeight: 700,
-                        color: "#ffffff",
-                        letterSpacing: "0.02em",
-                      }}
-                    >
-                      {car.price}
-                    </div>
-
-                    {/* Action buttons: Compare toggle + View details */}
-                    <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          if (isComparing(car.id)) {
-                            removeFromCompare(car.id);
-                          } else {
-                            addToCompare(car);
-                          }
-                        }}
-                        title={isComparing(car.id) ? "Remove from comparison" : "Add to comparison"}
-                        style={{
-                          padding: "4px 8px",
-                          borderRadius: "14px",
-                          backgroundColor: isComparing(car.id) ? "rgba(220, 38, 38, 0.25)" : "rgba(255, 255, 255, 0.05)",
-                          border: isComparing(car.id) ? "1px solid #ef4444" : "1px solid rgba(255, 255, 255, 0.15)",
-                          color: isComparing(car.id) ? "#ef4444" : "rgba(255, 255, 255, 0.65)",
-                          fontSize: "0.65rem",
-                          fontWeight: 600,
-                          letterSpacing: "0.04em",
-                          cursor: "pointer",
-                          transition: "all 0.2s ease",
-                        }}
-                        onMouseEnter={() => soundFx.playMechanicalClick()}
-                      >
-                        {isComparing(car.id) ? "✓ Compared" : "+ Compare"}
-                      </button>
-
-                      {/* Right Arrow Action Circle */}
+                    {/* Tag: Only cars of 2026 and 2027 have FEATURED tag */}
+                    {car.featured ? (
                       <div
                         style={{
-                          width: "34px",
-                          height: "34px",
-                          borderRadius: "50%",
-                          backgroundColor: "rgba(255, 255, 255, 0.06)",
-                          border: "1px solid rgba(255, 255, 255, 0.15)",
+                          backgroundColor: "#dc2626",
+                          color: "#ffffff",
+                          fontSize: "0.62rem",
+                          fontWeight: 700,
+                          letterSpacing: "0.14em",
+                          padding: "3px 8px",
+                          borderRadius: "4px",
+                          boxShadow: "0 2px 8px rgba(220, 38, 38, 0.6)",
                           display: "flex",
                           alignItems: "center",
-                          justifyContent: "center",
-                          color: "rgba(255, 255, 255, 0.8)",
-                          fontSize: "0.85rem",
-                          transition: "all 0.25s ease",
-                        }}
-                        onMouseEnter={(e) => {
-                          (e.currentTarget as HTMLDivElement).style.backgroundColor = "#dc2626";
-                          (e.currentTarget as HTMLDivElement).style.borderColor = "#ef4444";
-                          (e.currentTarget as HTMLDivElement).style.color = "#ffffff";
-                          (e.currentTarget as HTMLDivElement).style.boxShadow = "0 0 14px rgba(220, 38, 38, 0.6)";
-                          soundFx.playMechanicalClick();
-                        }}
-                        onMouseLeave={(e) => {
-                          (e.currentTarget as HTMLDivElement).style.backgroundColor = "rgba(255, 255, 255, 0.06)";
-                          (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(255, 255, 255, 0.15)";
-                          (e.currentTarget as HTMLDivElement).style.color = "rgba(255, 255, 255, 0.8)";
-                          (e.currentTarget as HTMLDivElement).style.boxShadow = "none";
+                          gap: "4px",
+                          textTransform: "uppercase",
                         }}
                       >
-                        ›
+                        <span style={{ fontSize: "0.65rem" }}>★</span> FEATURED
+                      </div>
+                    ) : (
+                      <div />
+                    )}
+
+                    {/* Heart / Favorite Button */}
+                    <button
+                      onClick={(e) => toggleWishlist(car.id, e)}
+                      style={{
+                        pointerEvents: "auto",
+                        background: "rgba(0, 0, 0, 0.5)",
+                        border: "none",
+                        borderRadius: "50%",
+                        width: "32px",
+                        height: "32px",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        color: isFavorited ? "#ef4444" : "rgba(255, 255, 255, 0.7)",
+                        fontSize: "1.05rem",
+                        cursor: "pointer",
+                        transition: "all 0.2s ease",
+                        backdropFilter: "blur(6px)",
+                      }}
+                      onMouseEnter={(e) => {
+                        (e.currentTarget as HTMLButtonElement).style.color = "#ef4444";
+                        (e.currentTarget as HTMLButtonElement).style.transform = "scale(1.15)";
+                      }}
+                      onMouseLeave={(e) => {
+                        (e.currentTarget as HTMLButtonElement).style.color = isFavorited
+                          ? "#ef4444"
+                          : "rgba(255, 255, 255, 0.7)";
+                        (e.currentTarget as HTMLButtonElement).style.transform = "scale(1)";
+                      }}
+                    >
+                      {isFavorited ? "♥" : "♡"}
+                    </button>
+                  </div>
+
+                  {/* ── Car Image on Studio Floor ── */}
+                  <div
+                    style={{
+                      position: "relative",
+                      width: "100%",
+                      height: "210px",
+                      backgroundColor: "#050608",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      overflow: "hidden",
+                    }}
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={primaryImage}
+                      alt={`${car.make} ${car.model}`}
+                      loading="lazy"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        objectPosition: "center center",
+                        display: "block",
+                        transition: "transform 0.5s ease",
+                      }}
+                      onMouseEnter={(e) => {
+                        (e.currentTarget as HTMLImageElement).style.transform = "scale(1.05)";
+                      }}
+                      onMouseLeave={(e) => {
+                        (e.currentTarget as HTMLImageElement).style.transform = "scale(1)";
+                      }}
+                    />
+
+                    {/* Bottom Vignette Overlay */}
+                    <div
+                      style={{
+                        position: "absolute",
+                        inset: 0,
+                        background: "linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(13,14,18,0.85) 100%)",
+                        pointerEvents: "none",
+                      }}
+                    />
+                  </div>
+
+                  {/* ── Card Content ── */}
+                  <div
+                    style={{
+                      padding: "1rem 1.2rem 1.2rem",
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "4px",
+                      flex: 1,
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <div>
+                      {/* Make & Model */}
+                      <h3
+                        style={{
+                          fontFamily: "var(--font-montserrat), 'Montserrat', sans-serif",
+                          fontSize: "1.02rem",
+                          fontWeight: 600,
+                          color: "#ffffff",
+                          margin: 0,
+                          lineHeight: 1.3,
+                          whiteSpace: "nowrap",
+                          overflow: "hidden",
+                          textOverflow: "ellipsis",
+                        }}
+                      >
+                        {car.make} {car.model}
+                      </h3>
+
+                      {/* Year */}
+                      <div
+                        style={{
+                          fontSize: "0.78rem",
+                          color: "rgba(255, 255, 255, 0.45)",
+                          marginTop: "2px",
+                        }}
+                      >
+                        {car.year}
+                      </div>
+                    </div>
+
+                    {/* Price & Action Button Row */}
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        marginTop: "12px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          fontFamily: "var(--font-montserrat), 'Montserrat', sans-serif",
+                          fontSize: "1.08rem",
+                          fontWeight: 700,
+                          color: "#ffffff",
+                          letterSpacing: "0.02em",
+                        }}
+                      >
+                        {car.price}
+                      </div>
+
+                      {/* Action buttons: Compare toggle + View details */}
+                      <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            if (isComparing(car.id)) {
+                              removeFromCompare(car.id);
+                            } else {
+                              addToCompare(car);
+                            }
+                          }}
+                          title={isComparing(car.id) ? "Remove from comparison" : "Add to comparison"}
+                          style={{
+                            padding: "4px 8px",
+                            borderRadius: "14px",
+                            backgroundColor: isComparing(car.id) ? "rgba(220, 38, 38, 0.25)" : "rgba(255, 255, 255, 0.05)",
+                            border: isComparing(car.id) ? "1px solid #ef4444" : "1px solid rgba(255, 255, 255, 0.15)",
+                            color: isComparing(car.id) ? "#ef4444" : "rgba(255, 255, 255, 0.65)",
+                            fontSize: "0.65rem",
+                            fontWeight: 600,
+                            letterSpacing: "0.04em",
+                            cursor: "pointer",
+                            transition: "all 0.2s ease",
+                          }}
+                          onMouseEnter={() => soundFx.playMechanicalClick()}
+                        >
+                          {isComparing(car.id) ? "✓ Compared" : "+ Compare"}
+                        </button>
+
+                        {/* Right Arrow Action Circle */}
+                        <div
+                          style={{
+                            width: "34px",
+                            height: "34px",
+                            borderRadius: "50%",
+                            backgroundColor: "rgba(255, 255, 255, 0.06)",
+                            border: "1px solid rgba(255, 255, 255, 0.15)",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            color: "rgba(255, 255, 255, 0.8)",
+                            fontSize: "0.85rem",
+                            transition: "all 0.25s ease",
+                          }}
+                          onMouseEnter={(e) => {
+                            (e.currentTarget as HTMLDivElement).style.backgroundColor = "#dc2626";
+                            (e.currentTarget as HTMLDivElement).style.borderColor = "#ef4444";
+                            (e.currentTarget as HTMLDivElement).style.color = "#ffffff";
+                            (e.currentTarget as HTMLDivElement).style.boxShadow = "0 0 14px rgba(220, 38, 38, 0.6)";
+                            soundFx.playMechanicalClick();
+                          }}
+                          onMouseLeave={(e) => {
+                            (e.currentTarget as HTMLDivElement).style.backgroundColor = "rgba(255, 255, 255, 0.06)";
+                            (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(255, 255, 255, 0.15)";
+                            (e.currentTarget as HTMLDivElement).style.color = "rgba(255, 255, 255, 0.8)";
+                            (e.currentTarget as HTMLDivElement).style.boxShadow = "none";
+                          }}
+                        >
+                          ›
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
         )}
 
         {/* Empty State */}

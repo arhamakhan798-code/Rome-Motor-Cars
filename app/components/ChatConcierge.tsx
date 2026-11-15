@@ -1421,7 +1421,7 @@ function InChatRefundCard({ messageId, user, onComplete }: InChatRefundCardProps
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "6px" }}>
           <div>
             <label style={{ fontSize: "0.68rem", color: "rgba(255, 255, 255, 0.75)", display: "block", marginBottom: "2px" }}>
-              Buyer Number (Physical) *
+              Buyer Number *
             </label>
             <input
               type="text"
@@ -1444,7 +1444,7 @@ function InChatRefundCard({ messageId, user, onComplete }: InChatRefundCardProps
 
           <div>
             <label style={{ fontSize: "0.68rem", color: "rgba(255, 255, 255, 0.75)", display: "block", marginBottom: "2px" }}>
-              Secret Number (Physical) *
+              Secret Number *
             </label>
             <input
               type="text"

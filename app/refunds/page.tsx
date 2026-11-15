@@ -447,10 +447,10 @@ export default function RefundRequestPage() {
                       margin: "0 0 6px 0",
                     }}
                   >
-                    Physical Purchase Credentials & Location
+                    Purchase Credentials & Location
                   </h2>
                   <p style={{ fontSize: "0.78rem", color: "rgba(255, 255, 255, 0.6)", margin: 0 }}>
-                    Please reference the physical leather deed and security dossier handed over at vehicle delivery.
+                    Please reference the handover documentation and security dossier provided at vehicle delivery.
                   </p>
                 </div>
 
@@ -497,7 +497,7 @@ export default function RefundRequestPage() {
 
                   <div>
                     <label style={{ fontSize: "0.75rem", color: "rgba(255, 255, 255, 0.75)", display: "block", marginBottom: "6px" }}>
-                      Buyer Number (Allocated Physically at Purchase) *
+                      Buyer Number *
                     </label>
                     <input
                       type="text"
@@ -518,13 +518,13 @@ export default function RefundRequestPage() {
                       }}
                     />
                     <span style={{ fontSize: "0.68rem", color: "rgba(255, 255, 255, 0.45)", marginTop: "4px", display: "block" }}>
-                      Stamped on physical handover deed.
+                      Stamped on handover deed.
                     </span>
                   </div>
 
                   <div>
                     <label style={{ fontSize: "0.75rem", color: "rgba(255, 255, 255, 0.75)", display: "block", marginBottom: "6px" }}>
-                      Secret Number (Given Physically at Purchase) *
+                      Secret Number *
                     </label>
                     <input
                       type="text"
@@ -545,7 +545,7 @@ export default function RefundRequestPage() {
                       }}
                     />
                     <span style={{ fontSize: "0.68rem", color: "rgba(255, 255, 255, 0.45)", marginTop: "4px", display: "block" }}>
-                      Sealed inside confidential handover folder.
+                      Provided in confidential handover folder.
                     </span>
                   </div>
 
