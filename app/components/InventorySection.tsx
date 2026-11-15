@@ -302,24 +302,26 @@ export default function InventorySection() {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
+            gap: "1.25rem",
             flexWrap: "wrap",
-            gap: "1rem",
-            marginBottom: "2rem",
-            paddingBottom: "1rem",
+            marginBottom: "2.2rem",
+            paddingBottom: "1.2rem",
+            borderBottom: "1px solid rgba(255, 255, 255, 0.06)",
           }}
         >
-          {/* Category Pills (horizontally scrollable on mobile) */}
+          {/* Category Pills (horizontally scrollable, minWidth 0 prevents overlap) */}
           <div
             className="category-scroll-container"
             style={{
+              flex: "1 1 520px",
+              minWidth: 0,
               display: "flex",
               alignItems: "center",
               gap: "10px",
               overflowX: "auto",
-              paddingBottom: "4px",
+              paddingBottom: "6px",
               scrollbarWidth: "none",
               msOverflowStyle: "none",
-              maxWidth: "100%",
             }}
           >
             {categories.map((cat) => {
@@ -331,6 +333,7 @@ export default function InventorySection() {
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
                   style={{
+                    flexShrink: 0,
                     display: "flex",
                     alignItems: "center",
                     gap: "6px",
@@ -370,14 +373,15 @@ export default function InventorySection() {
             })}
           </div>
 
-          {/* Right Controls: Search + Sort Dropdown */}
+          {/* Right Controls: Search + Sort Dropdown (flexShrink 0 guarantees no overlap) */}
           <div
             style={{
+              flexShrink: 0,
               display: "flex",
               alignItems: "center",
-              gap: "12px",
+              gap: "14px",
               marginLeft: "auto",
-              flexWrap: "wrap",
+              flexWrap: "nowrap",
             }}
           >
             {/* Search Input */}
@@ -394,24 +398,26 @@ export default function InventorySection() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 style={{
-                  padding: "0.55rem 1rem 0.55rem 2.2rem",
-                  backgroundColor: "rgba(255, 255, 255, 0.04)",
-                  border: "1px solid rgba(255, 255, 255, 0.12)",
+                  padding: "0.55rem 2rem 0.55rem 2.2rem",
+                  backgroundColor: "rgba(255, 255, 255, 0.05)",
+                  border: "1px solid rgba(255, 255, 255, 0.15)",
                   borderRadius: "20px",
                   color: "#ffffff",
                   fontSize: "0.75rem",
                   outline: "none",
-                  width: "160px",
+                  width: "170px",
                   transition: "all 0.25s ease",
                   fontFamily: "var(--font-montserrat), 'Montserrat', sans-serif",
                 }}
                 onFocus={(e) => {
                   e.target.style.width = "220px";
                   e.target.style.borderColor = "#dc2626";
+                  e.target.style.boxShadow = "0 0 12px rgba(220, 38, 38, 0.35)";
                 }}
                 onBlur={(e) => {
-                  if (!searchQuery) e.target.style.width = "160px";
-                  e.target.style.borderColor = "rgba(255, 255, 255, 0.12)";
+                  if (!searchQuery) e.target.style.width = "170px";
+                  e.target.style.borderColor = "rgba(255, 255, 255, 0.15)";
+                  e.target.style.boxShadow = "none";
                 }}
               />
               <span
@@ -425,6 +431,24 @@ export default function InventorySection() {
               >
                 🔍
               </span>
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery("")}
+                  style={{
+                    position: "absolute",
+                    right: "8px",
+                    background: "none",
+                    border: "none",
+                    color: "rgba(255, 255, 255, 0.6)",
+                    cursor: "pointer",
+                    fontSize: "0.75rem",
+                    padding: "2px 4px",
+                  }}
+                  title="Clear search"
+                >
+                  ✕
+                </button>
+              )}
             </div>
 
             {/* Sort Dropdown */}

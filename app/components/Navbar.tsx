@@ -100,9 +100,10 @@ export default function Navbar({ visible }: NavbarProps) {
       }
 
       const sections = [
-        { id: "inventory", label: "Inventory" },
-        { id: "collection", label: "Inventory" },
+        { id: "policies", label: "Policies" },
         { id: "about", label: "About" },
+        { id: "collection", label: "Inventory" },
+        { id: "inventory", label: "Inventory" },
       ];
 
       let found = false;
@@ -110,7 +111,7 @@ export default function Navbar({ visible }: NavbarProps) {
         const el = document.getElementById(s.id);
         if (el) {
           const rect = el.getBoundingClientRect();
-          if (rect.top <= 160 && rect.bottom > 100) {
+          if (rect.top <= 220 && rect.bottom > 100) {
             setActiveSection(s.label);
             found = true;
             break;
@@ -158,6 +159,23 @@ export default function Navbar({ visible }: NavbarProps) {
   ) => {
     soundFx.playMechanicalClick();
     setMenuOpen(false);
+
+    // Gate all tabs except "Home" behind authentication
+    if (!isAuthenticated && label !== "Home") {
+      e.preventDefault();
+      openAuthModal("login", () => {
+        setTimeout(() => {
+          if (href === "/refunds") {
+            window.location.href = "/refunds";
+          } else {
+            const targetId = label === "Policies" ? "policies" : label === "About" ? "about" : "collection";
+            const el = document.getElementById(targetId);
+            if (el) el.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 300);
+      });
+      return;
+    }
 
     if (href === "/refunds") {
       // Allow browser to navigate to /refunds
@@ -350,6 +368,19 @@ export default function Navbar({ visible }: NavbarProps) {
               }}
             >
               {item.label}
+              {!isAuthenticated && item.label !== "Home" && (
+                <span
+                  style={{
+                    fontSize: "0.6rem",
+                    marginLeft: "4px",
+                    color: "rgba(239, 68, 68, 0.8)",
+                    verticalAlign: "middle",
+                  }}
+                  title="Sign in required"
+                >
+                  🔒
+                </span>
+              )}
               {isActive && (
                 <span
                   style={{
@@ -752,6 +783,9 @@ export default function Navbar({ visible }: NavbarProps) {
               }}
             >
               {item.label}
+              {!isAuthenticated && item.label !== "Home" && (
+                <span style={{ fontSize: "0.75rem", marginLeft: "6px" }}>🔒</span>
+              )}
             </a>
           ))}
         </div>

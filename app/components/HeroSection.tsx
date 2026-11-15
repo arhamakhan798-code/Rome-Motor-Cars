@@ -342,55 +342,103 @@ export default function HeroSection({ started }: HeroSectionProps) {
         )}
       </div>
 
-      {/* ── Scroll Prompt ── */}
-      <div
-        style={{
-          position: "absolute",
-          bottom: "1.8rem",
-          left: "50%",
-          transform: "translateX(-50%)",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          gap: "8px",
-          zIndex: 3,
-          opacity: stage >= 4 ? 0.7 : 0,
-          transition: "opacity 1.2s ease 0.4s",
-          pointerEvents: "none",
-        }}
-      >
-        <span
-          style={{
-            fontFamily: "var(--font-montserrat), 'Montserrat', sans-serif",
-            fontSize: "0.58rem",
-            letterSpacing: "0.28em",
-            textTransform: "uppercase",
-            color: "rgba(255, 255, 255, 0.6)",
-          }}
-        >
-          Scroll
-        </span>
+      {/* ── Scroll Prompt (Only when authenticated; prompt sign in otherwise) ── */}
+      {isAuthenticated ? (
         <div
           style={{
-            width: "1px",
-            height: "28px",
-            overflow: "hidden",
-            position: "relative",
+            position: "absolute",
+            bottom: "1.8rem",
+            left: "50%",
+            transform: "translateX(-50%)",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "8px",
+            zIndex: 3,
+            opacity: stage >= 4 ? 0.7 : 0,
+            transition: "opacity 1.2s ease 0.4s",
+            pointerEvents: "none",
           }}
         >
+          <span
+            style={{
+              fontFamily: "var(--font-montserrat), 'Montserrat', sans-serif",
+              fontSize: "0.58rem",
+              letterSpacing: "0.28em",
+              textTransform: "uppercase",
+              color: "rgba(255, 255, 255, 0.6)",
+            }}
+          >
+            Scroll
+          </span>
           <div
             style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              background: "linear-gradient(180deg, #cc0000 0%, rgba(255,255,255,0.2) 100%)",
-              animation: "scrollPulse 2.2s ease-in-out infinite",
+              width: "1px",
+              height: "28px",
+              overflow: "hidden",
+              position: "relative",
             }}
-          />
+          >
+            <div
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                background: "linear-gradient(180deg, #cc0000 0%, rgba(255,255,255,0.2) 100%)",
+                animation: "scrollPulse 2.2s ease-in-out infinite",
+              }}
+            />
+          </div>
         </div>
-      </div>
+      ) : (
+        <button
+          onClick={() => openAuthModal("login")}
+          style={{
+            position: "absolute",
+            bottom: "1.8rem",
+            left: "50%",
+            transform: "translateX(-50%)",
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+            zIndex: 3,
+            opacity: stage >= 4 ? 1 : 0,
+            transition: "opacity 1.2s ease 0.4s, background-color 0.2s ease",
+            backgroundColor: "rgba(10, 11, 15, 0.85)",
+            backdropFilter: "blur(12px)",
+            border: "1px solid rgba(239, 68, 68, 0.5)",
+            boxShadow: "0 0 20px rgba(220, 38, 38, 0.3)",
+            padding: "8px 20px",
+            borderRadius: "20px",
+            cursor: "pointer",
+            color: "#ffffff",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = "rgba(220, 38, 38, 0.25)";
+            e.currentTarget.style.borderColor = "#ef4444";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = "rgba(10, 11, 15, 0.85)";
+            e.currentTarget.style.borderColor = "rgba(239, 68, 68, 0.5)";
+          }}
+        >
+          <span style={{ fontSize: "0.78rem" }}>🔒</span>
+          <span
+            style={{
+              fontFamily: "var(--font-montserrat), 'Montserrat', sans-serif",
+              fontSize: "0.62rem",
+              letterSpacing: "0.15em",
+              textTransform: "uppercase",
+              fontWeight: 600,
+              color: "rgba(255, 255, 255, 0.95)",
+            }}
+          >
+            Sign In to Unlock Full Fleet & Policies
+          </span>
+        </button>
+      )}
 
       {/* Subtle Bottom Accent Glow */}
       <div

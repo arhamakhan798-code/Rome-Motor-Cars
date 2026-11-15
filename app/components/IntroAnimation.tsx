@@ -10,13 +10,37 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
   // 'playing' = video active
   // 'fading'  = video smoothly cross-fading to reveal showroom underneath
   // 'done'    = overlay completely unmounted
-  const [phase, setPhase] = useState<"playing" | "fading" | "done">("playing");
+  const [phase, setPhase] = useState<"playing" | "fading" | "done">(() => {
+    if (typeof window !== "undefined") {
+      try {
+        if (sessionStorage.getItem("rmc_intro_seen") === "true") {
+          return "done";
+        }
+      } catch {
+        // storage disabled
+      }
+    }
+    return "playing";
+  });
   const videoRef = useRef<HTMLVideoElement>(null);
   const completedRef = useRef(false);
+
+  // If already seen in this session, trigger onComplete immediately on mount
+  useEffect(() => {
+    if (phase === "done") {
+      completedRef.current = true;
+      onComplete();
+    }
+  }, [phase, onComplete]);
 
   const triggerFadeOut = useCallback(() => {
     if (completedRef.current) return;
     completedRef.current = true;
+    try {
+      sessionStorage.setItem("rmc_intro_seen", "true");
+    } catch {
+      // storage disabled
+    }
     setPhase("fading");
     onComplete();
 
