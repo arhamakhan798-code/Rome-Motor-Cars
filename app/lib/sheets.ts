@@ -535,6 +535,7 @@ export interface RefundRecord {
   reason?: string;
   status: string; // 'Pending' | 'Confirmed' | 'Rejected'
   lastUpdated?: string;
+  clientId?: string;
 }
 
 /**
@@ -593,10 +594,11 @@ export async function ensureRefundsSheet(): Promise<void> {
         "Reason / Notes",
         "Status",
         "Last Updated",
+        "Client ID",
       ];
 
       await fetch(
-        `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${REFUNDS_SHEET_NAME}!A1:J1?valueInputOption=USER_ENTERED`,
+        `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${REFUNDS_SHEET_NAME}!A1:K1?valueInputOption=USER_ENTERED`,
         {
           method: "PUT",
           headers: {
@@ -628,10 +630,11 @@ export async function insertRefundRequest(record: RefundRecord): Promise<void> {
     record.reason || "General Acquisition Refund Request",
     record.status || "Pending",
     record.lastUpdated || record.timestamp,
+    record.clientId || "",
   ];
 
   const res = await fetch(
-    `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${REFUNDS_SHEET_NAME}!A:J:append?valueInputOption=USER_ENTERED`,
+    `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${REFUNDS_SHEET_NAME}!A:K:append?valueInputOption=USER_ENTERED`,
     {
       method: "POST",
       headers: {
@@ -645,6 +648,63 @@ export async function insertRefundRequest(record: RefundRecord): Promise<void> {
   if (!res.ok) {
     throw new Error(`Failed to append refund request: ${await res.text()}`);
   }
+}
+
+/**
+ * Get all refund requests for a given client ID or specific request IDs
+ */
+export async function getClientRefunds(
+  clientId: string,
+  requestIds: string[] = []
+): Promise<RefundRecord[]> {
+  await ensureRefundsSheet();
+  const token = await getAccessToken();
+
+  const res = await fetch(
+    `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${REFUNDS_SHEET_NAME}!A2:K300`,
+    {
+      headers: { Authorization: `Bearer ${token}` },
+      cache: "no-store",
+      signal: AbortSignal.timeout(10000),
+    }
+  );
+
+  if (!res.ok) return [];
+
+  const data = await res.json();
+  const rows: string[][] = data.values || [];
+  const cleanId = clientId ? clientId.trim().toLowerCase() : "";
+  const idSet = new Set(requestIds.map((id) => id.trim().toLowerCase()).filter(Boolean));
+  const refunds: RefundRecord[] = [];
+
+  rows.forEach((row) => {
+    if (!row || row.length < 5) return;
+    const reqId = (row[0] || "").trim();
+    const rowClientId = (row[10] || "").trim().toLowerCase();
+
+    const matchesClient = cleanId !== "" && rowClientId === cleanId;
+    const matchesReqId = reqId !== "" && idSet.has(reqId.toLowerCase());
+
+    if (matchesClient || matchesReqId) {
+      refunds.push({
+        requestId: reqId,
+        timestamp: row[1] || "",
+        buyerName: row[2] || "",
+        buyerNumber: row[3] || "",
+        secretNumber: row[4] || "",
+        city: row[5] || "",
+        address: row[6] || "",
+        reason: row[7] || "",
+        status: row[8] || "Pending",
+        lastUpdated: row[9] || "",
+        clientId: row[10] || "",
+      });
+    }
+  });
+
+  // Sort newest first
+  refunds.reverse();
+  return refunds;
 }
 
 /**

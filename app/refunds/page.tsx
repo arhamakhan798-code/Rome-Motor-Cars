@@ -1,14 +1,21 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { ATELIER_CITIES } from "../lib/cities";
+import { useAuth } from "../context/AuthContext";
+import NotificationsModal from "../components/NotificationsModal";
 
 export default function RefundRequestPage() {
+  const { user, isAuthenticated } = useAuth();
   const [activeTab, setActiveTab] = useState<"submit" | "status">("submit");
+  const [notificationsOpen, setNotificationsOpen] = useState(false);
+  const [notificationCount, setNotificationCount] = useState(0);
+  const [hasConfirmedNotification, setHasConfirmedNotification] = useState(false);
+  const [hasViewedNotifications, setHasViewedNotifications] = useState(false);
 
   // Submit Form State
-  const [buyerName, setBuyerName] = useState("");
+  const [buyerName, setBuyerName] = useState(user?.name || "");
   const [buyerNumber, setBuyerNumber] = useState("");
   const [secretNumber, setSecretNumber] = useState("");
   const [city, setCity] = useState("Dubai");
@@ -43,10 +50,88 @@ export default function RefundRequestPage() {
     message: string;
   } | null>(null);
 
+  // Poll notifications status (viewings + refunds)
+  useEffect(() => {
+    if (!isAuthenticated || !user?.clientId) {
+      setNotificationCount(0);
+      return;
+    }
+
+    const storageKey = `rmc_notif_seen_${user.clientId}`;
+
+    async function checkNotifications() {
+      try {
+        let viewingsCount = 0;
+        let viewingsConfirmed = false;
+        try {
+          const vRes = await fetch(`/api/viewings?clientId=${encodeURIComponent(user?.clientId || "")}`);
+          if (vRes.ok) {
+            const vData = await vRes.json();
+            const viewings = vData.viewings || [];
+            viewingsCount = viewings.length;
+            viewingsConfirmed = viewings.some((v: { status: string }) =>
+              v.status.toLowerCase().includes("confirm") || v.status.toLowerCase().includes("approv")
+            );
+          }
+        } catch {
+          // ignore
+        }
+
+        let refundsCount = 0;
+        let refundsConfirmed = false;
+        try {
+          const savedRefundIds =
+            typeof window !== "undefined"
+              ? localStorage.getItem(`rmc_refund_ids_${user?.clientId}`) || ""
+              : "";
+          const rRes = await fetch(
+            `/api/refunds?clientId=${encodeURIComponent(user?.clientId || "")}&requestIds=${encodeURIComponent(
+              savedRefundIds
+            )}`
+          );
+          if (rRes.ok) {
+            const rData = await rRes.json();
+            const refunds = rData.refunds || [];
+            refundsCount = refunds.length;
+            refundsConfirmed = refunds.some((r: { status: string }) => {
+              const st = (r.status || "").toLowerCase();
+              return st.includes("confirm") || st.includes("approv") || st.includes("accept");
+            });
+          }
+        } catch {
+          // ignore
+        }
+
+        const totalCount = viewingsCount + refundsCount;
+        setNotificationCount(totalCount);
+        setHasConfirmedNotification(viewingsConfirmed || refundsConfirmed);
+
+        const seenCount = parseInt(localStorage.getItem(storageKey) || "0", 10);
+        if (totalCount > seenCount) {
+          setHasViewedNotifications(false);
+        } else {
+          setHasViewedNotifications(true);
+        }
+      } catch {
+        // silent
+      }
+    }
+
+    checkNotifications();
+    const interval = setInterval(checkNotifications, 15000);
+    const handleUpdate = () => checkNotifications();
+    window.addEventListener("rmc_notifications_updated", handleUpdate);
+
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener("rmc_notifications_updated", handleUpdate);
+    };
+  }, [isAuthenticated, user?.clientId]);
+
   const handleSubmitRefund = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!buyerName.trim() || !buyerNumber.trim() || !secretNumber.trim() || !address.trim()) {
-      setSubmitError("Please fill in all required fields including physical deed credentials.");
+      setSubmitError("Please fill in all required fields.");
       return;
     }
 
@@ -58,12 +143,13 @@ export default function RefundRequestPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          buyerName,
-          buyerNumber,
-          secretNumber,
+          buyerName: buyerName.trim(),
+          buyerNumber: buyerNumber.trim(),
+          secretNumber: secretNumber.trim(),
           city,
-          address,
-          reason,
+          address: address.trim(),
+          reason: reason.trim(),
+          clientId: user?.clientId || "",
         }),
       });
 
@@ -76,6 +162,22 @@ export default function RefundRequestPage() {
           message: data.message,
           status: data.status,
         });
+
+        // Save to local storage for instant notification tracking
+        if (user?.clientId && data.requestId) {
+          const storageKey = `rmc_refund_ids_${user.clientId}`;
+          const existing = localStorage.getItem(storageKey);
+          const ids = existing ? existing.split(",") : [];
+          if (!ids.includes(data.requestId)) {
+            ids.push(data.requestId);
+            localStorage.setItem(storageKey, ids.join(","));
+          }
+        }
+
+        // Trigger immediate notification refresh across all listeners
+        if (typeof window !== "undefined") {
+          window.dispatchEvent(new Event("rmc_notifications_updated"));
+        }
       }
     } catch (err: unknown) {
       setSubmitError(err instanceof Error ? err.message : "Network error. Please try again.");
@@ -180,6 +282,62 @@ export default function RefundRequestPage() {
         </Link>
 
         <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+          {isAuthenticated && user && (
+            <button
+              onClick={() => {
+                setNotificationsOpen(true);
+                setHasViewedNotifications(true);
+                const storageKey = `rmc_notif_seen_${user.clientId}`;
+                localStorage.setItem(storageKey, String(notificationCount));
+              }}
+              aria-label="Concierge Notifications"
+              title="Concierge Notifications"
+              style={{
+                position: "relative",
+                background: "none",
+                border: "none",
+                color:
+                  (!hasViewedNotifications && notificationCount > 0) || hasConfirmedNotification
+                    ? "#22c55e"
+                    : "rgba(255, 255, 255, 0.85)",
+                fontSize: "1.15rem",
+                cursor: "pointer",
+                padding: "6px",
+                transition: "transform 0.2s",
+              }}
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLButtonElement).style.transform = "scale(1.15)";
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLButtonElement).style.transform = "scale(1)";
+              }}
+            >
+              🔔
+              {!hasViewedNotifications && notificationCount > 0 && (
+                <span
+                  style={{
+                    position: "absolute",
+                    top: "2px",
+                    right: "0px",
+                    backgroundColor: hasConfirmedNotification ? "#22c55e" : "#dc2626",
+                    color: "#ffffff",
+                    fontSize: "0.55rem",
+                    fontWeight: 700,
+                    width: "16px",
+                    height: "16px",
+                    borderRadius: "50%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    boxShadow: hasConfirmedNotification ? "0 0 10px #22c55e" : "0 0 8px #dc2626",
+                  }}
+                >
+                  {notificationCount}
+                </span>
+              )}
+            </button>
+          )}
+
           <Link
             href="/"
             style={{
@@ -910,6 +1068,11 @@ export default function RefundRequestPage() {
           </div>
         </div>
       </main>
+
+      <NotificationsModal
+        isOpen={notificationsOpen}
+        onClose={() => setNotificationsOpen(false)}
+      />
     </div>
   );
 }

@@ -36,7 +36,7 @@ export default function Navbar({ visible }: NavbarProps) {
   const { compareVehicles, openCompareModal } = useCompare();
   const [soundActive, setSoundActive] = useState(() => soundFx.isEnabled());
 
-  // Poll notifications status from Google Sheets
+  // Poll notifications status from Google Sheets (both viewings and refund requests)
   useEffect(() => {
     if (!isAuthenticated || !user?.clientId) {
       setNotificationCount(0);
@@ -49,25 +49,59 @@ export default function Navbar({ visible }: NavbarProps) {
 
     async function checkNotifications() {
       try {
-        const res = await fetch(`/api/viewings?clientId=${encodeURIComponent(user?.clientId || "")}`);
-        if (res.ok) {
-          const data = await res.json();
-          const viewings = data.viewings || [];
-          const count = viewings.length;
-          setNotificationCount(count);
-
-          const confirmed = viewings.some((v: { status: string }) =>
-            v.status.toLowerCase().includes("confirm") || v.status.toLowerCase().includes("approv")
-          );
-          setHasConfirmedNotification(confirmed);
-
-          // Show badge only if there are MORE viewings than when user last opened the panel
-          const seenCount = parseInt(localStorage.getItem(storageKey) || "0", 10);
-          if (count > seenCount) {
-            setHasViewedNotifications(false); // new - show badge
-          } else {
-            setHasViewedNotifications(true);  // already seen - hide badge
+        // 1. Check Viewing Requests
+        let viewingsCount = 0;
+        let viewingsConfirmed = false;
+        try {
+          const vRes = await fetch(`/api/viewings?clientId=${encodeURIComponent(user?.clientId || "")}`);
+          if (vRes.ok) {
+            const vData = await vRes.json();
+            const viewings = vData.viewings || [];
+            viewingsCount = viewings.length;
+            viewingsConfirmed = viewings.some((v: { status: string }) =>
+              v.status.toLowerCase().includes("confirm") || v.status.toLowerCase().includes("approv")
+            );
           }
+        } catch {
+          // ignore
+        }
+
+        // 2. Check Refund Requests
+        let refundsCount = 0;
+        let refundsConfirmed = false;
+        try {
+          const savedRefundIds =
+            typeof window !== "undefined"
+              ? localStorage.getItem(`rmc_refund_ids_${user?.clientId}`) || ""
+              : "";
+          const rRes = await fetch(
+            `/api/refunds?clientId=${encodeURIComponent(user?.clientId || "")}&requestIds=${encodeURIComponent(
+              savedRefundIds
+            )}`
+          );
+          if (rRes.ok) {
+            const rData = await rRes.json();
+            const refunds = rData.refunds || [];
+            refundsCount = refunds.length;
+            refundsConfirmed = refunds.some((r: { status: string }) => {
+              const st = (r.status || "").toLowerCase();
+              return st.includes("confirm") || st.includes("approv") || st.includes("accept");
+            });
+          }
+        } catch {
+          // ignore
+        }
+
+        const totalCount = viewingsCount + refundsCount;
+        setNotificationCount(totalCount);
+        setHasConfirmedNotification(viewingsConfirmed || refundsConfirmed);
+
+        // Show badge only if there are MORE items than when user last opened the panel
+        const seenCount = parseInt(localStorage.getItem(storageKey) || "0", 10);
+        if (totalCount > seenCount) {
+          setHasViewedNotifications(false); // new - show badge
+        } else {
+          setHasViewedNotifications(true); // already seen - hide badge
         }
       } catch (e) {
         // silent
@@ -76,7 +110,15 @@ export default function Navbar({ visible }: NavbarProps) {
 
     checkNotifications();
     const interval = setInterval(checkNotifications, 15000);
-    return () => clearInterval(interval);
+
+    // Listen for instant local updates when user books viewing or submits refund
+    const handleUpdate = () => checkNotifications();
+    window.addEventListener("rmc_notifications_updated", handleUpdate);
+
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener("rmc_notifications_updated", handleUpdate);
+    };
   }, [isAuthenticated, user?.clientId]);
 
   const isClickScrollingRef = useRef(false);

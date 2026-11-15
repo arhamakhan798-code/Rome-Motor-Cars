@@ -1351,6 +1351,7 @@ function InChatRefundCard({ messageId, user, onComplete }: InChatRefundCardProps
           city,
           address: address.trim(),
           reason: reason.trim(),
+          clientId: user?.clientId || "",
         }),
       });
 
@@ -1358,6 +1359,18 @@ function InChatRefundCard({ messageId, user, onComplete }: InChatRefundCardProps
       if (!res.ok) {
         setError(data.error || "Failed to transmit refund request.");
       } else {
+        if (user?.clientId && data.requestId) {
+          const storageKey = `rmc_refund_ids_${user.clientId}`;
+          const existing = localStorage.getItem(storageKey);
+          const ids = existing ? existing.split(",") : [];
+          if (!ids.includes(data.requestId)) {
+            ids.push(data.requestId);
+            localStorage.setItem(storageKey, ids.join(","));
+          }
+        }
+        if (typeof window !== "undefined") {
+          window.dispatchEvent(new Event("rmc_notifications_updated"));
+        }
         onComplete(messageId, data);
       }
     } catch (err: unknown) {

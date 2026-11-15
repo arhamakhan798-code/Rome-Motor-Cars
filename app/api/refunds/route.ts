@@ -1,12 +1,17 @@
 import { NextResponse } from "next/server";
-import { insertRefundRequest, getRefundRequestStatus, RefundRecord } from "@/app/lib/sheets";
+import {
+  insertRefundRequest,
+  getRefundRequestStatus,
+  getClientRefunds,
+  RefundRecord,
+} from "@/app/lib/sheets";
 
 export const dynamic = "force-dynamic";
 
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { buyerName, buyerNumber, secretNumber, city, address, reason } = body;
+    const { buyerName, buyerNumber, secretNumber, city, address, reason, clientId } = body;
 
     if (!buyerName || !buyerNumber || !secretNumber || !city || !address) {
       return NextResponse.json(
@@ -34,6 +39,7 @@ export async function POST(req: Request) {
       reason: reason ? reason.trim() : "Acquisition Rescission / Condition Audit",
       status: "Pending",
       lastUpdated: formattedTimestamp,
+      clientId: clientId ? String(clientId).trim() : "",
     };
 
     await insertRefundRequest(record);
@@ -58,6 +64,21 @@ export async function POST(req: Request) {
 export async function GET(req: Request) {
   try {
     const { searchParams } = new URL(req.url);
+    const clientId = searchParams.get("clientId");
+    const requestIdsParam = searchParams.get("requestIds");
+
+    // Client Notifications query
+    if (clientId || requestIdsParam) {
+      const ids = requestIdsParam
+        ? requestIdsParam.split(",").map((s) => s.trim()).filter(Boolean)
+        : [];
+      const refunds = await getClientRefunds(clientId || "", ids);
+      return NextResponse.json({
+        success: true,
+        refunds,
+      });
+    }
+
     const buyerNumber = searchParams.get("buyerNumber");
     const secretNumber = searchParams.get("secretNumber");
 
