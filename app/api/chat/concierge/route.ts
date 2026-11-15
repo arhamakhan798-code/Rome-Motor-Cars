@@ -115,6 +115,8 @@ CRITICAL INSTRUCTIONS:
 
     if (geminiApiKey) {
       const geminiModels = [
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent",
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent",
         "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
       ];
 
@@ -190,14 +192,14 @@ CRITICAL INSTRUCTIONS:
       } else if (/speed|fast|acceleration|0-60|engine|horsepower|hp|specs/i.test(qLower)) {
         reply = `Engineering specifications for the **${topCar.year} ${topCar.make} ${topCar.model}**:\n\n• Powerplant: ${topCar.engine || "High-Output Atelier Engine"}\n• Output: ${topCar.horsepower || "Apex Output"}\n• 0-60 mph: ${topCar.acceleration || "Sub-4.0s"}\n• Top Speed: ${topCar.topSpeed || "190+ mph"}\n• Valuation: ${topCar.price}\n\nPreserved in our climate-stabilized subterranean vault.`;
       } else if (/v12/i.test(qLower)) {
-        reply = `Our vault houses several premier twelve-cylinder and apex flagship specimens:\n\n` +
+        reply = `Our atelier vault houses premier twelve-cylinder and apex flagship specimens:\n\n` +
           matchingCars
             .map(
               (c) =>
-                `• **${c.year} ${c.make} ${c.model}** (${c.category})\n  Valuation: ${c.price} | Output: ${c.horsepower || "Apex Output"} | 0-60: ${c.acceleration || "Sub-4.0s"}`
+                `• **${c.year} ${c.make} ${c.model}** (${c.category})\n  Powerplant: ${c.engine || "6.0L+ V12"} | Output: ${c.horsepower || "Apex Output"} | Valuation: ${c.price}`
             )
             .join("\n\n") +
-          `\n\nEach vehicle is preserved in our climate-stabilized subterranean vault and available for private inspection with a minimum 2-day advance reservation.`;
+          `\n\nEach twelve-cylinder specimen is preserved in our climate-stabilized subterranean vault and available for private inspection with a minimum 2-day advance preparation buffer.`;
       } else {
         const intros = [
           `From our live reserve, here are curated models aligned with your inquiry:`,
@@ -216,6 +218,8 @@ CRITICAL INSTRUCTIONS:
             .join("\n\n") +
           `\n\nEach vehicle is safeguarded in our climate-stabilized vault and available for private inspection with a minimum 2-day advance reservation.`;
       }
+    } else if (isCarInquiry) {
+      reply = `Our live vault registry encompasses 205 curated supercars, grand tourers, and bespoke flagships (including Pagani, Ferrari, Rolls-Royce, Aston Martin, and Lamborghini).\n\nCould you specify your preferred manufacturer, powertrain (e.g. V12 or twin-turbo V8), or body style? I will immediately present exact matching allocations from our subterranean sanctum.`;
     } else {
       reply = `Welcome to Rome Motor Cars, ${clientName || "distinguished patron"}. I am connected live to our 205-vehicle vault registry and official Corporate Governance Handbook.\n\nHow may I assist you today? You may inquire about our live inventory (e.g. "What V12 cars do you have?"), performance specifications, private viewing reservations, or our delivery and acquisition policies.`;
     }
