@@ -15,6 +15,7 @@ export interface ViewingItem {
   requestedDate: string;
   specialNotes: string;
   status: string;
+  city?: string;
 }
 
 interface NotificationsModalProps {
@@ -262,7 +263,7 @@ export default function NotificationsModal({ isOpen, onClose }: NotificationsMod
 
                   {/* Date & Location */}
                   <div style={{ fontSize: "0.78rem", color: "rgba(255, 255, 255, 0.75)", marginBottom: "8px" }}>
-                    📅 <strong>Scheduled Date:</strong> {v.requestedDate} &nbsp;·&nbsp; 📍 Rome Motor Cars Lounge
+                    📅 <strong>Scheduled Date:</strong> {v.requestedDate} &nbsp;·&nbsp; 📍 {v.city ? `${v.city} Atelier Lounge` : "Rome Motor Cars Lounge"}
                   </div>
 
                   {/* Notification Status Message */}

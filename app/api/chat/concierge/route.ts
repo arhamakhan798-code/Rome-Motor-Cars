@@ -146,6 +146,8 @@ CRITICAL INSTRUCTIONS:
                 reply: candidate,
                 source: "gemini",
                 model: baseEndpoint.split("/models/")[1]?.split(":")[0] ?? "gemini",
+                isBookingIntent,
+                suggestedVehicle: matchingCars[0] || null,
                 retrievedCarsCount: matchingCars.length,
                 retrievedPoliciesCount: relevantPolicies.length,
               });
@@ -216,6 +218,8 @@ CRITICAL INSTRUCTIONS:
     return NextResponse.json({
       reply,
       source: "gemini",
+      isBookingIntent,
+      suggestedVehicle: matchingCars[0] || null,
       retrievedCarsCount: matchingCars.length,
       retrievedPoliciesCount: relevantPolicies.length,
     });

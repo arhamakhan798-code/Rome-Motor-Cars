@@ -2,13 +2,35 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
+import { ATELIER_CITIES } from "../lib/cities";
 
 export interface Message {
   id: string;
   sender: "concierge" | "client";
   text: string;
   time: string;
+  isBookingCard?: boolean;
+  suggestedVehicle?: {
+    id?: string;
+    make?: string;
+    model?: string;
+    year?: number;
+  } | null;
+  createdViewing?: {
+    tokenNumber: string;
+    timestamp: string;
+    vehicleName: string;
+    requestedDate: string;
+    city: string;
+    status: string;
+  };
 }
+
+const getMinViewingDate = () => {
+  const d = new Date();
+  d.setDate(d.getDate() + 3);
+  return d.toISOString().split("T")[0];
+};
 
 export interface ChatSession {
   id: string;
@@ -188,6 +210,8 @@ export default function ChatConcierge() {
         sender: "concierge",
         text: replyText,
         time: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
+        isBookingCard: !!data.isBookingIntent,
+        suggestedVehicle: data.suggestedVehicle || null,
       };
 
       setSessions((prev) =>
@@ -217,10 +241,39 @@ export default function ChatConcierge() {
 
   const quickPrompts = [
     "What V12 cars do you have?",
+    "Book Private Viewing",
     "Tell me the return policy",
     "Private viewing booking rules?",
     "How are cars shipped?",
   ];
+
+  const handleCompleteBooking = (messageId: string, viewing: any) => {
+    setSessions((prev) =>
+      prev.map((s) => {
+        if (s.id !== activeSessionId) return s;
+        return {
+          ...s,
+          messages: s.messages.map((m) => {
+            if (m.id === messageId) {
+              return {
+                ...m,
+                isBookingCard: false,
+                createdViewing: {
+                  tokenNumber: viewing.tokenNumber,
+                  timestamp: viewing.timestamp,
+                  vehicleName: viewing.vehicleName,
+                  requestedDate: viewing.requestedDate,
+                  city: viewing.city || "Dubai",
+                  status: viewing.status || "In Process",
+                },
+              };
+            }
+            return m;
+          }),
+        };
+      })
+    );
+  };
 
   /**
    * Renders a concierge message with luxury formatting:
@@ -626,6 +679,21 @@ export default function ChatConcierge() {
                         }}
                       >
                         {isUser ? msg.text : renderConciergeMessage(msg.text)}
+
+                        {/* Interactive In-Chat Booking Form */}
+                        {!isUser && msg.isBookingCard && (
+                          <InChatBookingCard
+                            messageId={msg.id}
+                            suggestedVehicle={msg.suggestedVehicle}
+                            user={user}
+                            onComplete={handleCompleteBooking}
+                          />
+                        )}
+
+                        {/* Confirmed Viewing Notification Card */}
+                        {!isUser && msg.createdViewing && (
+                          <InChatViewingReceipt viewing={msg.createdViewing} />
+                        )}
                       </div>
                       <span
                         style={{
@@ -816,5 +884,375 @@ export default function ChatConcierge() {
         )}
       </button>
     </>
+  );
+}
+
+interface InChatBookingCardProps {
+  messageId: string;
+  suggestedVehicle?: { id?: string; make?: string; model?: string; year?: number } | null;
+  user: any;
+  onComplete: (messageId: string, viewing: any) => void;
+}
+
+function InChatBookingCard({
+  messageId,
+  suggestedVehicle,
+  user,
+  onComplete,
+}: InChatBookingCardProps) {
+  const [vehicleName, setVehicleName] = useState(
+    suggestedVehicle
+      ? `${suggestedVehicle.year || 2026} ${suggestedVehicle.make || ""} ${suggestedVehicle.model || ""}`.trim()
+      : "Ferrari Roma Spider"
+  );
+  const [city, setCity] = useState("Dubai");
+  const [date, setDate] = useState(() => getMinViewingDate());
+  const [clientName, setClientName] = useState(user?.username || "");
+  const [email, setEmail] = useState(user?.email || "");
+  const [notes, setNotes] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!vehicleName.trim()) {
+      setError("Please specify a vehicle of interest.");
+      return;
+    }
+    const minD = getMinViewingDate();
+    if (!date || date < minD) {
+      setError(`Viewing sessions require at least 2 full buffer days. Earliest date: ${minD}`);
+      return;
+    }
+
+    setIsSubmitting(true);
+    setError(null);
+
+    try {
+      const res = await fetch("/api/viewings", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          clientId: user?.clientId || `VIP-${Date.now().toString().slice(-4)}`,
+          username: clientName.trim() || user?.username || "VIP Patron",
+          email: email.trim() || user?.email || "concierge@client.vip",
+          vehicleId: suggestedVehicle?.id || "rmc-selection",
+          vehicleName: vehicleName.trim(),
+          vehicleYear: suggestedVehicle?.year || 2026,
+          requestedDate: date,
+          city: city,
+          specialNotes: notes,
+        }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) {
+        setError(data.error || "Failed to transmit booking request.");
+      } else {
+        onComplete(messageId, data.viewing);
+      }
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : "Network error. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  return (
+    <form
+      onSubmit={handleSubmit}
+      style={{
+        marginTop: "12px",
+        padding: "12px 14px",
+        borderRadius: "10px",
+        backgroundColor: "rgba(8, 9, 12, 0.96)",
+        border: "1px solid rgba(220, 38, 38, 0.4)",
+        boxShadow: "0 6px 24px rgba(0, 0, 0, 0.7)",
+      }}
+    >
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "8px" }}>
+        <span style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.15em", color: "#ef4444", textTransform: "uppercase" }}>
+          Private Viewing Reservation
+        </span>
+        <span style={{ fontSize: "0.62rem", color: "rgba(255, 255, 255, 0.5)" }}>
+          2-Day Bay Buffer
+        </span>
+      </div>
+
+      {error && (
+        <div style={{ padding: "6px 8px", backgroundColor: "rgba(239, 68, 68, 0.15)", border: "1px solid #ef4444", borderRadius: "4px", color: "#fca5a5", fontSize: "0.72rem", marginBottom: "8px" }}>
+          {error}
+        </div>
+      )}
+
+      <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+        <div>
+          <label style={{ fontSize: "0.68rem", color: "rgba(255, 255, 255, 0.65)", display: "block", marginBottom: "2px" }}>
+            Vehicle of Interest
+          </label>
+          <input
+            type="text"
+            required
+            value={vehicleName}
+            onChange={(e) => setVehicleName(e.target.value)}
+            placeholder="e.g. Rolls-Royce Ghost or Ferrari Purosangue"
+            style={{
+              width: "100%",
+              padding: "6px 10px",
+              backgroundColor: "rgba(255, 255, 255, 0.06)",
+              border: "1px solid rgba(255, 255, 255, 0.18)",
+              borderRadius: "4px",
+              color: "#ffffff",
+              fontSize: "0.78rem",
+              boxSizing: "border-box",
+            }}
+          />
+        </div>
+
+        <div>
+          <label style={{ fontSize: "0.68rem", color: "rgba(255, 255, 255, 0.75)", display: "block", marginBottom: "2px" }}>
+            Atelier City (Select from 20 Sovereign Hubs)
+          </label>
+          <select
+            value={city}
+            onChange={(e) => setCity(e.target.value)}
+            style={{
+              width: "100%",
+              padding: "6px 10px",
+              backgroundColor: "#12141a",
+              border: "1px solid rgba(220, 38, 38, 0.4)",
+              borderRadius: "4px",
+              color: "#ffffff",
+              fontSize: "0.78rem",
+              boxSizing: "border-box",
+              outline: "none",
+            }}
+          >
+            {ATELIER_CITIES.map((c) => (
+              <option key={c} value={c} style={{ backgroundColor: "#12141a", color: "#ffffff" }}>
+                {c}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "2px" }}>
+            <label style={{ fontSize: "0.68rem", color: "rgba(255, 255, 255, 0.65)" }}>Preferred Viewing Date</label>
+            <span style={{ fontSize: "0.62rem", color: "#ef4444" }}>Min 2-day notice</span>
+          </div>
+          <input
+            type="date"
+            required
+            min={getMinViewingDate()}
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+            style={{
+              width: "100%",
+              padding: "6px 10px",
+              backgroundColor: "rgba(255, 255, 255, 0.06)",
+              border: "1px solid rgba(255, 255, 255, 0.18)",
+              borderRadius: "4px",
+              color: "#ffffff",
+              fontSize: "0.78rem",
+              boxSizing: "border-box",
+              colorScheme: "dark",
+            }}
+          />
+        </div>
+
+        {!user && (
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "6px" }}>
+            <div>
+              <label style={{ fontSize: "0.68rem", color: "rgba(255, 255, 255, 0.65)", display: "block", marginBottom: "2px" }}>Your Name</label>
+              <input
+                type="text"
+                required
+                placeholder="e.g. Julian Ross"
+                value={clientName}
+                onChange={(e) => setClientName(e.target.value)}
+                style={{
+                  width: "100%",
+                  padding: "6px 10px",
+                  backgroundColor: "rgba(255, 255, 255, 0.06)",
+                  border: "1px solid rgba(255, 255, 255, 0.18)",
+                  borderRadius: "4px",
+                  color: "#ffffff",
+                  fontSize: "0.78rem",
+                  boxSizing: "border-box",
+                }}
+              />
+            </div>
+            <div>
+              <label style={{ fontSize: "0.68rem", color: "rgba(255, 255, 255, 0.65)", display: "block", marginBottom: "2px" }}>Email / Phone</label>
+              <input
+                type="text"
+                required
+                placeholder="client@vault.vip"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                style={{
+                  width: "100%",
+                  padding: "6px 10px",
+                  backgroundColor: "rgba(255, 255, 255, 0.06)",
+                  border: "1px solid rgba(255, 255, 255, 0.18)",
+                  borderRadius: "4px",
+                  color: "#ffffff",
+                  fontSize: "0.78rem",
+                  boxSizing: "border-box",
+                }}
+              />
+            </div>
+          </div>
+        )}
+
+        <div>
+          <label style={{ fontSize: "0.68rem", color: "rgba(255, 255, 255, 0.65)", display: "block", marginBottom: "2px" }}>
+            Special Instructions (Optional)
+          </label>
+          <input
+            type="text"
+            placeholder="e.g. Technical curator consultation..."
+            value={notes}
+            onChange={(e) => setNotes(e.target.value)}
+            style={{
+              width: "100%",
+              padding: "6px 10px",
+              backgroundColor: "rgba(255, 255, 255, 0.06)",
+              border: "1px solid rgba(255, 255, 255, 0.18)",
+              borderRadius: "4px",
+              color: "#ffffff",
+              fontSize: "0.78rem",
+              boxSizing: "border-box",
+            }}
+          />
+        </div>
+
+        <button
+          type="submit"
+          disabled={isSubmitting}
+          style={{
+            marginTop: "4px",
+            width: "100%",
+            padding: "8px",
+            backgroundColor: isSubmitting ? "#7f1d1d" : "#dc2626",
+            border: "none",
+            borderRadius: "4px",
+            color: "#ffffff",
+            fontSize: "0.72rem",
+            fontWeight: 700,
+            letterSpacing: "0.14em",
+            textTransform: "uppercase",
+            cursor: isSubmitting ? "not-allowed" : "pointer",
+            boxShadow: "0 0 12px rgba(220, 38, 38, 0.4)",
+          }}
+        >
+          {isSubmitting ? "Saving to Registry..." : "Confirm Private Viewing"}
+        </button>
+      </div>
+    </form>
+  );
+}
+
+function InChatViewingReceipt({ viewing }: { viewing: NonNullable<Message["createdViewing"]> }) {
+  return (
+    <div
+      style={{
+        marginTop: "12px",
+        padding: "14px",
+        backgroundColor: "rgba(10, 11, 15, 0.96)",
+        border: "1px solid rgba(220, 38, 38, 0.45)",
+        borderRadius: "10px",
+        boxShadow: "0 6px 24px rgba(0, 0, 0, 0.75)",
+        display: "flex",
+        flexDirection: "column",
+        gap: "10px",
+      }}
+    >
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <span style={{ fontSize: "0.68rem", letterSpacing: "0.18em", color: "#ef4444", textTransform: "uppercase", fontWeight: 700 }}>
+          ✓ PRIVATE VIEWING RECORDED
+        </span>
+        <span
+          style={{
+            fontFamily: "var(--font-montserrat), 'Montserrat', sans-serif",
+            fontSize: "0.75rem",
+            fontWeight: 700,
+            color: "#ef4444",
+            letterSpacing: "0.1em",
+            backgroundColor: "rgba(239, 68, 68, 0.15)",
+            padding: "2px 8px",
+            borderRadius: "4px",
+            border: "1px solid rgba(239, 68, 68, 0.3)",
+          }}
+        >
+          {viewing.tokenNumber}
+        </span>
+      </div>
+
+      <div style={{ fontSize: "0.95rem", fontWeight: 600, color: "#ffffff", fontFamily: "var(--font-cinzel), 'Cinzel', serif" }}>
+        {viewing.vehicleName}
+      </div>
+
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "6px",
+          padding: "8px 10px",
+          backgroundColor: "rgba(255, 255, 255, 0.03)",
+          borderRadius: "6px",
+          border: "1px solid rgba(255, 255, 255, 0.06)",
+        }}
+      >
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <span style={{ fontSize: "0.7rem", color: "rgba(255, 255, 255, 0.5)" }}>Requested Date:</span>
+          <span style={{ fontSize: "0.75rem", color: "#ffffff", fontWeight: 600 }}>{viewing.requestedDate}</span>
+        </div>
+
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <span style={{ fontSize: "0.7rem", color: "rgba(255, 255, 255, 0.5)" }}>Selected Atelier City:</span>
+          <span style={{ fontSize: "0.75rem", color: "#ef4444", fontWeight: 600 }}>{viewing.city}</span>
+        </div>
+
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <span style={{ fontSize: "0.7rem", color: "rgba(255, 255, 255, 0.5)" }}>Submission Time:</span>
+          <span style={{ fontSize: "0.72rem", color: "rgba(255, 255, 255, 0.7)" }}>{viewing.timestamp}</span>
+        </div>
+
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <span style={{ fontSize: "0.7rem", color: "rgba(255, 255, 255, 0.5)" }}>Current Status:</span>
+          <span
+            style={{
+              fontSize: "0.68rem",
+              fontWeight: 700,
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
+              color: "#facc15",
+              backgroundColor: "rgba(234, 179, 8, 0.15)",
+              padding: "2px 8px",
+              borderRadius: "12px",
+              border: "1px solid rgba(234, 179, 8, 0.4)",
+            }}
+          >
+            🟡 IN PROCESS
+          </span>
+        </div>
+      </div>
+
+      <div
+        style={{
+          fontSize: "0.72rem",
+          color: "rgba(255, 255, 255, 0.65)",
+          lineHeight: 1.5,
+          backgroundColor: "rgba(234, 179, 8, 0.08)",
+          border: "1px solid rgba(234, 179, 8, 0.25)",
+          borderRadius: "6px",
+          padding: "8px 10px",
+        }}
+      >
+        🔔 <strong>Concierge Tracking:</strong> When our team confirms your allocation from the showroom registry, your status will update to 🟢 <strong>CONFIRMED</strong>. You can monitor your live status anytime via the notification bell (🔔) in the top navigation bar.
+      </div>
+    </div>
   );
 }

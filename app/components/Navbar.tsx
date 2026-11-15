@@ -12,9 +12,11 @@ interface NavbarProps {
 }
 
 const NAV_ITEMS = [
-  { label: "Home", href: "#home" },
-  { label: "Inventory", href: "#inventory" },
-  { label: "About", href: "#about" },
+  { label: "Home", href: "/#home" },
+  { label: "Inventory", href: "/#inventory" },
+  { label: "About", href: "/#about" },
+  { label: "Policies", href: "/#policies" },
+  { label: "Refund Request", href: "/refunds" },
 ];
 
 export default function Navbar({ visible }: NavbarProps) {
@@ -154,10 +156,21 @@ export default function Navbar({ visible }: NavbarProps) {
     href: string,
     e: React.MouseEvent<HTMLAnchorElement>
   ) => {
+    soundFx.playMechanicalClick();
+    setMenuOpen(false);
+
+    if (href === "/refunds") {
+      // Allow browser to navigate to /refunds
+      return;
+    }
+
+    if (typeof window !== "undefined" && window.location.pathname !== "/") {
+      // If we are on /refunds, allow default link navigation to home anchors
+      return;
+    }
+
     e.preventDefault();
     setActiveSection(label);
-    setMenuOpen(false);
-    soundFx.playMechanicalClick();
 
     isClickScrollingRef.current = true;
     setTimeout(() => {
@@ -167,7 +180,7 @@ export default function Navbar({ visible }: NavbarProps) {
     if (label === "Home") {
       window.scrollTo({ top: 0, behavior: "smooth" });
       if (typeof window !== "undefined") {
-        window.history.replaceState(null, "", window.location.pathname);
+        window.history.replaceState(null, "", "/");
       }
       return;
     }
@@ -193,6 +206,19 @@ export default function Navbar({ visible }: NavbarProps) {
         window.scrollTo({ top: targetTop, behavior: "smooth" });
         if (typeof window !== "undefined") {
           window.history.replaceState(null, "", "#about");
+        }
+      }
+      return;
+    }
+
+    if (label === "Policies") {
+      const el = document.getElementById("policies") || document.getElementById("about");
+      if (el) {
+        const scrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+        const targetTop = el.getBoundingClientRect().top + scrollY - 75;
+        window.scrollTo({ top: targetTop, behavior: "smooth" });
+        if (typeof window !== "undefined") {
+          window.history.replaceState(null, "", "#policies");
         }
       }
       return;

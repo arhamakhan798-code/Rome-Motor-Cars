@@ -351,6 +351,7 @@ export interface ViewingRecord {
   specialNotes: string;
   status: string; // 'In Process' | 'Confirmed' | 'Completed' | 'Cancelled'
   lastUpdated?: string;
+  city?: string;
 }
 
 /**
@@ -411,10 +412,11 @@ export async function ensureViewingsSheet(): Promise<void> {
         "Special Notes",
         "Status",
         "Last Updated",
+        "City",
       ];
 
       await fetch(
-        `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${VIEWINGS_SHEET_NAME}!A1:L1?valueInputOption=USER_ENTERED`,
+        `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${VIEWINGS_SHEET_NAME}!A1:M1?valueInputOption=USER_ENTERED`,
         {
           method: "PUT",
           headers: {
@@ -448,10 +450,11 @@ export async function insertViewingRecord(record: ViewingRecord): Promise<void> 
     record.specialNotes,
     record.status || "In Process",
     record.lastUpdated || record.timestamp,
+    record.city || "Dubai",
   ];
 
   const res = await fetch(
-    `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${VIEWINGS_SHEET_NAME}!A:L:append?valueInputOption=USER_ENTERED`,
+    `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${VIEWINGS_SHEET_NAME}!A:M:append?valueInputOption=USER_ENTERED`,
     {
       method: "POST",
       headers: {
@@ -475,7 +478,7 @@ export async function getClientViewings(clientId: string): Promise<ViewingRecord
   const token = await getAccessToken();
 
   const res = await fetch(
-    `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${VIEWINGS_SHEET_NAME}!A2:L200`,
+    `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${VIEWINGS_SHEET_NAME}!A2:M200`,
     {
       headers: { Authorization: `Bearer ${token}` },
       cache: "no-store",
@@ -508,6 +511,7 @@ export async function getClientViewings(clientId: string): Promise<ViewingRecord
         specialNotes: row[9] || "",
         status: row[10] || "In Process",
         lastUpdated: row[11] || "",
+        city: row[12] || "",
       });
     }
   });
@@ -515,6 +519,185 @@ export async function getClientViewings(clientId: string): Promise<ViewingRecord
   // Sort newest first
   viewings.reverse();
   return viewings;
+}
+
+// ── Refund Requests Management ──────────────────────────────
+export const REFUNDS_SHEET_NAME = "Refund Requests";
+
+export interface RefundRecord {
+  requestId: string;
+  timestamp: string;
+  buyerName: string;
+  buyerNumber: string;
+  secretNumber: string;
+  city: string;
+  address: string;
+  reason?: string;
+  status: string; // 'Pending' | 'Confirmed' | 'Rejected'
+  lastUpdated?: string;
+}
+
+/**
+ * Ensures 'Refund Requests' tab exists in Google Sheets
+ */
+export async function ensureRefundsSheet(): Promise<void> {
+  const token = await getAccessToken();
+
+  const metaRes = await fetch(
+    `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}?fields=sheets.properties`,
+    {
+      headers: { Authorization: `Bearer ${token}` },
+      signal: AbortSignal.timeout(10000),
+    }
+  );
+
+  if (!metaRes.ok) return;
+
+  const meta = await metaRes.json();
+  const existingSheets: string[] =
+    meta.sheets?.map((s: { properties: { title: string } }) => s.properties.title) || [];
+
+  if (!existingSheets.includes(REFUNDS_SHEET_NAME)) {
+    const addRes = await fetch(
+      `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}:batchUpdate`,
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          requests: [
+            {
+              addSheet: {
+                properties: {
+                  title: REFUNDS_SHEET_NAME,
+                  gridProperties: { rowCount: 1000, columnCount: 12 },
+                },
+              },
+            },
+          ],
+        }),
+      }
+    );
+
+    if (addRes.ok) {
+      const headers = [
+        "Request ID",
+        "Timestamp",
+        "Buyer Name",
+        "Buyer Number",
+        "Secret Number",
+        "City",
+        "Physical Address",
+        "Reason / Notes",
+        "Status",
+        "Last Updated",
+      ];
+
+      await fetch(
+        `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${REFUNDS_SHEET_NAME}!A1:J1?valueInputOption=USER_ENTERED`,
+        {
+          method: "PUT",
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ values: [headers] }),
+        }
+      );
+    }
+  }
+}
+
+/**
+ * Append a new refund request row to Google Sheets
+ */
+export async function insertRefundRequest(record: RefundRecord): Promise<void> {
+  await ensureRefundsSheet();
+  const token = await getAccessToken();
+
+  const rowData = [
+    record.requestId,
+    record.timestamp,
+    record.buyerName,
+    record.buyerNumber,
+    record.secretNumber,
+    record.city,
+    record.address,
+    record.reason || "General Acquisition Refund Request",
+    record.status || "Pending",
+    record.lastUpdated || record.timestamp,
+  ];
+
+  const res = await fetch(
+    `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${REFUNDS_SHEET_NAME}!A:J:append?valueInputOption=USER_ENTERED`,
+    {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ values: [rowData] }),
+    }
+  );
+
+  if (!res.ok) {
+    throw new Error(`Failed to append refund request: ${await res.text()}`);
+  }
+}
+
+/**
+ * Look up refund request status by buyerNumber and secretNumber
+ */
+export async function getRefundRequestStatus(
+  buyerNumber: string,
+  secretNumber: string
+): Promise<RefundRecord | null> {
+  await ensureRefundsSheet();
+  const token = await getAccessToken();
+
+  const res = await fetch(
+    `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${REFUNDS_SHEET_NAME}!A2:J300`,
+    {
+      headers: { Authorization: `Bearer ${token}` },
+      cache: "no-store",
+      signal: AbortSignal.timeout(10000),
+    }
+  );
+
+  if (!res.ok) return null;
+
+  const data = await res.json();
+  const rows: string[][] = data.values || [];
+
+  const cleanBuyer = buyerNumber.trim().toLowerCase();
+  const cleanSecret = secretNumber.trim().toLowerCase();
+
+  // Search newest first
+  for (let i = rows.length - 1; i >= 0; i--) {
+    const row = rows[i];
+    if (!row || row.length < 5) continue;
+    const rBuyer = (row[3] || "").trim().toLowerCase();
+    const rSecret = (row[4] || "").trim().toLowerCase();
+
+    if (rBuyer === cleanBuyer && rSecret === cleanSecret) {
+      return {
+        requestId: row[0] || "",
+        timestamp: row[1] || "",
+        buyerName: row[2] || "",
+        buyerNumber: row[3] || "",
+        secretNumber: row[4] || "",
+        city: row[5] || "",
+        address: row[6] || "",
+        reason: row[7] || "",
+        status: row[8] || "Pending",
+        lastUpdated: row[9] || "",
+      };
+    }
+  }
+
+  return null;
 }
 
 

@@ -15,6 +15,7 @@ export async function POST(req: Request) {
       vehicleYear,
       requestedDate,
       specialNotes,
+      city,
     } = body;
 
     if (!clientId || !vehicleId || !requestedDate) {
@@ -46,6 +47,7 @@ export async function POST(req: Request) {
       specialNotes: specialNotes || "",
       status: "In Process",
       lastUpdated: formattedTimestamp,
+      city: city || "Dubai",
     };
 
     await insertViewingRecord(record);

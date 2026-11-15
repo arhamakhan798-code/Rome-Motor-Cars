@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Vehicle } from "../lib/types";
 import { useAuth } from "../context/AuthContext";
 import { useWishlist } from "../context/WishlistContext";
+import { ATELIER_CITIES } from "../lib/cities";
 
 interface VehicleDetailPageProps {
   vehicle: Vehicle;
@@ -34,6 +35,7 @@ export default function VehicleDetailPage({ vehicle, onBack }: VehicleDetailPage
   const [bookingError, setBookingError] = useState<string | null>(null);
   const [bookingDate, setBookingDate] = useState(() => getMinViewingDate());
   const [bookingTime, setBookingTime] = useState("14:00");
+  const [bookingCity, setBookingCity] = useState<string>("Dubai");
   const [bookingNotes, setBookingNotes] = useState("");
   const [showBookingModal, setShowBookingModal] = useState(false);
   const [fullscreenImage, setFullscreenImage] = useState<string | null>(null);
@@ -127,6 +129,7 @@ export default function VehicleDetailPage({ vehicle, onBack }: VehicleDetailPage
           vehicleYear: vehicle.year,
           requestedDate: bookingDate,
           specialNotes: bookingNotes,
+          city: bookingCity,
         }),
       });
 
@@ -1121,6 +1124,11 @@ export default function VehicleDetailPage({ vehicle, onBack }: VehicleDetailPage
                   </div>
 
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <span style={{ fontSize: "0.72rem", color: "rgba(255, 255, 255, 0.5)" }}>Selected Atelier City:</span>
+                    <span style={{ fontSize: "0.75rem", color: "#ef4444", fontWeight: 600 }}>{bookingCity}</span>
+                  </div>
+
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                     <span style={{ fontSize: "0.72rem", color: "rgba(255, 255, 255, 0.5)" }}>Current Status:</span>
                     <span
                       style={{
@@ -1255,6 +1263,33 @@ export default function VehicleDetailPage({ vehicle, onBack }: VehicleDetailPage
                     <div style={{ fontSize: "0.68rem", color: "rgba(255, 255, 255, 0.45)", marginTop: "4px" }}>
                       Viewing sessions require concierge preparation. Earliest selectable date: {getMinViewingDate()}.
                     </div>
+                  </div>
+
+                  <div>
+                    <label style={{ fontSize: "0.72rem", color: "rgba(255, 255, 255, 0.7)", display: "block", marginBottom: "4px" }}>
+                      Atelier Destination City (Select from 20 Sovereign Hubs)
+                    </label>
+                    <select
+                      value={bookingCity}
+                      onChange={(e) => setBookingCity(e.target.value)}
+                      style={{
+                        width: "100%",
+                        padding: "0.65rem 0.9rem",
+                        backgroundColor: "#101216",
+                        border: "1px solid rgba(255, 255, 255, 0.25)",
+                        borderRadius: "6px",
+                        color: "#ffffff",
+                        fontSize: "0.82rem",
+                        boxSizing: "border-box",
+                        outline: "none",
+                      }}
+                    >
+                      {ATELIER_CITIES.map((c) => (
+                        <option key={c} value={c} style={{ backgroundColor: "#101216", color: "#ffffff" }}>
+                          {c}
+                        </option>
+                      ))}
+                    </select>
                   </div>
 
                   <div>
