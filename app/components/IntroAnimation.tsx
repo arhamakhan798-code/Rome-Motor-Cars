@@ -24,7 +24,6 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
   });
 
   const [isMobile, setIsMobile] = useState(false);
-  const [isMuted, setIsMuted] = useState(true);
   const [progress, setProgress] = useState(0);
   const videoRef = useRef<HTMLVideoElement>(null);
   const completedRef = useRef(false);
@@ -63,14 +62,14 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
     }, 1000);
   }, [onComplete]);
 
-  // Video playback & event handlers (Mandatory / Non-skippable)
+  // Video playback & event handlers (Mandatory / Non-skippable, Strictly Muted)
   useEffect(() => {
     if (phase === "done") return;
 
     const video = videoRef.current;
     if (!video) return;
 
-    // Both videos are strictly muted by default
+    // Strictly muted: no audio playback
     video.muted = true;
     video.volume = 0;
 
@@ -78,7 +77,6 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
       const p = video.play();
       if (p !== undefined) {
         p.catch(() => {
-          // In case autoplay policy requires muted
           video.muted = true;
           video.play().catch(() => {});
         });
@@ -88,7 +86,7 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
     startPlayback();
 
     // Fallback safety timer: in case browser prevents playback or file hangs,
-    // do not lock the user indefinitely (15s safe ceiling)
+    // do not lock the user indefinitely (16s ceiling)
     const fallbackTimer = setTimeout(() => {
       triggerFadeOut();
     }, 16000);
@@ -118,18 +116,6 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
       video.removeEventListener("timeupdate", handleTimeUpdate);
     };
   }, [phase, isMobile, triggerFadeOut]);
-
-  const toggleAudio = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    if (!videoRef.current) return;
-
-    const nextMuted = !videoRef.current.muted;
-    videoRef.current.muted = nextMuted;
-    if (!nextMuted) {
-      videoRef.current.volume = 0.75;
-    }
-    setIsMuted(nextMuted);
-  };
 
   if (phase === "done") return null;
 
@@ -172,52 +158,6 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
       >
         <source src={currentVideoSrc} type="video/mp4" />
       </video>
-
-      {/* ── Top-Right Audio Toggle (Muted by Default with Sound On/Off Button) ── */}
-      <div
-        style={{
-          position: "absolute",
-          top: "clamp(16px, 4vw, 32px)",
-          right: "clamp(16px, 4vw, 32px)",
-          zIndex: 20,
-        }}
-      >
-        <button
-          onClick={toggleAudio}
-          type="button"
-          aria-label={isMuted ? "Unmute audio" : "Mute audio"}
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "8px",
-            padding: "8px 16px",
-            backgroundColor: "rgba(10, 11, 16, 0.75)",
-            backdropFilter: "blur(12px)",
-            WebkitBackdropFilter: "blur(12px)",
-            border: "1px solid rgba(255, 255, 255, 0.2)",
-            borderRadius: "30px",
-            color: "#ffffff",
-            fontSize: "0.72rem",
-            fontWeight: 600,
-            letterSpacing: "0.1em",
-            textTransform: "uppercase",
-            cursor: "pointer",
-            transition: "all 0.25s ease",
-            boxShadow: "0 4px 20px rgba(0, 0, 0, 0.6)",
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = "rgba(220, 38, 38, 0.35)";
-            e.currentTarget.style.borderColor = "#ef4444";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = "rgba(10, 11, 16, 0.75)";
-            e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.2)";
-          }}
-        >
-          <span style={{ fontSize: "0.9rem" }}>{isMuted ? "🔇" : "🔊"}</span>
-          <span>{isMuted ? "Sound Off (Tap to Unmute)" : "Sound On"}</span>
-        </button>
-      </div>
 
       {/* ── Bottom Mandatory Presentation Status & Progress Bar ── */}
       <div
