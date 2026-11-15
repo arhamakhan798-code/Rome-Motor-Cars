@@ -24,7 +24,6 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
   });
 
   const [isMobile, setIsMobile] = useState(false);
-  const [progress, setProgress] = useState(0);
   const videoRef = useRef<HTMLVideoElement>(null);
   const completedRef = useRef(false);
 
@@ -97,9 +96,6 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
 
     const handleTimeUpdate = () => {
       if (video.duration && video.duration > 0) {
-        const pct = (video.currentTime / video.duration) * 100;
-        setProgress(Math.min(pct, 100));
-
         // Smooth transition right as the video concludes
         if (video.currentTime >= Math.max(0.3, video.duration - 0.35)) {
           triggerFadeOut();
@@ -158,73 +154,6 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
       >
         <source src={currentVideoSrc} type="video/mp4" />
       </video>
-
-      {/* ── Bottom Mandatory Presentation Status & Progress Bar ── */}
-      <div
-        style={{
-          position: "absolute",
-          bottom: "clamp(20px, 4vw, 36px)",
-          left: "clamp(16px, 4vw, 36px)",
-          right: "clamp(16px, 4vw, 36px)",
-          zIndex: 20,
-          display: "flex",
-          flexDirection: "column",
-          gap: "8px",
-          pointerEvents: "none",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            fontSize: "0.68rem",
-            letterSpacing: "0.22em",
-            textTransform: "uppercase",
-            color: "rgba(255, 255, 255, 0.7)",
-            fontFamily: "var(--font-montserrat), 'Montserrat', sans-serif",
-          }}
-        >
-          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            <span
-              style={{
-                width: "6px",
-                height: "6px",
-                borderRadius: "50%",
-                backgroundColor: "#ef4444",
-                boxShadow: "0 0 10px #ef4444",
-                display: "inline-block",
-              }}
-            />
-            <span>Rome Motor Cars • Atelier Introduction</span>
-          </div>
-          <span style={{ color: "rgba(255, 255, 255, 0.45)", fontSize: "0.62rem" }}>
-            Mandatory Presentation
-          </span>
-        </div>
-
-        {/* Ambient Crimson Progress Line */}
-        <div
-          style={{
-            width: "100%",
-            height: "2px",
-            backgroundColor: "rgba(255, 255, 255, 0.15)",
-            borderRadius: "2px",
-            overflow: "hidden",
-            position: "relative",
-          }}
-        >
-          <div
-            style={{
-              height: "100%",
-              width: `${progress}%`,
-              backgroundColor: "#ef4444",
-              boxShadow: "0 0 12px #ef4444",
-              transition: "width 0.15s linear",
-            }}
-          />
-        </div>
-      </div>
     </div>
   );
 }
