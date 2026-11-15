@@ -224,10 +224,26 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function useAuth() {
+export function useAuth(): AuthContextType {
   const context = useContext(AuthContext);
   if (!context) {
-    throw new Error("useAuth must be used within an AuthProvider");
+    return {
+      user: null,
+      isAuthenticated: false,
+      isLoading: false,
+      authModalOpen: false,
+      authModalMode: "login",
+      profileModalOpen: false,
+      openAuthModal: () => {},
+      closeAuthModal: () => {},
+      openProfileModal: () => {},
+      closeProfileModal: () => {},
+      login: async () => ({ success: false, error: "Authentication context unavailable" }),
+      register: async () => ({ success: false, error: "Authentication context unavailable" }),
+      updateProfile: async () => ({ success: false, error: "Authentication context unavailable" }),
+      logout: () => {},
+      requireAuth: (cb) => cb(),
+    };
   }
   return context;
 }

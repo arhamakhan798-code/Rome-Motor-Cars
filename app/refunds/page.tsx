@@ -3,10 +3,10 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { ATELIER_CITIES } from "../lib/cities";
-import { useAuth } from "../context/AuthContext";
+import { AuthProvider, useAuth } from "../context/AuthContext";
 import NotificationsModal from "../components/NotificationsModal";
 
-export default function RefundRequestPage() {
+function RefundRequestContent() {
   const { user, isAuthenticated } = useAuth();
   const [activeTab, setActiveTab] = useState<"submit" | "status">("submit");
   const [notificationsOpen, setNotificationsOpen] = useState(false);
@@ -15,7 +15,7 @@ export default function RefundRequestPage() {
   const [hasViewedNotifications, setHasViewedNotifications] = useState(false);
 
   // Submit Form State
-  const [buyerName, setBuyerName] = useState(user?.name || "");
+  const [buyerName, setBuyerName] = useState(user?.username || "");
   const [buyerNumber, setBuyerNumber] = useState("");
   const [secretNumber, setSecretNumber] = useState("");
   const [city, setCity] = useState("Dubai");
@@ -1074,5 +1074,13 @@ export default function RefundRequestPage() {
         onClose={() => setNotificationsOpen(false)}
       />
     </div>
+  );
+}
+
+export default function RefundRequestPage() {
+  return (
+    <AuthProvider>
+      <RefundRequestContent />
+    </AuthProvider>
   );
 }
