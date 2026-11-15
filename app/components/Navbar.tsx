@@ -254,7 +254,8 @@ export default function Navbar({ visible }: NavbarProps) {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
-        padding: "0 clamp(1.5rem, 4vw, 4rem)",
+        padding: "0 clamp(1.2rem, 3vw, 3rem)",
+        gap: "1rem",
         zIndex: 50,
         opacity: visible ? 1 : 0,
         transform: visible ? "translateY(0)" : "translateY(-10px)",
@@ -271,6 +272,7 @@ export default function Navbar({ visible }: NavbarProps) {
         href="#"
         onClick={(e) => handleNavClick("Home", "#", e)}
         style={{
+          flexShrink: 0,
           display: "flex",
           alignItems: "center",
           gap: "12px",
@@ -327,16 +329,18 @@ export default function Navbar({ visible }: NavbarProps) {
         </div>
       </a>
 
-      {/* Center Navigation Links */}
+      {/* Center Navigation Links (Center-aligned in empty area between Logo and Right Controls) */}
       <nav
         className="desktop-nav"
         style={{
-          position: "absolute",
-          left: "50%",
-          transform: "translateX(-50%)",
+          flex: "1 1 auto",
+          minWidth: 0,
           display: "flex",
           alignItems: "center",
-          gap: "clamp(2rem, 3.5vw, 3.2rem)",
+          justifyContent: "center",
+          gap: "clamp(0.6rem, 1.6vw, 1.8rem)",
+          padding: "0 10px",
+          whiteSpace: "nowrap",
         }}
       >
         {NAV_ITEMS.map((item) => {
@@ -350,9 +354,9 @@ export default function Navbar({ visible }: NavbarProps) {
               style={{
                 position: "relative",
                 fontFamily: "var(--font-montserrat), 'Montserrat', sans-serif",
-                fontSize: "0.75rem",
+                fontSize: "clamp(0.68rem, 0.8vw, 0.75rem)",
                 fontWeight: isActive ? 600 : 400,
-                letterSpacing: "0.08em",
+                letterSpacing: "0.06em",
                 color: isActive ? "#ffffff" : "rgba(255, 255, 255, 0.7)",
                 textDecoration: "none",
                 transition: "color 0.25s ease",
@@ -402,7 +406,7 @@ export default function Navbar({ visible }: NavbarProps) {
       </nav>
 
       {/* Right Icons */}
-      <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
+      <div style={{ flexShrink: 0, display: "flex", alignItems: "center", gap: "12px", marginLeft: "auto" }}>
 
         {/* Search Icon */}
         <button
