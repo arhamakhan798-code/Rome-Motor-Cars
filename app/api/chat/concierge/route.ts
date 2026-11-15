@@ -50,9 +50,11 @@ export async function POST(req: Request) {
     }
 
     // ── Intent Classification (Strictly based on what user is asking NOW) ─────
-    const isPolicyIntent = /policy|policies|return|refund|cancel|cooling|warranty|guarantee|defect|repair|delivery|shipping|transport|freight|carrier|handover|pdi|governance|handbook|contract|legal|gdpr|privacy|kyc|terms/i.test(qLower);
+    const isRefundIntent = /refund|return.*car|cancel.*acquisition|cooling.*off|rescind|rescission|request.*refund|get.*refund|money back/i.test(qLower);
 
-    const isBookingIntent = !isPolicyIntent && /viewing|booking|book|visit|appointment|schedule|slot|reserve a viewing|reserve|see (the|this|a) car in person|test drive/i.test(qLower);
+    const isPolicyIntent = !isRefundIntent && /policy|policies|return|refund|cancel|cooling|warranty|guarantee|defect|repair|delivery|shipping|transport|freight|carrier|handover|pdi|governance|handbook|contract|legal|gdpr|privacy|kyc|terms/i.test(qLower);
+
+    const isBookingIntent = !isRefundIntent && !isPolicyIntent && /viewing|booking|book|visit|appointment|schedule|slot|reserve a viewing|reserve|see (the|this|a) car in person|test drive/i.test(qLower);
 
     const isCarInquiry = !isPolicyIntent && !isBookingIntent && (/car|cars|fleet|inventory|vault|v12|v8|v10|v6|suv|coupe|sedan|hypercar|supercar|convertible|hybrid|electric|price|cost|how much|worth|speed|top speed|fast|acceleration|0-60|0 to 60|horsepower|hp|engine|specs|recommend|show me|do you have|what do you have/i.test(qLower) || !!contextCarBrand);
 
@@ -147,6 +149,7 @@ CRITICAL INSTRUCTIONS:
                 source: "gemini",
                 model: baseEndpoint.split("/models/")[1]?.split(":")[0] ?? "gemini",
                 isBookingIntent,
+                isRefundIntent,
                 suggestedVehicle: matchingCars[0] || null,
                 retrievedCarsCount: matchingCars.length,
                 retrievedPoliciesCount: relevantPolicies.length,
@@ -162,7 +165,9 @@ CRITICAL INSTRUCTIONS:
     // ── High-Precision Context-Aware Local Fallback ───────────────────────────
     let reply = "";
 
-    if (isPolicyIntent) {
+    if (isRefundIntent) {
+      reply = `Under Section 9 of our Corporate Governance Handbook (*Returns & Acquisition Rescissions*):\n\nAcquisitions through Rome Motor Cars are supported by our official 14-day condition audit window. To prevent unauthorized tampering, all refund submissions require the physical Buyer Number (engraved on your handover deed) and Secret Physical Number (sealed in your handover dossier).\n\nPlease provide your details in the official refund form below. Your request will be transmitted to our central ledger with status **Pending**. Once confirmed by our executive board, an official mechanical inspection team will be scheduled to visit you in the following week.`;
+    } else if (isPolicyIntent) {
       const p = relevantPolicies[0];
       if (/return|refund|cancel|cooling/i.test(qLower)) {
         reply = `According to Section 9 of our Corporate Governance Handbook (*Returns and Cancellations After Delivery*):\n\nAcquisitions and reservations through Rome Motor Cars are supported by our rigorous condition audit framework. Any return or cancellation request is subject to contractual inspection ratification and verification against pre-delivery documentation. Approved refunds are routed strictly through original certified payment channels.\n\nOur concierge can provide full legal disclosures for any vehicle under your review.`;
@@ -219,6 +224,7 @@ CRITICAL INSTRUCTIONS:
       reply,
       source: "gemini",
       isBookingIntent,
+      isRefundIntent,
       suggestedVehicle: matchingCars[0] || null,
       retrievedCarsCount: matchingCars.length,
       retrievedPoliciesCount: relevantPolicies.length,

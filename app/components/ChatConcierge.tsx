@@ -10,6 +10,7 @@ export interface Message {
   text: string;
   time: string;
   isBookingCard?: boolean;
+  isRefundCard?: boolean;
   suggestedVehicle?: {
     id?: string;
     make?: string;
@@ -23,6 +24,16 @@ export interface Message {
     requestedDate: string;
     city: string;
     status: string;
+  };
+  createdRefund?: {
+    requestId: string;
+    timestamp: string;
+    buyerName: string;
+    buyerNumber: string;
+    city: string;
+    address: string;
+    status: string;
+    message: string;
   };
 }
 
@@ -211,6 +222,7 @@ export default function ChatConcierge() {
         text: replyText,
         time: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
         isBookingCard: !!data.isBookingIntent,
+        isRefundCard: !!data.isRefundIntent,
         suggestedVehicle: data.suggestedVehicle || null,
       };
 
@@ -242,6 +254,7 @@ export default function ChatConcierge() {
   const quickPrompts = [
     "What V12 cars do you have?",
     "Book Private Viewing",
+    "Request a Refund",
     "Tell me the return policy",
     "Private viewing booking rules?",
     "How are cars shipped?",
@@ -265,6 +278,36 @@ export default function ChatConcierge() {
                   requestedDate: viewing.requestedDate,
                   city: viewing.city || "Dubai",
                   status: viewing.status || "In Process",
+                },
+              };
+            }
+            return m;
+          }),
+        };
+      })
+    );
+  };
+
+  const handleCompleteRefund = (messageId: string, refundData: any) => {
+    setSessions((prev) =>
+      prev.map((s) => {
+        if (s.id !== activeSessionId) return s;
+        return {
+          ...s,
+          messages: s.messages.map((m) => {
+            if (m.id === messageId) {
+              return {
+                ...m,
+                isRefundCard: false,
+                createdRefund: {
+                  requestId: refundData.requestId,
+                  timestamp: refundData.record?.timestamp || new Date().toLocaleString(),
+                  buyerName: refundData.record?.buyerName || "",
+                  buyerNumber: refundData.record?.buyerNumber || "",
+                  city: refundData.record?.city || "Dubai",
+                  address: refundData.record?.address || "",
+                  status: refundData.status || "Pending",
+                  message: refundData.message,
                 },
               };
             }
@@ -693,6 +736,20 @@ export default function ChatConcierge() {
                         {/* Confirmed Viewing Notification Card */}
                         {!isUser && msg.createdViewing && (
                           <InChatViewingReceipt viewing={msg.createdViewing} />
+                        )}
+
+                        {/* Interactive In-Chat Refund Form */}
+                        {!isUser && msg.isRefundCard && (
+                          <InChatRefundCard
+                            messageId={msg.id}
+                            user={user}
+                            onComplete={handleCompleteRefund}
+                          />
+                        )}
+
+                        {/* Confirmed Refund Notification Card */}
+                        {!isUser && msg.createdRefund && (
+                          <InChatRefundReceipt refund={msg.createdRefund} />
                         )}
                       </div>
                       <span
@@ -1252,6 +1309,361 @@ function InChatViewingReceipt({ viewing }: { viewing: NonNullable<Message["creat
         }}
       >
         🔔 <strong>Concierge Tracking:</strong> When our team confirms your allocation from the showroom registry, your status will update to 🟢 <strong>CONFIRMED</strong>. You can monitor your live status anytime via the notification bell (🔔) in the top navigation bar.
+      </div>
+    </div>
+  );
+}
+
+interface InChatRefundCardProps {
+  messageId: string;
+  user: any;
+  onComplete: (messageId: string, refundData: any) => void;
+}
+
+function InChatRefundCard({ messageId, user, onComplete }: InChatRefundCardProps) {
+  const [buyerName, setBuyerName] = useState(user?.username || "");
+  const [buyerNumber, setBuyerNumber] = useState("");
+  const [secretNumber, setSecretNumber] = useState("");
+  const [city, setCity] = useState("Dubai");
+  const [address, setAddress] = useState("");
+  const [reason, setReason] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!buyerName.trim() || !buyerNumber.trim() || !secretNumber.trim() || !address.trim()) {
+      setError("Please complete all physical deed credentials and physical address.");
+      return;
+    }
+
+    setIsSubmitting(true);
+    setError(null);
+
+    try {
+      const res = await fetch("/api/refunds", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          buyerName: buyerName.trim(),
+          buyerNumber: buyerNumber.trim(),
+          secretNumber: secretNumber.trim(),
+          city,
+          address: address.trim(),
+          reason: reason.trim(),
+        }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) {
+        setError(data.error || "Failed to transmit refund request.");
+      } else {
+        onComplete(messageId, data);
+      }
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : "Network error. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  return (
+    <form
+      onSubmit={handleSubmit}
+      style={{
+        marginTop: "12px",
+        padding: "12px 14px",
+        borderRadius: "10px",
+        backgroundColor: "rgba(8, 9, 12, 0.96)",
+        border: "1px solid rgba(220, 38, 38, 0.45)",
+        boxShadow: "0 6px 24px rgba(0, 0, 0, 0.75)",
+      }}
+    >
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "8px" }}>
+        <span style={{ fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.15em", color: "#ef4444", textTransform: "uppercase" }}>
+          Official Refund & Rescission Request
+        </span>
+        <span style={{ fontSize: "0.62rem", color: "rgba(255, 255, 255, 0.5)" }}>
+          Section 9 Protocol
+        </span>
+      </div>
+
+      {error && (
+        <div style={{ padding: "6px 8px", backgroundColor: "rgba(239, 68, 68, 0.15)", border: "1px solid #ef4444", borderRadius: "4px", color: "#fca5a5", fontSize: "0.72rem", marginBottom: "8px" }}>
+          {error}
+        </div>
+      )}
+
+      <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+        <div>
+          <label style={{ fontSize: "0.68rem", color: "rgba(255, 255, 255, 0.75)", display: "block", marginBottom: "2px" }}>
+            Full Name of Buyer *
+          </label>
+          <input
+            type="text"
+            required
+            placeholder="e.g. Lord Julian Sterling"
+            value={buyerName}
+            onChange={(e) => setBuyerName(e.target.value)}
+            style={{
+              width: "100%",
+              padding: "6px 10px",
+              backgroundColor: "rgba(255, 255, 255, 0.06)",
+              border: "1px solid rgba(255, 255, 255, 0.18)",
+              borderRadius: "4px",
+              color: "#ffffff",
+              fontSize: "0.78rem",
+              boxSizing: "border-box",
+            }}
+          />
+        </div>
+
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "6px" }}>
+          <div>
+            <label style={{ fontSize: "0.68rem", color: "rgba(255, 255, 255, 0.75)", display: "block", marginBottom: "2px" }}>
+              Buyer Number (Physical) *
+            </label>
+            <input
+              type="text"
+              required
+              placeholder="e.g. RMC-B-8492"
+              value={buyerNumber}
+              onChange={(e) => setBuyerNumber(e.target.value)}
+              style={{
+                width: "100%",
+                padding: "6px 10px",
+                backgroundColor: "rgba(255, 255, 255, 0.06)",
+                border: "1px solid rgba(255, 255, 255, 0.18)",
+                borderRadius: "4px",
+                color: "#ffffff",
+                fontSize: "0.78rem",
+                boxSizing: "border-box",
+              }}
+            />
+          </div>
+
+          <div>
+            <label style={{ fontSize: "0.68rem", color: "rgba(255, 255, 255, 0.75)", display: "block", marginBottom: "2px" }}>
+              Secret Number (Physical) *
+            </label>
+            <input
+              type="text"
+              required
+              placeholder="e.g. SEC-7391"
+              value={secretNumber}
+              onChange={(e) => setSecretNumber(e.target.value)}
+              style={{
+                width: "100%",
+                padding: "6px 10px",
+                backgroundColor: "rgba(255, 255, 255, 0.06)",
+                border: "1px solid rgba(255, 255, 255, 0.18)",
+                borderRadius: "4px",
+                color: "#ffffff",
+                fontSize: "0.78rem",
+                boxSizing: "border-box",
+              }}
+            />
+          </div>
+        </div>
+
+        <div>
+          <label style={{ fontSize: "0.68rem", color: "rgba(255, 255, 255, 0.75)", display: "block", marginBottom: "2px" }}>
+            Atelier City (Select from 20 Sovereign Hubs) *
+          </label>
+          <select
+            value={city}
+            onChange={(e) => setCity(e.target.value)}
+            style={{
+              width: "100%",
+              padding: "6px 10px",
+              backgroundColor: "#12141a",
+              border: "1px solid rgba(220, 38, 38, 0.4)",
+              borderRadius: "4px",
+              color: "#ffffff",
+              fontSize: "0.78rem",
+              boxSizing: "border-box",
+              outline: "none",
+            }}
+          >
+            {ATELIER_CITIES.map((c) => (
+              <option key={c} value={c} style={{ backgroundColor: "#12141a", color: "#ffffff" }}>
+                {c}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div>
+          <label style={{ fontSize: "0.68rem", color: "rgba(255, 255, 255, 0.75)", display: "block", marginBottom: "2px" }}>
+            Physical Address for Inspection Team Visit *
+          </label>
+          <textarea
+            required
+            rows={2}
+            placeholder="Address where inspection team will arrive..."
+            value={address}
+            onChange={(e) => setAddress(e.target.value)}
+            style={{
+              width: "100%",
+              padding: "6px 10px",
+              backgroundColor: "rgba(255, 255, 255, 0.06)",
+              border: "1px solid rgba(255, 255, 255, 0.18)",
+              borderRadius: "4px",
+              color: "#ffffff",
+              fontSize: "0.78rem",
+              boxSizing: "border-box",
+              fontFamily: "inherit",
+            }}
+          />
+        </div>
+
+        <div>
+          <label style={{ fontSize: "0.68rem", color: "rgba(255, 255, 255, 0.65)", display: "block", marginBottom: "2px" }}>
+            Vehicle Model & Rescission Notes (Optional)
+          </label>
+          <input
+            type="text"
+            placeholder="e.g. 2024 Rolls-Royce Phantom — Cooling-off window"
+            value={reason}
+            onChange={(e) => setReason(e.target.value)}
+            style={{
+              width: "100%",
+              padding: "6px 10px",
+              backgroundColor: "rgba(255, 255, 255, 0.06)",
+              border: "1px solid rgba(255, 255, 255, 0.18)",
+              borderRadius: "4px",
+              color: "#ffffff",
+              fontSize: "0.78rem",
+              boxSizing: "border-box",
+            }}
+          />
+        </div>
+
+        <button
+          type="submit"
+          disabled={isSubmitting}
+          style={{
+            marginTop: "4px",
+            width: "100%",
+            padding: "8px",
+            backgroundColor: isSubmitting ? "#7f1d1d" : "#dc2626",
+            border: "none",
+            borderRadius: "4px",
+            color: "#ffffff",
+            fontSize: "0.72rem",
+            fontWeight: 700,
+            letterSpacing: "0.14em",
+            textTransform: "uppercase",
+            cursor: isSubmitting ? "not-allowed" : "pointer",
+            boxShadow: "0 0 12px rgba(220, 38, 38, 0.4)",
+          }}
+        >
+          {isSubmitting ? "Transmitting to Central Directorate..." : "Submit Official Refund Request"}
+        </button>
+      </div>
+    </form>
+  );
+}
+
+function InChatRefundReceipt({ refund }: { refund: NonNullable<Message["createdRefund"]> }) {
+  return (
+    <div
+      style={{
+        marginTop: "12px",
+        padding: "14px",
+        backgroundColor: "rgba(10, 11, 15, 0.96)",
+        border: "1px solid rgba(220, 38, 38, 0.45)",
+        borderRadius: "10px",
+        boxShadow: "0 6px 24px rgba(0, 0, 0, 0.75)",
+        display: "flex",
+        flexDirection: "column",
+        gap: "10px",
+      }}
+    >
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <span style={{ fontSize: "0.68rem", letterSpacing: "0.18em", color: "#facc15", textTransform: "uppercase", fontWeight: 700 }}>
+          ✓ REFUND REQUEST FORWARDED
+        </span>
+        <span
+          style={{
+            fontFamily: "var(--font-montserrat), 'Montserrat', sans-serif",
+            fontSize: "0.75rem",
+            fontWeight: 700,
+            color: "#ef4444",
+            letterSpacing: "0.1em",
+            backgroundColor: "rgba(239, 68, 68, 0.15)",
+            padding: "2px 8px",
+            borderRadius: "4px",
+            border: "1px solid rgba(239, 68, 68, 0.3)",
+          }}
+        >
+          {refund.requestId}
+        </span>
+      </div>
+
+      <div style={{ fontSize: "0.78rem", color: "#fef08a", lineHeight: 1.5, backgroundColor: "rgba(234, 179, 8, 0.1)", padding: "10px 12px", borderRadius: "6px", border: "1px solid rgba(234, 179, 8, 0.3)" }}>
+        {refund.message}
+      </div>
+
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "6px",
+          padding: "8px 10px",
+          backgroundColor: "rgba(255, 255, 255, 0.03)",
+          borderRadius: "6px",
+          border: "1px solid rgba(255, 255, 255, 0.06)",
+        }}
+      >
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <span style={{ fontSize: "0.7rem", color: "rgba(255, 255, 255, 0.5)" }}>Registered Buyer:</span>
+          <span style={{ fontSize: "0.75rem", color: "#ffffff", fontWeight: 600 }}>{refund.buyerName} ({refund.buyerNumber})</span>
+        </div>
+
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <span style={{ fontSize: "0.7rem", color: "rgba(255, 255, 255, 0.5)" }}>Atelier Hub City:</span>
+          <span style={{ fontSize: "0.75rem", color: "#ef4444", fontWeight: 600 }}>{refund.city}</span>
+        </div>
+
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <span style={{ fontSize: "0.7rem", color: "rgba(255, 255, 255, 0.5)" }}>Inspection Address:</span>
+          <span style={{ fontSize: "0.72rem", color: "rgba(255, 255, 255, 0.8)" }}>{refund.address}</span>
+        </div>
+
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <span style={{ fontSize: "0.7rem", color: "rgba(255, 255, 255, 0.5)" }}>Current Status:</span>
+          <span
+            style={{
+              fontSize: "0.68rem",
+              fontWeight: 700,
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
+              color: "#facc15",
+              backgroundColor: "rgba(234, 179, 8, 0.15)",
+              padding: "2px 8px",
+              borderRadius: "12px",
+              border: "1px solid rgba(234, 179, 8, 0.4)",
+            }}
+          >
+            🟡 PENDING
+          </span>
+        </div>
+      </div>
+
+      <div style={{ display: "flex", justifyContent: "flex-end" }}>
+        <a
+          href="/refunds"
+          style={{
+            fontSize: "0.72rem",
+            color: "#ef4444",
+            fontWeight: 600,
+            textDecoration: "none",
+            letterSpacing: "0.06em",
+          }}
+        >
+          Open Dedicated Refund Portal →
+        </a>
       </div>
     </div>
   );
