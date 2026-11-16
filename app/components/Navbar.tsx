@@ -450,8 +450,9 @@ export default function Navbar({ visible }: NavbarProps) {
       {/* Right Icons */}
       <div style={{ flexShrink: 0, display: "flex", alignItems: "center", gap: "12px", marginLeft: "auto" }}>
 
-        {/* Search Icon */}
+        {/* Search Icon (Desktop) */}
         <button
+          className="desktop-only-action"
           onClick={() => {
             const invEl = document.getElementById("inventory");
             if (invEl) {
@@ -482,9 +483,10 @@ export default function Navbar({ visible }: NavbarProps) {
           🔍
         </button>
 
-        {/* Compare Button */}
+        {/* Compare Button (Desktop) */}
         {compareVehicles.length > 0 && (
           <button
+            className="desktop-only-action"
             onClick={openCompareModal}
             aria-label="Compare Vehicles"
             title={`View Comparison (${compareVehicles.length} vehicles)`}
@@ -530,8 +532,9 @@ export default function Navbar({ visible }: NavbarProps) {
           </button>
         )}
 
-        {/* Sound Toggle */}
+        {/* Sound Toggle (Desktop) */}
         <button
+          className="desktop-only-action"
           onClick={() => {
             const next = soundFx.toggleSound();
             setSoundActive(next);
@@ -557,8 +560,9 @@ export default function Navbar({ visible }: NavbarProps) {
           {soundActive ? "🔊" : "🔇"}
         </button>
 
-        {/* Wishlist / Heart Icon */}
+        {/* Wishlist / Heart Icon (Desktop) */}
         <button
+          className="desktop-only-action"
           onClick={() => {
             if (favoritesCount === 0) {
               setEmptyWishlistModalOpen(true);
@@ -679,9 +683,9 @@ export default function Navbar({ visible }: NavbarProps) {
           </button>
         )}
 
-        {/* Client Profile / Settings & Sign In */}
+        {/* Client Profile / Settings & Sign In (Desktop) */}
         {isAuthenticated && user ? (
-          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          <div className="desktop-only-action" style={{ display: "flex", alignItems: "center", gap: "10px" }}>
             <button
               onClick={openProfileModal}
               title="Client Profile & Settings"
@@ -744,6 +748,7 @@ export default function Navbar({ visible }: NavbarProps) {
           </div>
         ) : (
           <button
+            className="desktop-only-action"
             onClick={() => openAuthModal("login")}
             style={{
               padding: "0.55rem 1.2rem",
@@ -771,24 +776,39 @@ export default function Navbar({ visible }: NavbarProps) {
           </button>
         )}
 
-        {/* Mobile Hamburger Button */}
+        {/* Mobile Hamburger Button (Three Lines) */}
         <button
           className="hamburger-btn"
           aria-label="Toggle Navigation Menu"
-          onClick={() => setMenuOpen((prev) => !prev)}
+          onClick={() => {
+            soundFx.playMechanicalClick();
+            setMenuOpen((prev) => !prev);
+          }}
           style={{
             display: "none",
-            background: "transparent",
-            border: "none",
+            background: "rgba(255, 255, 255, 0.06)",
+            border: "1px solid rgba(255, 255, 255, 0.18)",
+            borderRadius: "8px",
             cursor: "pointer",
-            padding: "6px",
+            padding: "8px 10px",
             flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
             gap: "5px",
+            flexShrink: 0,
+            marginLeft: "2px",
+            transition: "all 0.2s ease",
           }}
         >
-          <span style={{ display: "block", width: "22px", height: "1.5px", backgroundColor: "#ffffff" }} />
-          <span style={{ display: "block", width: "16px", height: "1.5px", backgroundColor: "#ef4444" }} />
-          <span style={{ display: "block", width: "22px", height: "1.5px", backgroundColor: "#ffffff" }} />
+          {menuOpen ? (
+            <span style={{ fontSize: "1.1rem", lineHeight: 1, color: "#ef4444", fontWeight: 700 }}>✕</span>
+          ) : (
+            <>
+              <span style={{ display: "block", width: "22px", height: "2px", backgroundColor: "#ffffff", borderRadius: "1px" }} />
+              <span style={{ display: "block", width: "16px", height: "2px", backgroundColor: "#ef4444", borderRadius: "1px" }} />
+              <span style={{ display: "block", width: "22px", height: "2px", backgroundColor: "#ffffff", borderRadius: "1px" }} />
+            </>
+          )}
         </button>
       </div>
 
@@ -800,40 +820,310 @@ export default function Navbar({ visible }: NavbarProps) {
             top: "80px",
             left: 0,
             right: 0,
+            maxHeight: "calc(100vh - 80px)",
+            overflowY: "auto",
             backgroundColor: "rgba(7, 8, 10, 0.98)",
-            backdropFilter: "blur(20px)",
-            WebkitBackdropFilter: "blur(20px)",
-            borderBottom: "1px solid rgba(220, 38, 38, 0.3)",
+            backdropFilter: "blur(24px)",
+            WebkitBackdropFilter: "blur(24px)",
+            borderBottom: "1px solid rgba(220, 38, 38, 0.35)",
+            boxShadow: "0 20px 50px rgba(0, 0, 0, 0.95)",
             display: "flex",
             flexDirection: "column",
-            padding: "1.8rem 2rem",
-            gap: "1.2rem",
+            padding: "1.4rem 1.4rem 2.5rem 1.4rem",
+            gap: "1.1rem",
             zIndex: 60,
           }}
         >
-          {NAV_ITEMS.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              onClick={(e) => {
-                setMenuOpen(false);
-                handleNavClick(item.label, item.href, e);
-              }}
+          {/* 1. Mobile VIP Profile / Settings Card */}
+          {isAuthenticated && user ? (
+            <div
               style={{
-                fontFamily: "var(--font-montserrat), 'Montserrat', sans-serif",
-                fontSize: "0.9rem",
-                letterSpacing: "0.15em",
-                textTransform: "uppercase",
-                color: activeSection === item.label ? "#ef4444" : "#ffffff",
-                textDecoration: "none",
+                padding: "14px 16px",
+                backgroundColor: "rgba(255, 255, 255, 0.04)",
+                border: "1px solid rgba(220, 38, 38, 0.4)",
+                borderRadius: "12px",
+                display: "flex",
+                flexDirection: "column",
+                gap: "12px",
               }}
             >
-              {item.label}
-              {!isAuthenticated && item.label !== "Home" && (
-                <span style={{ fontSize: "0.75rem", marginLeft: "6px" }}>🔒</span>
-              )}
-            </a>
-          ))}
+              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                <div
+                  style={{
+                    width: "42px",
+                    height: "42px",
+                    borderRadius: "50%",
+                    overflow: "hidden",
+                    border: "1px solid #dc2626",
+                    flexShrink: 0,
+                  }}
+                >
+                  <img
+                    src={user.avatar}
+                    alt={user.username}
+                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  />
+                </div>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ fontSize: "0.92rem", fontWeight: 700, color: "#ffffff", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                    {user.username}
+                  </div>
+                  <div style={{ fontSize: "0.68rem", color: "#ef4444", letterSpacing: "0.08em", fontWeight: 600 }}>
+                    VIP CLIENT · {user.clientId}
+                  </div>
+                </div>
+              </div>
+
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px" }}>
+                <button
+                  onClick={() => {
+                    setMenuOpen(false);
+                    openProfileModal();
+                  }}
+                  style={{
+                    padding: "8px 12px",
+                    backgroundColor: "rgba(255, 255, 255, 0.08)",
+                    border: "1px solid rgba(255, 255, 255, 0.2)",
+                    borderRadius: "8px",
+                    color: "#ffffff",
+                    fontSize: "0.75rem",
+                    fontWeight: 600,
+                    cursor: "pointer",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "6px",
+                  }}
+                >
+                  ⚙️ Settings
+                </button>
+                <button
+                  onClick={() => {
+                    setMenuOpen(false);
+                    logout();
+                  }}
+                  style={{
+                    padding: "8px 12px",
+                    backgroundColor: "rgba(239, 68, 68, 0.15)",
+                    border: "1px solid rgba(239, 68, 68, 0.35)",
+                    borderRadius: "8px",
+                    color: "#fca5a5",
+                    fontSize: "0.75rem",
+                    fontWeight: 600,
+                    cursor: "pointer",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "6px",
+                  }}
+                >
+                  🚪 Sign Out
+                </button>
+              </div>
+            </div>
+          ) : (
+            <div
+              style={{
+                padding: "14px 16px",
+                backgroundColor: "rgba(255, 255, 255, 0.03)",
+                border: "1px solid rgba(220, 38, 38, 0.3)",
+                borderRadius: "12px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                gap: "12px",
+              }}
+            >
+              <div>
+                <div style={{ fontSize: "0.85rem", fontWeight: 700, color: "#ffffff" }}>
+                  Atelier Client Portal
+                </div>
+                <div style={{ fontSize: "0.68rem", color: "rgba(255, 255, 255, 0.55)", marginTop: "2px" }}>
+                  Authenticate to explore collection
+                </div>
+              </div>
+              <button
+                onClick={() => {
+                  setMenuOpen(false);
+                  openAuthModal("login");
+                }}
+                style={{
+                  padding: "8px 16px",
+                  backgroundColor: "#dc2626",
+                  border: "none",
+                  borderRadius: "20px",
+                  color: "#ffffff",
+                  fontSize: "0.72rem",
+                  fontWeight: 700,
+                  letterSpacing: "0.12em",
+                  textTransform: "uppercase",
+                  cursor: "pointer",
+                  boxShadow: "0 0 12px rgba(220, 38, 38, 0.4)",
+                  flexShrink: 0,
+                }}
+              >
+                Sign In
+              </button>
+            </div>
+          )}
+
+          {/* 2. Mobile Quick Utilities */}
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px" }}>
+            <button
+              onClick={() => {
+                setMenuOpen(false);
+                const invEl = document.getElementById("inventory");
+                if (invEl) {
+                  invEl.scrollIntoView({ behavior: "smooth" });
+                  const searchInput = invEl.querySelector("input");
+                  if (searchInput) searchInput.focus();
+                }
+              }}
+              style={{
+                padding: "10px 12px",
+                backgroundColor: "rgba(255, 255, 255, 0.04)",
+                border: "1px solid rgba(255, 255, 255, 0.1)",
+                borderRadius: "8px",
+                color: "rgba(255, 255, 255, 0.85)",
+                fontSize: "0.75rem",
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                gap: "8px",
+              }}
+            >
+              <span>🔍</span> Search Collection
+            </button>
+
+            <button
+              onClick={() => {
+                setMenuOpen(false);
+                if (favoritesCount === 0) {
+                  setEmptyWishlistModalOpen(true);
+                } else {
+                  setFilterFavoritesOnly((prev) => !prev);
+                  const invEl = document.getElementById("collection") || document.getElementById("inventory");
+                  if (invEl) invEl.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+              style={{
+                padding: "10px 12px",
+                backgroundColor: filterFavoritesOnly ? "rgba(239, 68, 68, 0.18)" : "rgba(255, 255, 255, 0.04)",
+                border: filterFavoritesOnly ? "1px solid #ef4444" : "1px solid rgba(255, 255, 255, 0.1)",
+                borderRadius: "8px",
+                color: filterFavoritesOnly || favoritesCount > 0 ? "#ef4444" : "rgba(255, 255, 255, 0.85)",
+                fontSize: "0.75rem",
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                gap: "8px",
+              }}
+            >
+              <span>{favoritesCount > 0 ? "♥" : "♡"}</span> Wishlist ({favoritesCount})
+            </button>
+
+            <button
+              onClick={() => {
+                const next = soundFx.toggleSound();
+                setSoundActive(next);
+              }}
+              style={{
+                padding: "10px 12px",
+                backgroundColor: "rgba(255, 255, 255, 0.04)",
+                border: "1px solid rgba(255, 255, 255, 0.1)",
+                borderRadius: "8px",
+                color: "rgba(255, 255, 255, 0.85)",
+                fontSize: "0.75rem",
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                gap: "8px",
+              }}
+            >
+              <span>{soundActive ? "🔊" : "🔇"}</span> Sound: {soundActive ? "On" : "Muted"}
+            </button>
+
+            {compareVehicles.length > 0 && (
+              <button
+                onClick={() => {
+                  setMenuOpen(false);
+                  openCompareModal();
+                }}
+                style={{
+                  padding: "10px 12px",
+                  backgroundColor: "rgba(220, 38, 38, 0.15)",
+                  border: "1px solid #dc2626",
+                  borderRadius: "8px",
+                  color: "#ffffff",
+                  fontSize: "0.75rem",
+                  cursor: "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "8px",
+                }}
+              >
+                <span>⚖️</span> Compare ({compareVehicles.length})
+              </button>
+            )}
+          </div>
+
+          {/* Section Divider */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "10px",
+              margin: "4px 0 0px 0",
+            }}
+          >
+            <div style={{ flex: 1, height: "1px", backgroundColor: "rgba(255, 255, 255, 0.08)" }} />
+            <span style={{ fontSize: "0.62rem", letterSpacing: "0.2em", color: "rgba(255, 255, 255, 0.4)", textTransform: "uppercase" }}>
+              Showroom Navigation
+            </span>
+            <div style={{ flex: 1, height: "1px", backgroundColor: "rgba(255, 255, 255, 0.08)" }} />
+          </div>
+
+          {/* 3. Navigation Links */}
+          <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+            {NAV_ITEMS.map((item) => {
+              const isActive = activeSection === item.label;
+              return (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  onClick={(e) => {
+                    setMenuOpen(false);
+                    handleNavClick(item.label, item.href, e);
+                  }}
+                  style={{
+                    fontFamily: "var(--font-montserrat), 'Montserrat', sans-serif",
+                    fontSize: "0.88rem",
+                    letterSpacing: "0.14em",
+                    textTransform: "uppercase",
+                    color: isActive ? "#ef4444" : "#ffffff",
+                    textDecoration: "none",
+                    padding: "12px 14px",
+                    borderRadius: "8px",
+                    backgroundColor: isActive ? "rgba(239, 68, 68, 0.1)" : "rgba(255, 255, 255, 0.02)",
+                    border: isActive ? "1px solid rgba(239, 68, 68, 0.3)" : "1px solid transparent",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    transition: "all 0.2s ease",
+                  }}
+                >
+                  <span>{item.label}</span>
+                  {!isAuthenticated && item.label !== "Home" ? (
+                    <span style={{ fontSize: "0.75rem", color: "rgba(239, 68, 68, 0.8)" }}>🔒 Locked</span>
+                  ) : isActive ? (
+                    <span style={{ fontSize: "0.75rem", color: "#ef4444" }}>● Active</span>
+                  ) : (
+                    <span style={{ fontSize: "0.85rem", color: "rgba(255, 255, 255, 0.3)" }}>›</span>
+                  )}
+                </a>
+              );
+            })}
+          </div>
         </div>
       )}
 

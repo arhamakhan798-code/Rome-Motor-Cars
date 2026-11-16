@@ -192,6 +192,10 @@ body {
   .hamburger-btn {
     display: flex !important;
   }
+
+  .desktop-only-action {
+    display: none !important;
+  }
 }
 
 @keyframes spin {
